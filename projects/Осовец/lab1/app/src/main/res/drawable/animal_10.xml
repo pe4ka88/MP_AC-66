@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Слон -->
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="60dp"
+    android:height="60dp"
+    android:viewportWidth="60"
+    android:viewportHeight="60">
+    <!-- Голова -->
+    <path
+        android:fillColor="#78909C"
+        android:pathData="M30,50 C16,50 8,42 8,32 C8,22 16,14 30,14 C44,14 52,22 52,32 C52,42 44,50 30,50 Z"/>
+    <!-- Уши -->
+    <path
+        android:fillColor="#546E7A"
+        android:pathData="M8,28 C2,28 0,34 0,38 C0,44 4,48 10,44 L12,32 Z"/>
+    <path
+        android:fillColor="#546E7A"
+        android:pathData="M52,28 C58,28 60,34 60,38 C60,44 56,48 50,44 L48,32 Z"/>
+    <!-- Хобот -->
+    <path
+        android:fillColor="#78909C"
+        android:pathData="M26,40 L26,54 Q30,58 34,54 L34,40 Z"/>
+    <!-- Глаза -->
+    <path
+        android:fillColor="#000000"
+        android:pathData="M22,28 A3,3 0 1,1 22,28.01"/>
+    <path
+        android:fillColor="#000000"
+        android:pathData="M38,28 A3,3 0 1,1 38,28.01"/>
+</vector>

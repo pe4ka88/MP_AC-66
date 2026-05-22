@@ -1,0 +1,359 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/settingsScrollView"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    tools:context=".SettingsActivity">
+
+    <LinearLayout
+        android:id="@+id/settingsContainer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <!-- Заголовок -->
+        <TextView
+            android:id="@+id/settingsTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Настройки игры"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:layout_marginBottom="4dp"/>
+
+        <!-- Авторство -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Разработал Осовец А.О. | Группа АС-66"
+            android:textSize="11sp"
+            android:gravity="center"
+            android:textColor="#9E9E9E"
+            android:layout_marginBottom="16dp"/>
+
+        <!-- Размер игрового поля -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Размер поля"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="8dp"/>
+
+        <RadioGroup
+            android:id="@+id/gridSizeRadioGroup"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginBottom="16dp">
+
+            <RadioButton
+                android:id="@+id/gridSize4x4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="4×4 (8 пар)"
+                android:textSize="16sp"
+                android:padding="8dp"/>
+
+            <RadioButton
+                android:id="@+id/gridSize4x5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="4×5 (10 пар)"
+                android:textSize="16sp"
+                android:padding="8dp"/>
+
+            <RadioButton
+                android:id="@+id/gridSize5x6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="5×6 (15 пар)"
+                android:textSize="16sp"
+                android:padding="8dp"/>
+
+            <RadioButton
+                android:id="@+id/gridSize6x6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="6×6 (18 пар)"
+                android:textSize="16sp"
+                android:padding="8dp"/>
+
+        </RadioGroup>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#E0E0E0"
+            android:layout_marginVertical="8dp"/>
+
+        <!-- Режим игры (пары/тройки) -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Режим игры"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp"/>
+
+        <RadioGroup
+            android:id="@+id/matchModeRadioGroup"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginBottom="16dp">
+
+            <RadioButton
+                android:id="@+id/modePairs"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Пары (2 одинаковые карты)"
+                android:textSize="16sp"
+                android:padding="8dp"/>
+
+            <RadioButton
+                android:id="@+id/modeTriplets"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Тройки (3 одинаковые карты)"
+                android:textSize="16sp"
+                android:padding="8dp"/>
+
+        </RadioGroup>
+
+        <!-- Переключатель смешанного режима -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:paddingVertical="8dp"
+            android:layout_marginBottom="8dp">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Смешанный режим (пары + тройки)"
+                android:textSize="16sp"/>
+
+            <Switch
+                android:id="@+id/mixedModeSwitch"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/mixedModeHint"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Когда включён, на поле будут и пары, и тройки карточек одновременно"
+            android:textSize="12sp"
+            android:textColor="#666666"
+            android:layout_marginBottom="8dp"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#E0E0E0"
+            android:layout_marginVertical="8dp"/>
+
+        <!-- Набор картинок -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Набор картинок"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp"/>
+
+        <RadioGroup
+            android:id="@+id/cardSetRadioGroup"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginBottom="16dp">
+
+            <RadioButton
+                android:id="@+id/cardSetShapes"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="🔷 Геометрические фигуры"
+                android:textSize="16sp"
+                android:padding="8dp"/>
+
+            <RadioButton
+                android:id="@+id/cardSetAnimals"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="🐱 Животные"
+                android:textSize="16sp"
+                android:padding="8dp"/>
+
+            <RadioButton
+                android:id="@+id/cardSetFruits"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="🍎 Фрукты"
+                android:textSize="16sp"
+                android:padding="8dp"/>
+
+            <RadioButton
+                android:id="@+id/cardSetEmojis"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="😀 Эмодзи"
+                android:textSize="16sp"
+                android:padding="8dp"/>
+
+        </RadioGroup>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#E0E0E0"
+            android:layout_marginVertical="8dp"/>
+
+        <!-- Цветовая схема -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Цветовая тема"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp"/>
+
+        <RadioGroup
+            android:id="@+id/colorSchemeRadioGroup"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginBottom="16dp">
+
+            <RadioButton
+                android:id="@+id/colorBlue"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="💙 Синяя (по умолчанию)"
+                android:textSize="16sp"
+                android:padding="8dp"/>
+
+            <RadioButton
+                android:id="@+id/colorGreen"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="💚 Зелёная"
+                android:textSize="16sp"
+                android:padding="8dp"/>
+
+            <RadioButton
+                android:id="@+id/colorPurple"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="💜 Фиолетовая"
+                android:textSize="16sp"
+                android:padding="8dp"/>
+
+            <RadioButton
+                android:id="@+id/colorOrange"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="🧡 Оранжевая"
+                android:textSize="16sp"
+                android:padding="8dp"/>
+
+            <RadioButton
+                android:id="@+id/colorPink"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="💗 Розовая"
+                android:textSize="16sp"
+                android:padding="8dp"/>
+
+        </RadioGroup>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#E0E0E0"
+            android:layout_marginVertical="8dp"/>
+
+        <!-- Превью рубашки карты -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Превью рубашки карты"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp"/>
+
+        <ImageView
+            android:id="@+id/cardBackPreview"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_gravity="center"
+            android:layout_marginBottom="16dp"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#E0E0E0"
+            android:layout_marginVertical="8dp"/>
+
+        <!-- Кнопки -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="16dp">
+
+            <Button
+                android:id="@+id/cancelButton"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Отмена"
+                android:layout_marginEnd="8dp"
+                style="@style/Widget.Material3.Button.OutlinedButton"/>
+
+            <Button
+                android:id="@+id/saveButton"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Нажимает Осовец — Сохранить"
+                android:layout_marginStart="8dp"/>
+
+        </LinearLayout>
+
+        <!-- Сброс настроек -->
+        <Button
+            android:id="@+id/resetButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Сбросить настройки"
+            android:layout_marginTop="16dp"
+            style="@style/Widget.Material3.Button.TextButton"/>
+
+        <!-- Подпись автора внизу -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="© Осовец Арсений Олегович, АС-66"
+            android:textSize="11sp"
+            android:gravity="center"
+            android:textColor="#BDBDBD"
+            android:layout_marginTop="24dp"
+            android:layout_marginBottom="8dp"/>
+
+    </LinearLayout>
+
+</ScrollView>

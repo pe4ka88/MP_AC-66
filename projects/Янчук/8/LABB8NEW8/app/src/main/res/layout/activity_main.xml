@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="24dp"
+    android:gravity="center">
+
+    <Button
+        android:id="@+id/btnMap"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="_Янчук_Открыть карту" />
+
+    <Button
+        android:id="@+id/btnHistory"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="История"
+        android:layout_marginTop="16dp" />
+
+    <Button
+        android:id="@+id/btnStartTracking"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Запустить сбор геоданных"
+        android:layout_marginTop="16dp" />
+
+    <Button
+        android:id="@+id/btnStats"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Статистика"
+        android:layout_marginTop="16dp" />
+
+    <Button
+        android:id="@+id/btnExport"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Экспорт GPX"
+        android:layout_marginTop="16dp" />
+
+
+</LinearLayout>

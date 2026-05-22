@@ -1,0 +1,47 @@
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="400dp"
+    android:height="400dp"
+    android:viewportWidth="400"
+    android:viewportHeight="400">
+
+    <!-- Фон -->
+    <path android:fillColor="#1a1a2e" android:pathData="M0,0h400v400h-400z"/>
+
+    <!-- Рамка -->
+    <path android:fillColor="#e94560" android:pathData="M20,20h360v360h-360z"/>
+
+    <!-- Основной круг -->
+    <path android:fillColor="#4ecca3" android:pathData="M200,200m-120,0a120,120 0,1,1 240,0a120,120 0,1,1 -240,0"/>
+
+    <!-- Внутренний круг -->
+    <path android:fillColor="#1a1a2e" android:pathData="M200,200m-100,0a100,100 0,1,1 200,0a100,100 0,1,1 -200,0"/>
+
+    <!-- Буква "Л" -->
+    <path android:fillColor="#ffffff" android:pathData="M155,100 h25 v80 l25,-80 h25 v110 h-25 v-30 h-25 v30 h-25 z"/>
+
+    <!-- Цифра "6" -->
+    <path android:fillColor="#e94560" android:pathData="M232,125 q20,0 20,22 q0,18 -15,22 q-5,2 -7,8 q0,7 5,10 q5,3 17,3 l0,-13 q-9,0 -13,-2 q-4,-2 -4,-8 q0,-7 7,-12 q8,-5 25,-5 l0,-12 q-18,0 -29,8 q-11,8 -11,28 q0,20 16,32 q16,12 42,12 l0,-12 q-20,0 -30,-5 q-10,-5 -10,-20 q0,-16 11,-24 q11,-8 29,-8 l0,-12 q-22,0 -35,8 q-13,8 -13,27 q0,19 16,30 q16,11 39,11 l0,-12 q-18,0 -27,-4 q-9,-4 -9,-14 q0,-11 10,-19 q10,-8 26,-8 z"/>
+
+    <!-- Подпись -->
+    <path android:fillColor="#a0c4ff" android:pathData="M60,330 h280 v4 h-280z"/>
+
+    <!-- Цеван -->
+    <path android:fillColor="#ffffff" android:pathData="M80,340 l0,5 l1.5,0 l0,25 l6,0 l0,5 l-10,0 l0,-35 l10,0 l0,5 l-6,0 l0,15 l-1.5,0z"/>
+    <path android:fillColor="#ffffff" android:pathData="M100,340 q5,0 7,3 q2,3 0,7.5 q-2,4.5 -7,6.5 l0,8 l-3,0 l0,-25 l3,0 l0,12 q5,-3 8,-3z"/>
+    <path android:fillColor="#ffffff" android:pathData="M120,340 l0,12 l-3,0 l0,5 l7,0 l0,-5 l-3,0 l0,-12 q2,-2 5,-2.5 q3,-0.5 7,-0.5 l0,3 q-4,0 -6,0.5 q-2,0.5 -4,2.5z"/>
+    <path android:fillColor="#ffffff" android:pathData="M140,340 l0,15 l-2,0 l0,5 l5,0 l0,5 l-8,0 l0,-25 l8,0 l0,5 l-5,0 l0,15 l-2,0z"/>
+    <path android:fillColor="#ffffff" android:pathData="M153,340 l4,0 l0,25 l4,0 l0,5 l-7,0 l0,-10 l-1,0z"/>
+
+    <!-- АС-66 -->
+    <path android:fillColor="#4ecca3" android:pathData="M180,345 l0,5 l1,0 l0,15 l7,0 l0,5 l-10,0 l0,-25 l10,0 l0,5 l-7,0 l0,15 l-1,0z"/>
+    <path android:fillColor="#4ecca3" android:pathData="M200,345 q4,0 5,2 q1,2 0,4 q-1,2 -5,4 l0,6 l-4,0 l0,-16 l4,0 l0,8 q2,-1 4,-2 q2,-1 2,-4 q0,-2 -1,-2.5 q-1,-0.5 -3,-0.5 l0,-2 l3,0z"/>
+    <path android:fillColor="#4ecca3" android:pathData="M220,345 l0,5 l8,0 l0,5 l-3,0 l0,3 l2,0 l0,7 l-2,0 l0,3 l3,0 l0,7 l-11,0 l0,-25z"/>
+    <path android:fillColor="#4ecca3" android:pathData="M242,345 l0,5 l1,0 l0,15 l5,0 l0,5 l-9,0 l0,-25 l9,0 l0,5 l-5,0 l0,15 l-1,0z"/>
+    <path android:fillColor="#4ecca3" android:pathData="M257,345 l0,25 l4,0 l0,5 l-7,0 l0,-20 l0,0 q3,0 3,2.5 q0,2 -1.5,3.5 q-1.5,1.5 -4,1.5 l0,0 q-3,0 -5,-2 l0,-3.5 q2,-2 5,-2z"/>
+
+    <!-- Точки -->
+    <path android:fillColor="#e94560" android:pathData="M285,358 m-6,0 a6,6 0,1,1 12,0 a6,6 0,1,1 -12,0"/>
+    <path android:fillColor="#ffffff" android:pathData="M298,358 m-6,0 a6,6 0,1,1 12,0 a6,6 0,1,1 -12,0"/>
+    <path android:fillColor="#4ecca3" android:pathData="M311,358 m-6,0 a6,6 0,1,1 12,0 a6,6 0,1,1 -12,0"/>
+
+</vector>

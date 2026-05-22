@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Медведь -->
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="60dp"
+    android:height="60dp"
+    android:viewportWidth="60"
+    android:viewportHeight="60">
+    <!-- Уши -->
+    <path
+        android:fillColor="#795548"
+        android:pathData="M12,18 A8,8 0 1,1 12,18.01"/>
+    <path
+        android:fillColor="#795548"
+        android:pathData="M48,18 A8,8 0 1,1 48,18.01"/>
+    <!-- Внутренние уши -->
+    <path
+        android:fillColor="#A1887F"
+        android:pathData="M12,18 A4,4 0 1,1 12,18.01"/>
+    <path
+        android:fillColor="#A1887F"
+        android:pathData="M48,18 A4,4 0 1,1 48,18.01"/>
+    <!-- Голова -->
+    <path
+        android:fillColor="#8D6E63"
+        android:pathData="M30,52 C16,52 6,42 6,30 C6,18 16,10 30,10 C44,10 54,18 54,30 C54,42 44,52 30,52 Z"/>
+    <!-- Морда -->
+    <path
+        android:fillColor="#A1887F"
+        android:pathData="M30,48 C22,48 16,42 16,36 C16,30 22,26 30,26 C38,26 44,30 44,36 C44,42 38,48 30,48 Z"/>
+    <!-- Глаза -->
+    <path
+        android:fillColor="#000000"
+        android:pathData="M20,26 A4,4 0 1,1 20,26.01"/>
+    <path
+        android:fillColor="#000000"
+        android:pathData="M40,26 A4,4 0 1,1 40,26.01"/>
+    <!-- Блики -->
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M19,24 A1.5,1.5 0 1,1 19,24.01"/>
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M39,24 A1.5,1.5 0 1,1 39,24.01"/>
+    <!-- Нос -->
+    <path
+        android:fillColor="#5D4037"
+        android:pathData="M30,34 A5,4 0 1,1 30,34.01"/>
+    <!-- Рот -->
+    <path
+        android:strokeColor="#5D4037"
+        android:strokeWidth="2"
+        android:pathData="M30,38 L30,42"/>
+    <path
+        android:strokeColor="#5D4037"
+        android:strokeWidth="2"
+        android:pathData="M24,44 Q30,48 36,44"/>
+</vector>

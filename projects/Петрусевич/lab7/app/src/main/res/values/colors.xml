@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Цвета для розово-фиолетовой темы -->
+    <color name="pink_background">#FCE4EC</color>
+    <color name="purple_primary">#7E57C2</color>
+    <color name="purple_dark">#5E35B1</color>
+    <color name="purple_accent">#B39DDB</color>
+
+    <!-- Цвета для стандартной (синей) темы -->
+    <color name="blue_primary">#2196F3</color>
+    <color name="blue_dark">#1976D2</color>
+    <color name="blue_background">#E3F2FD</color>
+
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+</resources>

@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <!-- Фоновое изображение -->
+    <ImageView
+        android:id="@+id/bgImage"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/bg_media"
+        android:scaleType="centerCrop"
+        android:contentDescription="Фон"/>
+    <!-- Основной контейнер -->
+    <LinearLayout
+        android:orientation="vertical"
+        android:gravity="center_horizontal"
+        android:padding="24dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/titleText"
+            android:layout_width="146dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="32dp"
+            android:shadowColor="#000000"
+            android:shadowDx="5"
+            android:shadowDy="1"
+            android:shadowRadius="1"
+            android:text="  Медиа ЁУ!"
+            android:textColor="#FAD16A"
+            android:textSize="26sp"
+            android:textStyle="bold" />
+
+        <!-- Блок кнопок -->
+        <LinearLayout
+            android:orientation="vertical"
+            android:background="@drawable/card_background"
+            android:padding="16dp"
+            android:elevation="6dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <!-- Аудио / Видео -->
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="170dp"
+                android:layout_marginBottom="16dp">
+
+                <ImageButton
+                    android:id="@+id/btnPlayer"
+                    android:layout_width="168dp"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/button_image_background"
+                    android:clipToOutline="true"
+                    android:padding="12dp"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/ic_player" />
+
+                <View
+                    android:layout_width="163dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="end"
+                    android:background="@drawable/text_gradient" />
+
+                <TextView
+                    android:layout_width="163dp"
+                    android:layout_height="76dp"
+                    android:layout_gravity="end|center"
+                    android:layout_marginBottom="8dp"
+                    android:text=" Аудио/Видео"
+                    android:textColor="#FFFFFF"
+                    android:textSize="24dp"
+                    android:textStyle="bold" />
+
+            </FrameLayout>
+
+            <!-- Галерея -->
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="170dp">
+
+                <ImageButton
+                    android:id="@+id/btnGallery"
+                    android:layout_width="168dp"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/button_image_background"
+                    android:clipToOutline="true"
+                    android:padding="12dp"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/ic_gallery" />
+
+                <View
+                    android:layout_width="163dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="end"
+                    android:background="@drawable/text_gradient" />
+
+                <TextView
+                    android:layout_width="163dp"
+                    android:layout_height="76dp"
+                    android:layout_gravity="end|center"
+                    android:layout_marginBottom="8dp"
+                    android:text="   Галерея"
+                    android:textColor="#FFFFFF"
+                    android:textSize="32dp"
+                    android:textStyle="bold" />
+
+            </FrameLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <!-- Круглая кнопка камеры -->
+    <ImageButton
+        android:id="@+id/fabCamera"
+        android:src="@android:drawable/ic_menu_camera"
+        android:background="@drawable/circle_button"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:scaleType="center"
+        android:elevation="10dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_margin="20dp"/>
+    <TextView
+        android:id="@+id/copyrightText"
+        android:text="© 2026 Езепчук А.С. АС-66"
+        android:textSize="12sp"
+        android:textColor="#DDFFFFFF"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="12dp"
+        android:alpha="0.8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+</RelativeLayout>

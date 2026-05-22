@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_app_gradient"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Главное меню"
+            android:textColor="@android:color/white"
+            android:textSize="30sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="6dp"
+            android:text="Выберите раздел мультимедиа"
+            android:textColor="#D0FFFFFF"
+            android:textSize="14sp" />
+
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/cardAudio"
+            style="@style/Widget.LabSeven17.MenuCard"
+            android:layout_marginTop="20dp">
+
+            <TextView
+                style="@style/Widget.LabSeven17.MenuCardText"
+                android:text="Аудио плеер" />
+        </com.google.android.material.card.MaterialCardView>
+
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/cardVideo"
+            style="@style/Widget.LabSeven17.MenuCard"
+            android:layout_marginTop="14dp">
+
+            <TextView
+                style="@style/Widget.LabSeven17.MenuCardText"
+                android:text="Видео плеер" />
+        </com.google.android.material.card.MaterialCardView>
+
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/cardCamera"
+            style="@style/Widget.LabSeven17.MenuCard"
+            android:layout_marginTop="14dp">
+
+            <TextView
+                style="@style/Widget.LabSeven17.MenuCardText"
+                android:text="Камера (фото)" />
+        </com.google.android.material.card.MaterialCardView>
+
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/cardTask"
+            style="@style/Widget.LabSeven17.MenuCard"
+            android:layout_marginTop="14dp">
+
+            <TextView
+                style="@style/Widget.LabSeven17.MenuCardText"
+                android:text="О задании" />
+        </com.google.android.material.card.MaterialCardView>
+
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/cardAuthor"
+            style="@style/Widget.LabSeven17.MenuCard"
+            android:layout_marginTop="14dp">
+
+            <TextView
+                style="@style/Widget.LabSeven17.MenuCardText"
+                android:text="Об авторе" />
+        </com.google.android.material.card.MaterialCardView>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="20dp"
+            android:alpha="0.95"
+            android:text="Разработал: Гончерёнок К.А., АС66"
+            android:textColor="#E6FFFFFF"
+            android:textSize="13sp" />
+
+    </LinearLayout>
+</androidx.core.widget.NestedScrollView>

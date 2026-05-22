@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#FFFFFF">
+
+    <TextView
+        android:id="@+id/tvPointsCount"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="📊 Собрано точек: 0"
+        android:textSize="14sp"
+        android:padding="8dp"
+        android:background="#E0E0E0"
+        android:gravity="center"/>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <org.osmdroid.views.MapView
+            android:id="@+id/map"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <!-- Кнопки выбора периода -->
+        <LinearLayout
+            android:id="@+id/periodButtonsLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_gravity="top|center_horizontal"
+            android:layout_marginTop="8dp"
+            android:background="#AAFFFFFF"
+            android:padding="8dp"
+            android:elevation="8dp">
+
+            <Button
+                android:id="@+id/btnDay"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="День"
+                android:backgroundTint="#FF9800"
+                android:layout_marginEnd="4dp"/>
+
+            <Button
+                android:id="@+id/btnWeek"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Неделя"
+                android:backgroundTint="#2196F3"
+                android:layout_marginStart="4dp"
+                android:layout_marginEnd="4dp"/>
+
+            <Button
+                android:id="@+id/btnMonth"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Месяц"
+                android:backgroundTint="#9C27B0"
+                android:layout_marginEnd="4dp"/>
+
+            <Button
+                android:id="@+id/btnAll"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Все"
+                android:backgroundTint="#4CAF50"
+                android:layout_marginStart="4dp"/>
+        </LinearLayout>
+    </FrameLayout>
+
+    <TextView
+        android:id="@+id/tvStats"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Выберите период для отображения маршрута"
+        android:textSize="12sp"
+        android:padding="8dp"
+        android:background="#F5F5F5"/>
+
+</LinearLayout>

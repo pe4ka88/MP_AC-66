@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">Игра Память</string>
+    <string name="settings_title">Настройки игры</string>
+    <string name="grid_size">Размер поля</string>
+    <string name="match_mode">Режим игры</string>
+    <string name="card_set">Набор картинок</string>
+    <string name="color_scheme">Цветовая тема</string>
+    <string name="save">Сохранить</string>
+    <string name="cancel">Отмена</string>
+    <string name="reset_settings">Сбросить настройки</string>
+    <string name="author_name">Осовец Арсений Олегович</string>
+    <string name="author_group">АС-66</string>
+    <string name="author_label">Разработал Осовец А.О.</string>
+    <string name="task_title">Лабораторная работа №1</string>
+    <string name="task_description">Лабораторная работа №1\n\nИгра «Память» (Memory Game)\n\nРазработать мобильное приложение — игру на запоминание расположения карточек. Игроку предлагается поле с перевёрнутыми карточками, которые необходимо открывать попарно (или тройками). При совпадении изображений карточки остаются открытыми. Цель — открыть все карточки за минимальное количество ходов и времени.\n\nВыполнил: Осовец Арсений Олегович\nГруппа: АС-66</string>
+</resources>

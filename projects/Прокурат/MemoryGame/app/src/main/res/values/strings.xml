@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Память</string>
+    <string name="game_title">ИГРА "ПАМЯТЬ"</string>
+    <string name="author_name">Разработала: Прокурат Валерия</string>
+    <string name="group_name">Группа: АС-66</string>
+    <string name="about_button">О ПРИЛОЖЕНИИ</string>
+
+    <string name="easy_mode">ЛЁГКИЙ (4×4)</string>
+    <string name="medium_mode">СРЕДНИЙ (4×5)</string>
+    <string name="hard_mode">СЛОЖНЫЙ (4×6)</string>
+
+    <string name="about_title">О ПРИЛОЖЕНИИ</string>
+    <string name="back_button">НАЗАД</string>
+    <string name="about_info"><![CDATA[
+ФОРМУЛИРОВКА ЗАДАЧИ:
+Необходимо реализовать интерфейс приложения для последовательного открытия пар карточек для запоминания.
+
+ТРЕБОВАНИЯ К ПРИЛОЖЕНИЮ:
+1. Отображать игровое поле минимального размера 4×4;
+2. В каждый момент времени на экране отображается не более одной картинки;
+3. При открытии каждой следующей картинки происходит парное удаление с игрового поля только в случае совпадения текущей и предыдущей картинки;
+4. Предоставлять возможность перезапустить игру.
+
+РЕАЛИЗОВАНО:
+1) Главное меню с выбором сложности (4×4, 4×5, 4×6);
+2) Видна только одна открытая карта;
+3) Парное удаление карточек при совпадении;
+4) Счётчик найденных пар и ходов;
+5) Кнопка перезапуска игры;
+6) Информация о разработчике и задании.
+
+РАЗРАБОТЧИК:
+Прокурат Валерия, АС-66.
+]]></string>
+
+    <string name="easy_level">УРОВЕНЬ: ЛЁГКИЙ</string>
+    <string name="medium_level">УРОВЕНЬ: СРЕДНИЙ</string>
+    <string name="hard_level">УРОВЕНЬ: СЛОЖНЫЙ</string>
+    <string name="pairs_text">Пар: %1$d/%2$d</string>
+    <string name="moves_text">Ходов: %d</string>
+    <string name="restart_button">ЗАНОВО</string>
+    <string name="back_to_menu">НАЗАД</string>
+    <string name="victory_text">ПОБЕДА! Все пары найдены!</string>
+    <string name="closed_card">❓</string>
+    <string name="open_card">⬤</string>
+</resources>

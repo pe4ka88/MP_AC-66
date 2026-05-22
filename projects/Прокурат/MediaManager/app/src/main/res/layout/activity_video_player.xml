@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Прокурат АС-66"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:background="#E0E0E0"
+        android:padding="8dp"
+        android:layout_marginBottom="8dp" />
+
+    <Button
+        android:id="@+id/btnBack"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Назад"
+        android:layout_marginBottom="16dp" />
+
+    <TextView
+        android:id="@+id/tvFileName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Файл не выбран"
+        android:textSize="14sp"
+        android:padding="8dp"
+        android:background="#F0F0F0"
+        android:layout_marginBottom="16dp" />
+
+    <VideoView
+        android:id="@+id/videoView"
+        android:layout_width="match_parent"
+        android:layout_height="388dp"
+        android:layout_marginBottom="16dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center">
+
+        <SeekBar
+            android:id="@+id/videoSeekBar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp" />
+
+        <TextView
+            android:id="@+id/tvVideoProgress"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="00:00 / 00:00"
+            android:gravity="center"
+            android:layout_marginBottom="16dp" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center">
+
+            <Button
+                android:id="@+id/btnVideoRewind"
+                android:layout_width="46dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:text="-10" />
+
+            <Button
+                android:id="@+id/btnVideoPlay"
+                android:layout_width="59dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:text="Play" />
+
+            <Button
+                android:id="@+id/btnVideoPause"
+                android:layout_width="70dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:text="Pause" />
+
+            <Button
+                android:id="@+id/btnVideoStop"
+                android:layout_width="60dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:text="Stop" />
+
+            <Button
+                android:id="@+id/btnVideoForward"
+                android:layout_width="48dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:text="+10" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

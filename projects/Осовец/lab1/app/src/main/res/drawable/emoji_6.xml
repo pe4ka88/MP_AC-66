@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Удивление -->
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="60dp"
+    android:height="60dp"
+    android:viewportWidth="60"
+    android:viewportHeight="60">
+    <!-- Лицо -->
+    <path
+        android:fillColor="#FFEB3B"
+        android:pathData="M30,56 C14,56 2,44 2,30 C2,16 14,4 30,4 C46,4 58,16 58,30 C58,44 46,56 30,56 Z"/>
+    <!-- Брови -->
+    <path
+        android:strokeColor="#000000"
+        android:strokeWidth="2"
+        android:pathData="M14,18 L26,16"/>
+    <path
+        android:strokeColor="#000000"
+        android:strokeWidth="2"
+        android:pathData="M34,16 L46,18"/>
+    <!-- Глаза (большие) -->
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M20,28 A6,6 0 1,1 20,28.01"/>
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M40,28 A6,6 0 1,1 40,28.01"/>
+    <!-- Зрачки -->
+    <path
+        android:fillColor="#000000"
+        android:pathData="M20,28 A3,3 0 1,1 20,28.01"/>
+    <path
+        android:fillColor="#000000"
+        android:pathData="M40,28 A3,3 0 1,1 40,28.01"/>
+    <!-- Рот (открытый О) -->
+    <path
+        android:fillColor="#000000"
+        android:pathData="M30,46 A6,6 0 1,1 30,46.01"/>
+</vector>

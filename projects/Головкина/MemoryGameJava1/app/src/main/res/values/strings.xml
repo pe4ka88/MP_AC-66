@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Memory Game ЛР1</string>
+
+    <!-- Значения для выбора темы -->
+    <string-array name="theme_options">
+        <item>Стандартная (белая)</item>
+        <item>Светло-фиолетовая</item>
+        <item>Светло-голубая</item>
+        <item>Светло-зеленая</item>
+        <item>Светло-серая</item>
+    </string-array>
+</resources>

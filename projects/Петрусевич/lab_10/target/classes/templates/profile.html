@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Профиль</title>
+    <style>
+        body { font-family: Arial, sans-serif; padding: 20px; }
+        .profile-container { border: 1px solid #ccc; padding: 15px; width: 450px; margin-bottom: 20px; border-radius: 5px; }
+        .avatar { width: 120px; height: 120px; border-radius: 50%; object-fit: cover; border: 2px solid #333; margin-bottom: 10px; }
+        .success { color: green; font-weight: bold; margin-bottom: 15px; }
+        .error { color: red; font-weight: bold; margin-bottom: 15px; }
+        label { display: block; margin-bottom: 5px; }
+        input[type="text"], input[type="email"], input[type="password"] { width: 90%; padding: 5px; margin-bottom: 10px; }
+    </style>
+</head>
+<body>
+    <h2>Профиль пользователя: <span th:text="${username}">User</span></h2>
+    <p><strong>Тип авторизации: </strong> <span th:text="${isKeycloak ? 'Keycloak (SSO)' : 'Локальная БД (SQLite)'}"></span></p>
+
+    <!-- Сообщения об ошибках и успехе -->
+    <div th:if="${param.success}" class="success">Изменения успешно сохранены!</div>
+    <div th:if="${param.error != null and param.error[0] == 'wrong_old_password'}" class="error">Ошибка: Неверный старый пароль!</div>
+    <div th:if="${param.error != null and param.error[0] == 'password_mismatch'}" class="error">Ошибка: Новые пароли не совпадают!</div>
+
+    <!-- Основная информация -->
+    <div class="profile-container">
+        <h3>Личные данные</h3>
+        
+        <div th:if="${avatarUrl != null}">
+            <img th:src="${avatarUrl}" class="avatar" alt="Avatar"/>
+        </div>
+        <div th:if="${avatarUrl == null}">
+            <!-- Заглушка, если аватар не загружен -->
+            <img src="https://via.placeholder.com/120?text=No+Avatar" class="avatar" alt="No Avatar"/>
+        </div>
+        
+        <p><strong>Имя / Никнейм:</strong> <span th:text="${username}"></span></p>
+        <p><strong>Email:</strong> <span th:text="${email}"></span></p>
+        <p><strong>Дата регистрации:</strong> <span th:text="${registrationDate}"></span></p>
+
+        <hr>
+        <h4>Обновить аватар</h4>
+        <form th:action="@{/profile/upload-avatar}" method="post" enctype="multipart/form-data">
+            <input type="file" name="avatar" accept="image/*" required />
+            <br/><br/>
+            <button type="submit">Загрузить картинку</button>
+        </form>
+    </div>
+
+    <!-- Блок для локальных пользователей -->
+    <div th:if="${!isKeycloak}" class="profile-container">
+        <h3>Смена пароля (Локальная база)</h3>
+        <form th:action="@{/profile/update-password}" method="post">
+            <label>Текущий пароль: <input type="password" name="oldPassword" required/></label>
+            <label>Новый пароль: <input type="password" name="newPassword" required/></label>
+            <label>Подтверждение нового пароля: <input type="password" name="confirmPassword" required/></label>
+            <button type="submit">Изменить пароль</button>
+        </form>
+    </div>
+
+    <!-- Блок для пользователей Keycloak -->
+    <div th:if="${isKeycloak}" class="profile-container">
+        <h3>Обновление профиля (API Keycloak)</h3>
+        <form th:action="@{/profile/update-keycloak}" method="post">
+            <label>Имя (First Name): <input type="text" name="firstName" th:value="${firstName}"/></label>
+            <label>Фамилия (Last Name): <input type="text" name="lastName" th:value="${lastName}"/></label>
+            <label>Email: <input type="email" name="email" th:value="${email}" required/></label>
+            <button type="submit">Сохранить в Keycloak</button>
+        </form>
+    </div>
+
+    <br/>
+    <a href="/admin">Перейти в админ-панель (Только для ADMIN)</a>
+    <hr/>
+    <form th:action="@{/logout}" method="post">
+        <input type="submit" value="Выйти" />
+    </form>
+</body>
+</html>

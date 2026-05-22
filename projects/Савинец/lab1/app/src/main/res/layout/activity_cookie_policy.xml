@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="20dp">
+
+    <!-- Инициалы -->
+    <TextView
+        android:id="@+id/initialsText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="М.С."
+        android:textSize="16sp"
+        android:layout_gravity="end"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"/>
+
+    <!-- Заголовок -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ПОЛИТИКА ИСПОЛЬЗОВАНИЯ COOKIE"
+        style="@style/MainText"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp"/>
+
+    <!-- Прогресс бар -->
+    <ProgressBar
+        android:id="@+id/progressBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginBottom="20dp"/>
+
+    <!-- Текст правил -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:layout_marginBottom="20dp">
+
+        <TextView
+            android:id="@+id/cookieTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Загрузка политики использования cookie..."
+            style="@style/SecondaryText"
+            android:padding="8dp"/>
+
+    </ScrollView>
+
+    <!-- Кнопки -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginBottom="20dp">
+
+        <Button
+            android:id="@+id/refreshButton"
+            android:layout_width="0dp"
+            android:layout_height="56dp"
+            android:layout_weight="1"
+            android:text="ОБНОВИТЬ"
+            android:textSize="18sp"
+            android:layout_marginEnd="8dp"/>
+
+        <Button
+            android:id="@+id/acceptButton"
+            android:layout_width="0dp"
+            android:layout_height="56dp"
+            android:layout_weight="1"
+            android:text="ПРИНЯТЬ"
+            android:textSize="18sp"
+            android:layout_marginStart="8dp"/>
+
+    </LinearLayout>
+
+    <!-- Кнопка назад -->
+    <Button
+        android:id="@+id/backButton"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:text="НАЗАД"
+        android:textSize="18sp"
+        android:layout_marginBottom="40dp"/>
+
+    <!-- Разработчик внизу -->
+    <TextView
+        android:id="@+id/developerText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="API загружается с внешнего сервиса\nСавинец М. Д., АС-66\n2026 год"
+        style="@style/SmallText"
+        android:layout_gravity="center"/>
+
+</LinearLayout>

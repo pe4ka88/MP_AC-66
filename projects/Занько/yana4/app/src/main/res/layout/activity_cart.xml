@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rootCart"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/app_bg"
+    android:padding="12dp">
+
+    <TextView
+        android:id="@+id/tvCartTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Корзина • Занько Я.С. (АС-66)"
+        android:textStyle="bold"
+        android:textSize="18sp"
+        android:textColor="@color/green_dark" />
+
+    <TextView
+        android:id="@+id/tvCartTask"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="6dp"
+        android:text="@string/task_text"
+        android:textColor="@color/green_dark" />
+
+    <Button
+        android:id="@+id/btnBack"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Назад (Нажимает Занько )"
+        android:layout_marginTop="10dp" />
+
+    <ListView
+        android:id="@+id/listViewCart"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:layout_marginTop="10dp"
+        android:divider="@android:color/darker_gray"
+        android:dividerHeight="1dp" />
+
+    <TextView
+        android:id="@+id/tvCartFooterAuthor"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Разработал: Занько Я.С., группа АС-66"
+        android:textStyle="bold"
+        android:textColor="@color/green_dark"
+        android:layout_marginTop="10dp" />
+
+</LinearLayout>

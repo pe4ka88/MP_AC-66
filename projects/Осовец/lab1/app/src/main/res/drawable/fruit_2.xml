@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Банан -->
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="60dp"
+    android:height="60dp"
+    android:viewportWidth="60"
+    android:viewportHeight="60">
+    <!-- Банан -->
+    <path
+        android:fillColor="#FFEB3B"
+        android:pathData="M10,48 Q4,32 16,16 Q24,8 36,8 Q48,8 52,16 Q48,20 40,20 Q28,20 20,32 Q14,42 10,48 Z"/>
+    <!-- Тень -->
+    <path
+        android:fillColor="#FBC02D"
+        android:pathData="M12,46 Q8,34 18,20 Q24,14 32,12 Q28,16 24,24 Q18,36 12,46 Z"/>
+    <!-- Кончик -->
+    <path
+        android:fillColor="#795548"
+        android:pathData="M52,16 Q54,14 56,16 Q54,18 52,18 Z"/>
+</vector>

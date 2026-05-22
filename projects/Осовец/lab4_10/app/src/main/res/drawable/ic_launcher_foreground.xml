@@ -1,0 +1,54 @@
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="108dp"
+    android:height="108dp"
+    android:viewportWidth="108"
+    android:viewportHeight="108">
+
+    <!-- Notepad body -->
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M28,18h52v72h-52z" />
+
+    <!-- Notepad top binding -->
+    <path
+        android:fillColor="#FFD54F"
+        android:pathData="M28,18h52v8h-52z" />
+
+    <!-- Lines on notepad -->
+    <path
+        android:fillColor="#00000000"
+        android:pathData="M34,36h40"
+        android:strokeWidth="1.2"
+        android:strokeColor="#BDBDBD" />
+    <path
+        android:fillColor="#00000000"
+        android:pathData="M34,44h40"
+        android:strokeWidth="1.2"
+        android:strokeColor="#BDBDBD" />
+    <path
+        android:fillColor="#00000000"
+        android:pathData="M34,52h40"
+        android:strokeWidth="1.2"
+        android:strokeColor="#BDBDBD" />
+
+    <!-- "1" digit -->
+    <path
+        android:fillColor="#4A148C"
+        android:pathData="M42,56 L42,76 L46,76 L46,60 L44,60 L40,62 L40,58 Z" />
+
+    <!-- "0" digit -->
+    <path
+        android:fillColor="#4A148C"
+        android:pathData="M54,56 C48,56 48,76 54,76 C60,76 60,56 54,56 Z M54,60 C57,60 57,72 54,72 C51,72 51,60 54,60 Z" />
+
+    <!-- Pencil icon on the side -->
+    <path
+        android:fillColor="#FF6F00"
+        android:pathData="M72,30 L78,24 L82,28 L76,34 Z" />
+    <path
+        android:fillColor="#FFD54F"
+        android:pathData="M70,36 L72,30 L76,34 L74,38 Z" />
+    <path
+        android:fillColor="#424242"
+        android:pathData="M69,38 L70,36 L74,38 L72,40 Z" />
+</vector>

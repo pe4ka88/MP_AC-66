@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Регистрация</title>
+</head>
+<body>
+    <h2>Регистрация нового пользователя (Локально)</h2>
+    <div th:if="${param.error}" style="color: red">Пользователь с таким именем уже существует!</div>
+    
+    <form th:action="@{/register}" method="post">
+        <!-- Защита от CSRF автоматическая для Thymeleaf, но можно оставить для надежности -->
+        <div>
+            <label>Логин: <input type="text" name="username" required/></label>
+        </div>
+        <div>
+            <label>Email: <input type="email" name="email" required/></label>
+        </div>
+        <div>
+            <label>Пароль: <input type="password" name="password" required/></label>
+        </div>
+        <div>
+            <input type="submit" value="Зарегистрироваться"/>
+        </div>
+    </form>
+    <br/>
+    <a href="/login">Вернуться ко входу</a>
+</body>
+</html>

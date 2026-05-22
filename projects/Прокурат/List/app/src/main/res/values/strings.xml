@@ -1,0 +1,5 @@
+<resources>
+<string name="app_name">List</string>
+<string name="btn_load_data">Загрузить данные\nнажимает Прокурат</string>
+<string name="author_signature">Прокурат АС-66</string>
+</resources>

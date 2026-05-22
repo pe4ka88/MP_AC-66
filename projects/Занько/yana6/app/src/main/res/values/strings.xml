@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">ЛР14 Занько</string>
+    <string name="author_fio">Студент: Занько Я.С., АС-66</string>
+    <string name="author_developed">Разработал: Занько</string>
+    <string name="btn_pick">Выбрать файл (Нажимает Занько)</string>
+    <string name="btn_task">Показать задание (Нажимает Занько)</string>
+    <string name="btn_stop_audio">Остановить аудио (Занько)</string>
+    <string name="task_text">ТЕМА 4. ФАЙЛОВАЯ СИСТЕМА ОС ANDROID.\nЛабораторная работа № 14.\nЗадание: Создать приложение, обеспечивающее выбор файла во внешнем хранилище с возможностью дальнейшей его обработки в зависимости от расширения:\n- графический файл (ImageView)\n- аудиофайл (MediaPlayer)\n- видеофайл (VideoView).\n\nВыполнил: Занько Я.С., группа АС-66.</string>
+</resources>

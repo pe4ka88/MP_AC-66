@@ -1,0 +1,85 @@
+<resources>
+
+    <!-- Базовая тема приложения -->
+    <style name="AppTheme" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <item name="colorPrimary">#6200EE</item>
+        <item name="colorPrimaryVariant">#3700B3</item>
+        <item name="colorAccent">#03DAC5</item>
+        <item name="android:windowBackground">@color/black</item>
+    </style>
+
+    <style name="Text">
+        <item name="android:textSize">24sp</item>
+        <item name="android:textColor">#FFFFFF</item>
+        <item name="android:fontFamily">@font/my_font</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <!-- Заголовки -->
+    <style name="Text.Title">
+        <item name="android:textSize">24sp</item>
+        <item name="android:textColor">#FFFFFF</item>
+        <item name="android:fontFamily">@font/my_font</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <!-- Основной текст -->
+    <style name="Text.Body">
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">#FFFFFF</item>
+        <item name="android:fontFamily">@font/my_font</item>
+    </style>
+
+    <!-- Подсказки в EditText -->
+    <style name="Text.Hint">
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColorHint">#777777</item>
+        <item name="android:fontFamily">@font/my_font</item>
+    </style>
+
+    <!-- Кнопки -->
+    <style name="Button.Game" parent="Widget.MaterialComponents.Button">
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">#FFFFFF</item>
+        <item name="android:fontFamily">@font/my_font</item>
+        <item name="android:backgroundTint">#FF6200EE</item>
+        <item name="android:paddingStart">16dp</item>
+        <item name="android:paddingEnd">16dp</item>
+        <item name="android:paddingTop">8dp</item>
+        <item name="android:paddingBottom">8dp</item>
+        <item name="cornerRadius">12dp</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <!-- Стили для EditText (поля ввода) -->
+    <style name="EditText.Game" parent="Widget.MaterialComponents.TextInputEditText.OutlinedBox">
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">#000000</item>
+        <item name="android:textColorHint">#777777</item>
+        <item name="android:fontFamily">@font/my_font</item>
+        <item name="android:padding">12dp</item>
+        <item name="android:background">@drawable/bg_input</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">56dp</item>
+    </style>
+
+    <!-- Стили для Spinner -->
+    <style name="Spinner.Game" parent="Widget.AppCompat.Spinner.Underlined">
+        <item name="android:background">@drawable/bg_input</item>
+        <item name="android:fontFamily">@font/my_font</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">56dp</item>
+    </style>
+
+    <!-- Стили для Switch -->
+    <style name="Switch.Game" parent="Widget.AppCompat.CompoundButton.Switch">
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">#FFFFFF</item>
+        <item name="android:fontFamily">@font/my_font</item>
+        <item name="android:minHeight">48dp</item>
+        <item name="android:paddingStart">12dp</item>
+        <item name="android:paddingEnd">12dp</item>
+    </style>
+
+</resources>

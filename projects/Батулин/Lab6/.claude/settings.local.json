@@ -1,0 +1,15 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(xargs grep *)",
+      "Bash(./gradlew assembleDebug)",
+      "Bash(./gradlew --stop)",
+      "Bash(./gradlew clean *)",
+      "Bash(./gradlew assembleDebug *)",
+      "Bash(tee /tmp/build_full.log)",
+      "Bash(echo \"EXIT: $?\")",
+      "Read(//tmp/**)",
+      "Bash(tee /tmp/build_full2.log)"
+    ]
+  }
+}

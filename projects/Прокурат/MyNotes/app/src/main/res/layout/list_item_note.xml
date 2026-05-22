@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="12dp"
+    android:background="?android:attr/selectableItemBackground">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Прокурат АС-66"
+        android:textSize="12sp"
+        android:textColor="#999999"
+        android:gravity="center"
+        android:padding="8dp"
+        android:layout_gravity="bottom" />
+
+    <TextView
+        android:id="@+id/tv_note_id"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="14sp"
+        android:textColor="#FF5722"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/tv_note_description"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="16sp"
+        android:layout_marginTop="4dp"
+        android:textColor="#000000" />
+
+</LinearLayout>

@@ -1,0 +1,57 @@
+<resources>
+    <string name="app_name">Taxi</string>
+
+    <string name="fio_group">Выполнил: Гончерёнок К.А., группа АС-66</string>
+    <string name="author_text">Разработал: Гончерёнок К.А.</string>
+    <string name="author_button">Нажимает Гончерёнок</string>
+    <string name="back_to_main">Назад в главное меню</string>
+
+    <string name="registration">Регистрация</string>
+    <string name="login">Вход</string>
+
+    <string name="hint_phone">Введите телефон</string>
+    <string name="hint_name">Введите имя</string>
+    <string name="hint_surname">Введите фамилию</string>
+
+    <string name="user_screen_title">Экран пользователя Taxi</string>
+    <string name="path_screen_title">Ввод маршрута Taxi</string>
+    <string name="task_screen_title">Условие лабораторной работы</string>
+
+    <string name="set_path">Задать маршрут</string>
+    <string name="call_taxi">Вызвать такси</string>
+    <string name="ok">ОК</string>
+    <string name="close">Закрыть</string>
+
+    <string name="user_name_default">Имя и фамилия:</string>
+    <string name="user_phone_default">Телефон:</string>
+    <string name="route_default">Маршрут не задан</string>
+
+    <string name="hint_from">Улица отправления</string>
+    <string name="hint_to">Улица назначения</string>
+    <string name="hint_city">Город</string>
+    <string name="hint_start_street">Дом отправления</string>
+    <string name="hint_end_street">Дом назначения</string>
+    <string name="hint_comment">Комментарий водителю</string>
+
+    <string name="empty_fields">Заполните все поля</string>
+    <string name="empty_route_fields">Заполните все поля маршрута</string>
+    <string name="taxi_sent">Такси успешно отправлено</string>
+
+    <string name="task_text">Практическое задание.
+1. Разработать приложение Taxi, состоящее из трёх Activity.
+2. В первом Activity создать три редактируемых текстовых поля для ввода регистрационных данных пользователя: телефон, имя и фамилия.
+3. При нажатии кнопки «Регистрация» выполнить явный вызов второго Activity с передачей данных пользователя.
+4. Во втором Activity вывести имя, фамилию и телефон пользователя, а также маршрут движения.
+5. Реализовать кнопку «Задать маршрут» для перехода к третьему Activity.
+6. Третий Activity должен запускаться методом startActivityForResult.
+7. В третьем Activity создать шесть полей для ввода параметров маршрута и кнопку «ОК» для возврата результата.
+8. После возврата во второй Activity вывести маршрут и активировать кнопку вызова такси.
+9. При нажатии кнопки «Вызвать такси» вывести всплывающее сообщение об успешной отправке такси.
+10. Реализовать сохранение регистрационных данных пользователя с помощью SharedPreferences.
+11. Вывести в лог очередность вызовов методов жизненного цикла Activity.
+12. Сделать вывод о жизненном цикле Activity.
+13. Продемонстрировать работу приложения на устройстве или эмуляторе.
+
+Выполнил: Гончерёнок К.А.
+Группа: АС-66</string>
+</resources>

@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "656653761087",
+    "project_id": "memoryezepchukac66",
+    "storage_bucket": "memoryezepchukac66.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:656653761087:android:f4f4c5d16cca93f35b968a",
+        "android_client_info": {
+          "package_name": "com.example.memoryezepchukac66"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyChSHg3IwXq6X3Y3KUHmm3anSF8fNJymYM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

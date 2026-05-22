@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <EditText
+                android:id="@+id/et_street"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Улица (Откуда)" />
+
+            <EditText
+                android:id="@+id/et_house"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Дом (Откуда)" />
+
+            <EditText
+                android:id="@+id/et_flat"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Квартира (Откуда)" />
+
+            <Button
+                android:id="@+id/btn_get_location"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Определить местоположение" />
+
+            <EditText
+                android:id="@+id/et_dest_street"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:hint="Улица (Куда)" />
+
+            <EditText
+                android:id="@+id/et_dest_house"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Дом (Куда)" />
+
+            <EditText
+                android:id="@+id/et_dest_flat"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Квартира (Куда)" />
+
+            <Button
+                android:id="@+id/btn_ok"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text="OK" />
+
+        </LinearLayout>
+    </ScrollView>
+
+    <org.osmdroid.views.MapView
+        android:id="@+id/map"
+        android:layout_width="match_parent"
+        android:layout_height="250dp" />
+
+</LinearLayout>

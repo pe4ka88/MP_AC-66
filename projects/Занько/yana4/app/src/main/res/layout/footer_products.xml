@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@color/green_soft"
+    android:padding="12dp">
+
+    <TextView
+        android:id="@+id/tvCheckedCount"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Активировано товаров: 0"
+        android:textStyle="bold"
+        android:textColor="@color/green_dark" />
+
+    <Button
+        android:id="@+id/btnShowChecked"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Show Checked Items (Нажимает Занько )"
+        android:layout_marginTop="10dp" />
+
+    <TextView
+        android:id="@+id/tvFooterAuthor"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="Разработал Занько Я.С., АС-66"
+        android:textColor="@color/green_dark" />
+
+</LinearLayout>

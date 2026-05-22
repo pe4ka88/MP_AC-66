@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/backgroundLight">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="FragmentDel • Удаление заметки"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:textColor="@color/primaryBlueDark" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="Автор: Занько Я.С."
+            android:textStyle="bold"
+            android:textColor="@color/textDark" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Группа: АС-66"
+            android:textColor="@color/textDark" />
+
+        <EditText
+            android:id="@+id/etDeleteId"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:hint="Введите номер заметки"
+            android:inputType="number"
+            android:minHeight="56dp"
+            android:background="@drawable/bg_edittext"
+            android:padding="12dp" />
+
+        <Button
+            android:id="@+id/btnDeleteNote"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="Del • Удаляет Занько"
+            android:textAllCaps="false"
+            android:textStyle="bold"
+            android:textColor="@android:color/white"
+            android:backgroundTint="@color/accentBlue" />
+
+    </LinearLayout>
+</ScrollView>

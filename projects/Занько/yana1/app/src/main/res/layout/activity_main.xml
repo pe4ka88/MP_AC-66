@@ -1,0 +1,51 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:padding="12dp"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!-- Авторство #1 -->
+    <TextView
+        android:id="@+id/tvAuthor"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Разработал: Занько Я.С., Группы АС-66"
+        android:textStyle="bold"
+        android:textSize="16sp"/>
+
+    <!-- Авторство #2 -->
+    <Button
+        android:id="@+id/btnRestart"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Нажимает Занько : Перезапуск"/>
+
+    <Button
+        android:id="@+id/btnTask"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Задание (ЛР1)"/>
+
+    <TextView
+        android:id="@+id/tvInfo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Осталось пар: 8"
+        android:paddingTop="6dp"
+        android:paddingBottom="6dp"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvBoard"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"/>
+
+    <!-- Авторство #3 -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Автор: Занько Я.С."
+        android:gravity="center_horizontal"
+        android:paddingTop="6dp"/>
+</LinearLayout>

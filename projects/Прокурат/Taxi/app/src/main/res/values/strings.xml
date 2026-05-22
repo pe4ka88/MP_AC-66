@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Taxi</string>
+    <string name="phone_hint">Телефон</string>
+    <string name="name_hint">Имя</string>
+    <string name="surname_hint">Фамилия</string>
+    <string name="registration">Registration</string>
+    <string name="login">Log in</string>
+    <string name="user_info">Информация о пользователе:</string>
+    <string name="route_info">Маршрут:</string>
+    <string name="set_path">Set path</string>
+    <string name="call_taxi">Call Taxi</string>
+    <string name="street_from_hint">Улица отправления</string>
+    <string name="house_from_hint">Дом отправления</string>
+    <string name="apartment_from_hint">Квартира отправления</string>
+    <string name="street_to_hint">Улица назначения</string>
+    <string name="house_to_hint">Дом назначения</string>
+    <string name="apartment_to_hint">Квартира назначения</string>
+    <string name="ok">OK</string>
+    <string name="taxi_message">Такси успешно вызвано!</string>
+    <string name="route_text">Такси будет подано по адресу: %1$s %2$s, кв.%3$s\nНазначение: %4$s %5$s, кв.%6$s</string>
+    <string name="user_text">%1$s %2$s\nТелефон: %3$s</string>
+    <string name="author_info">Разработала Прокурат Валерия, группа АС-66</string>
+    <string name="info">i</string>
+    <string name="about_developer">О разработчике</string>
+</resources>

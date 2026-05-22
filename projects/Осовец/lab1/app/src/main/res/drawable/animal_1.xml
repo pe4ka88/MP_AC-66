@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Кошка -->
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="60dp"
+    android:height="60dp"
+    android:viewportWidth="60"
+    android:viewportHeight="60">
+    <!-- Голова -->
+    <path
+        android:fillColor="#FFB74D"
+        android:pathData="M30,45 C18,45 10,35 10,25 C10,15 18,8 30,8 C42,8 50,15 50,25 C50,35 42,45 30,45 Z"/>
+    <!-- Уши -->
+    <path
+        android:fillColor="#FFB74D"
+        android:pathData="M12,18 L18,8 L22,18 Z"/>
+    <path
+        android:fillColor="#FFB74D"
+        android:pathData="M48,18 L42,8 L38,18 Z"/>
+    <!-- Внутренние уши -->
+    <path
+        android:fillColor="#FFCC80"
+        android:pathData="M14,16 L18,10 L20,16 Z"/>
+    <path
+        android:fillColor="#FFCC80"
+        android:pathData="M46,16 L42,10 L40,16 Z"/>
+    <!-- Глаза -->
+    <path
+        android:fillColor="#4CAF50"
+        android:pathData="M22,25 A4,4 0 1,1 22,25.01"/>
+    <path
+        android:fillColor="#4CAF50"
+        android:pathData="M38,25 A4,4 0 1,1 38,25.01"/>
+    <!-- Зрачки -->
+    <path
+        android:fillColor="#000000"
+        android:pathData="M23,25 A2,2 0 1,1 23,25.01"/>
+    <path
+        android:fillColor="#000000"
+        android:pathData="M39,25 A2,2 0 1,1 39,25.01"/>
+    <!-- Нос -->
+    <path
+        android:fillColor="#FF7043"
+        android:pathData="M30,32 L27,28 L33,28 Z"/>
+    <!-- Усы -->
+    <path
+        android:strokeColor="#424242"
+        android:strokeWidth="1"
+        android:pathData="M15,30 L25,32"/>
+    <path
+        android:strokeColor="#424242"
+        android:strokeWidth="1"
+        android:pathData="M15,33 L25,33"/>
+    <path
+        android:strokeColor="#424242"
+        android:strokeWidth="1"
+        android:pathData="M45,30 L35,32"/>
+    <path
+        android:strokeColor="#424242"
+        android:strokeWidth="1"
+        android:pathData="M45,33 L35,33"/>
+</vector>

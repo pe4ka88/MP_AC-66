@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/postListFragment">
+
+    <fragment
+        android:id="@+id/postListFragment"
+        android:name="com.example.lr3.ui.list.PostListFragment"
+        android:label="@string/lab_title">
+        <action
+            android:id="@+id/action_postListFragment_to_postDetailFragment"
+            app:destination="@id/postDetailFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/postDetailFragment"
+        android:name="com.example.lr3.ui.detail.PostDetailFragment"
+        android:label="Детали элемента">
+        <argument
+            android:name="post"
+            app:argType="com.example.lr3.model.Post" />
+    </fragment>
+
+</navigation>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="pink_light">#FFF8BBD0</color>
+    <color name="pink_medium">#FFF48FB1</color>
+    <color name="pink_dark">#FFEC407A</color>
+    <color name="pink_accent">#FFE91E63</color>
+    <color name="pink_deep">#FFC2185B</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="black">#FF000000</color>
+    <color name="gray_light">#FFF5F5F5</color>
+    <color name="text_primary">#FF880E4F</color>
+    <color name="text_secondary">#FFAD1457</color>
+    <color name="background">#FFFCE4EC</color>
+    <color name="card_background">#FFFFFFFF</color>
+    <color name="button_disabled">#CCCCCC</color>
+    <color name="button_enabled">#FFE91E63</color>
+</resources>

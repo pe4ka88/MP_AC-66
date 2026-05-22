@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Вход</title>
+</head>
+<body>
+    <h2>Авторизация</h2>
+    <div th:if="${param.registered}" style="color: green">Вы успешно зарегистрировались. Теперь войдите!</div>
+    <form th:action="@{/login}" method="post">
+        <div>
+            <label>Имя пользователя: <input type="text" name="username"/></label>
+        </div>
+        <div>
+            <label>Пароль: <input type="password" name="password"/></label>
+        </div>
+        <div>
+            <input type="submit" value="Войти"/>
+        </div>
+    </form>
+    
+    <p>Нет аккаунта? <a href="/register">Зарегистрироваться</a></p>
+
+    <hr>
+    <h3><a th:href="@{/oauth2/authorization/keycloak}">Войти через Keycloak (SSO)</a></h3>
+</body>
+</html>

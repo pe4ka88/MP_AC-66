@@ -1,0 +1,37 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Розово-фиолетовая тема -->
+    <style name="Theme.Lab_2.Pink" parent="Theme.MaterialComponents.DayNight.DarkActionBar">
+        <item name="colorPrimary">@color/purple_primary</item>
+        <item name="colorPrimaryVariant">@color/purple_dark</item>
+        <item name="colorOnPrimary">@color/white</item>
+        <item name="colorSecondary">@color/purple_accent</item>
+        <item name="android:windowBackground">@color/pink_background</item>
+
+        <!-- Стили для полей ввода (черный текст и черная линия) -->
+        <item name="editTextStyle">@style/Widget.App.BlackEditText</item>
+        <item name="colorControlNormal">@color/black</item>
+        <item name="colorControlActivated">@color/black</item>
+        <item name="android:textColorHint">@color/black</item>
+    </style>
+
+    <!-- Синяя тема -->
+    <style name="Theme.Lab_2.Blue" parent="Theme.MaterialComponents.DayNight.DarkActionBar">
+        <item name="colorPrimary">@color/blue_primary</item>
+        <item name="colorPrimaryVariant">@color/blue_dark</item>
+        <item name="colorOnPrimary">@color/white</item>
+        <item name="colorSecondary">@color/blue_primary</item>
+        <item name="android:windowBackground">@color/blue_background</item>
+
+        <item name="editTextStyle">@style/Widget.App.BlackEditText</item>
+        <item name="colorControlNormal">@color/black</item>
+        <item name="colorControlActivated">@color/black</item>
+        <item name="android:textColorHint">@color/black</item>
+    </style>
+
+    <style name="Widget.App.BlackEditText" parent="Widget.AppCompat.EditText">
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textColorHint">@color/black</item>
+    </style>
+
+    <style name="Theme.Lab_2" parent="Theme.Lab_2.Pink" />
+</resources>

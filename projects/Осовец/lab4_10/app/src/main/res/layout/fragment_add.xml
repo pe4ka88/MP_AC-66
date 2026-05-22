@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <TextView
+        android:id="@+id/tvAddHeader"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Осовец Арсений | АС-66"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:paddingBottom="16dp" />
+
+    <EditText
+        android:id="@+id/etDescription"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Описание заметки"
+        android:inputType="textMultiLine"
+        android:minLines="3"
+        android:gravity="top" />
+
+    <Button
+        android:id="@+id/btnGetQuote"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Получить случайную цитату"
+        android:layout_marginTop="8dp" />
+
+    <TextView
+        android:id="@+id/tvQuoteStatus"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:textSize="12sp"
+        android:textColor="#888888"
+        android:gravity="center"
+        android:paddingBottom="4dp" />
+
+    <Button
+        android:id="@+id/btnAdd"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Нажимает Осовец"
+        android:layout_marginTop="8dp" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+
+    <TextView
+        android:id="@+id/tvAddFooter"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Разработал: Осовец Арсений, АС-66"
+        android:textSize="14sp"
+        android:gravity="center"
+        android:paddingTop="8dp" />
+
+</LinearLayout>

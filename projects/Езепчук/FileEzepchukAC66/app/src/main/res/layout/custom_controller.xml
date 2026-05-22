@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!-- Затемнение -->
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#55000000"/>
+
+    <!-- Нижняя панель -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:orientation="vertical"
+        android:padding="8dp"
+        android:background="#CC000000">
+
+        <!-- Прогресс -->
+        <com.google.android.exoplayer2.ui.DefaultTimeBar
+            android:id="@+id/exo_progress"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:played_color="#FF0000"
+            app:buffered_color="#80FFFFFF"
+            app:unplayed_color="#33FFFFFF"
+            app:scrubber_color="#FF0000"/>
+
+        <!-- Нижний ряд кнопок -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:paddingTop="4dp">
+
+            <!-- Play -->
+            <ImageButton
+                android:id="@+id/exo_play_pause"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:background="@android:color/transparent"
+                android:src="@drawable/exo_icon_play"
+                app:tint="@android:color/white"
+                android:contentDescription="Play/Pause"/>
+
+            <!-- Назад 10 сек -->
+            <ImageButton
+                android:id="@+id/btnRewind"
+                android:layout_width="wrap_content"
+                android:layout_height="36dp"
+                android:background="@android:color/transparent"
+                android:contentDescription="Rewind"
+                android:src="@drawable/ic_replay_10"
+                app:tint="@android:color/white" />
+
+            <!-- Вперёд 10 сек -->
+            <ImageButton
+                android:id="@+id/btnForward"
+                android:layout_width="wrap_content"
+                android:layout_height="36dp"
+                android:background="@android:color/transparent"
+                android:contentDescription="Forward"
+                android:src="@drawable/ic_forward_10"
+                app:tint="@android:color/white" />
+
+            <!-- Время -->
+            <TextView
+                android:id="@+id/exo_position"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="00:00"
+                android:textColor="@android:color/white"
+                android:textSize="12sp"
+                android:layout_marginStart="8dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=" / "
+                android:textColor="@android:color/white"
+                android:textSize="12sp"/>
+
+            <TextView
+                android:id="@+id/exo_duration"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="00:00"
+                android:textColor="@android:color/white"
+                android:textSize="12sp"/>
+
+            <View
+                android:layout_width="wrap_content"
+                android:layout_height="19dp"
+                android:layout_weight="1" />
+
+            <!-- Скорость -->
+            <Spinner
+                android:id="@+id/spinnerSpeed"
+                android:layout_width="38dp"
+                android:layout_height="36dp"
+                android:entries="@array/playback_speeds"
+                android:spinnerMode="dropdown" />
+
+            <!-- Громкость -->
+            <ImageView
+                android:id="@+id/iconVolume"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_marginStart="8dp"
+                android:src="@drawable/ic_volume"
+                app:tint="@android:color/white" />
+
+            <SeekBar
+                android:id="@+id/seekVolume"
+                android:layout_width="65dp"
+                android:layout_height="wrap_content"
+                android:max="100"
+                android:progress="50" />
+
+            <!-- Fullscreen -->
+            <ImageButton
+                android:id="@+id/btnFullscreen"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:layout_marginStart="6dp"
+                android:background="@android:color/transparent"
+                android:contentDescription="Fullscreen"
+                android:src="@drawable/ic_fullscreen"
+                app:tint="@android:color/white" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</FrameLayout>

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="12dp"
+    android:background="#FFF4CC">
+
+    <TextView
+        android:id="@+id/tvSelectedCount"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Количество выбранных товаров: 0"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:paddingBottom="8dp" />
+
+    <Button
+        android:id="@+id/btnShowCheckedItems"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Show Checked Items"
+        android:padding="10dp" />
+
+    <TextView
+        android:id="@+id/tvFooterAuthor"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Нажимает Лысюк Ростислав, АС-66"
+        android:textSize="16sp"
+        android:gravity="center"
+        android:paddingTop="8dp" />
+
+</LinearLayout>

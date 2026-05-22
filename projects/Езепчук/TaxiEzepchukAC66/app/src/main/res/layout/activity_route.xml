@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:background="#121212">
+
+    <!-- Верхняя панель: пользователь + кнопка профиля -->
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical">
+
+        <TextView
+            android:id="@+id/tvUser"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="Пассажир: Иван Иванов"
+            android:textColor="#FFFFFF"
+            android:textSize="18sp"
+            android:padding="8dp"/>
+
+        <ImageButton
+            android:id="@+id/btnProfile"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:src="@drawable/ic_profile"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:contentDescription="Профиль"
+            android:layout_marginStart="8dp"
+            android:scaleType="fitCenter"
+            android:adjustViewBounds="true"/>
+
+    </LinearLayout>
+
+    <!-- Маршрут -->
+    <TextView
+        android:id="@+id/tvRoute"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Откуда - Куда"
+        android:textColor="#E0E0E0"
+        android:textSize="16sp"
+        android:padding="8dp"
+        android:layout_marginTop="8dp"/>
+
+    <!-- Кнопка указать маршрут -->
+    <Button
+        android:id="@+id/btnSetRoute"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Указать маршрут"
+        android:textColor="#FFFFFF"
+        android:backgroundTint="#1F1F1F"
+        android:layout_marginTop="12dp"/>
+
+    <!-- Заказ такси -->
+    <Button
+        android:id="@+id/btnCallTaxi"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Заказать такси"
+        android:textColor="#FFFFFF"
+        android:backgroundTint="#FF5722"
+        android:layout_marginTop="24dp"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"/>
+
+    <!-- Copyright -->
+    <TextView
+        android:id="@+id/tvCopyright"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="© 2026 Езепчук А.С."
+        android:textColor="#AAAAAA"
+        android:textSize="12sp"
+        android:gravity="center"
+        android:paddingTop="12dp"/>
+
+</LinearLayout>

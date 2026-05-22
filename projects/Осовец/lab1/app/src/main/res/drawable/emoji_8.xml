@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Звёздные глаза -->
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="60dp"
+    android:height="60dp"
+    android:viewportWidth="60"
+    android:viewportHeight="60">
+    <!-- Лицо -->
+    <path
+        android:fillColor="#FFEB3B"
+        android:pathData="M30,56 C14,56 2,44 2,30 C2,16 14,4 30,4 C46,4 58,16 58,30 C58,44 46,56 30,56 Z"/>
+    <!-- Левая звезда -->
+    <path
+        android:fillColor="#FFC107"
+        android:pathData="M20,26 L22,22 L24,26 L28,26 L25,29 L26,33 L20,30 L14,33 L15,29 L12,26 L16,26 Z"/>
+    <!-- Правая звезда -->
+    <path
+        android:fillColor="#FFC107"
+        android:pathData="M40,26 L42,22 L44,26 L48,26 L45,29 L46,33 L40,30 L34,33 L35,29 L32,26 L36,26 Z"/>
+    <!-- Рот (восторг) -->
+    <path
+        android:fillColor="#000000"
+        android:pathData="M22,42 Q30,52 38,42 Q30,46 22,42 Z"/>
+</vector>

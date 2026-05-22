@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/backgroundLight">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="FragmentAdd • Добавление заметки"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:textColor="@color/primaryBlueDark" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="Разработал Занько Я.С."
+            android:textStyle="bold"
+            android:textColor="@color/textDark" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="группа АС-66 • ЛР10"
+            android:textColor="@color/textDark" />
+
+        <EditText
+            android:id="@+id/etAddDesc"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:hint="Введите описание заметки"
+            android:minHeight="56dp"
+            android:background="@drawable/bg_edittext"
+            android:padding="12dp" />
+
+        <Button
+            android:id="@+id/btnAddNote"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="Add • Добавляет Занько"
+            android:textAllCaps="false"
+            android:textStyle="bold"
+            android:textColor="@android:color/white"
+            android:backgroundTint="@color/primaryBlue" />
+
+    </LinearLayout>
+</ScrollView>

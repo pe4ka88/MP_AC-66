@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="brand_primary">#0F4C5C</color>
+    <color name="brand_primary_variant">#155E73</color>
+    <color name="brand_secondary">#FF6B35</color>
+    <color name="brand_tertiary">#2A9D8F</color>
+    <color name="brand_on_primary">#FFFFFFFF</color>
+    <color name="surface_light">#F4F8FA</color>
+    <color name="surface_card">#FFFFFFFF</color>
+    <color name="text_primary">#1E2A32</color>
+    <color name="text_secondary">#5E727D</color>
+
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+</resources>

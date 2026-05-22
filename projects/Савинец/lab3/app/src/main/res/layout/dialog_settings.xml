@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="URL сервера:"
+        android:textSize="14sp"/>
+
+    <EditText
+        android:id="@+id/etCustomUrl"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="https://jsonplaceholder.typicode.com/posts"
+        android:layout_marginTop="4dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Количество элементов:"
+        android:textSize="14sp"
+        android:layout_marginTop="16dp"/>
+
+    <EditText
+        android:id="@+id/etItemsCount"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="20"
+        android:inputType="number"
+        android:layout_marginTop="4dp"/>
+
+    <Button
+        android:id="@+id/btnToggleImages"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Изображения: ВЫКЛ"
+        android:layout_marginTop="16dp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Разработала: Савинец М. Д."
+        android:textSize="12sp"
+        android:gravity="center"
+        android:layout_marginTop="24dp"/>
+
+</LinearLayout>

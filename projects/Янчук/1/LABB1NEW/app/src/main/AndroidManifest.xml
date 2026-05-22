@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.labb1new">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/game_memory"
+        android:label="Shibun Game"
+        android:roundIcon="@mipmap/game_memory_round"
+        android:theme="@style/Theme.App">
+        <activity
+            android:name=".utils.TaskInfoActivity"
+            android:exported="false" />
+        <activity
+            android:name=".RecordsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".GameActivity"
+            android:exported="false" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

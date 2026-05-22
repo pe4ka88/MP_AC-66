@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="ink_900">#111827</color>
+    <color name="ink_700">#334155</color>
+    <color name="ink_500">#475569</color>
+
+    <color name="mint_500">#10B981</color>
+    <color name="sky_500">#0EA5E9</color>
+    <color name="amber_500">#F59E0B</color>
+
+    <color name="bg_start">#E0F2FE</color>
+    <color name="bg_end">#ECFDF5</color>
+
+    <color name="glass_surface">#B3FFFFFF</color>
+    <color name="glass_border">#80FFFFFF</color>
+    <color name="glass_overlay">#66FFFFFF</color>
+
+    <color name="danger">#DC2626</color>
+    <color name="success">#059669</color>
+</resources>

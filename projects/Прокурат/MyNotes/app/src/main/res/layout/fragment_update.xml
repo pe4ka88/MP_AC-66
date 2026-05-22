@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Прокурат АС-66"
+        android:textSize="12sp"
+        android:textColor="#999999"
+        android:gravity="center"
+        android:padding="8dp"
+        android:layout_gravity="bottom" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Обновление заметки"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:padding="16dp"
+        android:background="#FFF3E0" />
+
+    <EditText
+        android:id="@+id/et_update_id"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Введите ID заметки"
+        android:inputType="number"
+        android:padding="12dp"
+        android:layout_marginTop="20dp"
+        android:background="@android:drawable/editbox_background" />
+
+    <EditText
+        android:id="@+id/et_new_description"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Введите новое описание"
+        android:padding="12dp"
+        android:layout_marginTop="12dp"
+        android:minHeight="100dp"
+        android:gravity="top"
+        android:background="@android:drawable/editbox_background" />
+
+    <Button
+        android:id="@+id/btn_update"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Обновить"
+        android:layout_marginTop="20dp"
+        android:background="#FF9800"
+        android:textColor="#FFFFFF"
+        android:textSize="16sp" />
+
+</LinearLayout>

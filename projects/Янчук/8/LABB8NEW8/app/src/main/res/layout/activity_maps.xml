@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!-- Карта -->
+    <fragment
+        android:id="@+id/map"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <!-- Панель выбора периода -->
+    <LinearLayout
+        android:id="@+id/periodPanel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="8dp"
+        android:gravity="center"
+        android:background="#AAFFFFFF"
+        android:layout_margin="8dp"
+        android:elevation="6dp">
+
+        <Button
+            android:id="@+id/btnDay"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="День" />
+
+        <Button
+            android:id="@+id/btnWeek"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Неделя"
+            android:layout_marginLeft="8dp" />
+
+        <Button
+            android:id="@+id/btnMonth"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Месяц"
+            android:layout_marginLeft="8dp" />
+
+        <Button
+            android:id="@+id/btnAll"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Все"
+            android:layout_marginLeft="8dp" />
+
+
+
+
+
+    </LinearLayout>
+
+</FrameLayout>

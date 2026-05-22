@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">LR4</string>
+
+    <string name="task_text">
+        Лабораторная работа №9: Списки. Собственный адаптер (BaseAdapter). Callback. ListView с Header/Footer. Корзина выбранных товаров.
+        Выполнил: Занько Я.С., группа АС-66.
+    </string>
+</resources>

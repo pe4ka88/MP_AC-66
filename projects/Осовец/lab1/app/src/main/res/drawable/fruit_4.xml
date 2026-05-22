@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Виноград -->
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="60dp"
+    android:height="60dp"
+    android:viewportWidth="60"
+    android:viewportHeight="60">
+    <!-- Стебель -->
+    <path
+        android:fillColor="#795548"
+        android:pathData="M28,10 L30,4 L32,10"/>
+    <!-- Листик -->
+    <path
+        android:fillColor="#4CAF50"
+        android:pathData="M32,6 Q40,2 44,8 Q36,12 32,6 Z"/>
+    <!-- Виноградины -->
+    <path
+        android:fillColor="#9C27B0"
+        android:pathData="M30,16 A7,7 0 1,1 30,16.01"/>
+    <path
+        android:fillColor="#9C27B0"
+        android:pathData="M20,22 A7,7 0 1,1 20,22.01"/>
+    <path
+        android:fillColor="#9C27B0"
+        android:pathData="M40,22 A7,7 0 1,1 40,22.01"/>
+    <path
+        android:fillColor="#9C27B0"
+        android:pathData="M25,32 A7,7 0 1,1 25,32.01"/>
+    <path
+        android:fillColor="#9C27B0"
+        android:pathData="M35,32 A7,7 0 1,1 35,32.01"/>
+    <path
+        android:fillColor="#9C27B0"
+        android:pathData="M30,42 A7,7 0 1,1 30,42.01"/>
+    <!-- Блики -->
+    <path
+        android:fillColor="#CE93D8"
+        android:pathData="M28,14 A2,2 0 1,1 28,14.01"/>
+    <path
+        android:fillColor="#CE93D8"
+        android:pathData="M18,20 A2,2 0 1,1 18,20.01"/>
+    <path
+        android:fillColor="#CE93D8"
+        android:pathData="M38,20 A2,2 0 1,1 38,20.01"/>
+</vector>

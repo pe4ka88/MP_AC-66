@@ -1,0 +1,26 @@
+<resources>
+    <string name="app_name">Lab3 — Осовец</string>
+    <string name="author_name">Осовец Арсений Олегович</string>
+    <string name="author_group">АС-66</string>
+    <string name="author_short">Осовец А.О.</string>
+    <string name="btn_load">Загрузить данные (Осовец)</string>
+    <string name="btn_prev">← Назад</string>
+    <string name="btn_next">Вперёд →</string>
+    <string name="btn_export">Сохранить CSV (Осовец)</string>
+    <string name="btn_share">Поделиться</string>
+    <string name="btn_save_settings">Сохранить настройки (Осовец)</string>
+    <string name="btn_back">← Назад к списку (Осовец)</string>
+    <string name="btn_detail_share">Поделиться (Осовец)</string>
+    <string name="btn_detail_save">Сохранить в файл</string>
+    <string name="developed_by">Разработал: Осовец Арсений Олегович</string>
+    <string name="copyright">© 2026 Осовец Арсений, АС-66</string>
+    <string name="no_data">Нажмите \"Загрузить данные\" для получения информации</string>
+    <string name="settings_title">Настройки — Осовец</string>
+    <string name="about_title">О программе — Осовец</string>
+    <string name="server_url_hint">URL сервера</string>
+    <string name="items_per_page">Элементов на странице:</string>
+    <string name="show_images">Показывать изображения</string>
+    <string name="lab_title">Лабораторная работа №3</string>
+    <string name="task_description">Реализовать интерфейс приложения для отображения списка элементов. В качестве данных для списка использовать файл в формате JSON, загруженный с удалённого сервера. Загрузка выполняется в ходе работы по команде пользователя.\n\nПриложение должно:\n• Отображать список элементов внутри фрагмента\n• Список занимает более одного экрана (прокрутка)\n• Отдельный элемент списка с пользовательским стилем\n• Выполнять запрос на получение данных с удалённого сервера\n• Выполнять преобразование JSON в коллекцию объектов\n• Выделение элемента списка с отображением детальной информации\n• Отображать детальную информацию внутри отдельного фрагмента\n\nБонусы:\n• Настройки приложения (URL сервера, размер страницы)\n• Кнопки управления страницами\n• Выбор типа запроса (Posts, Users, Photos, Comments)\n• Экспорт в CSV\n• Отправка данных (email, мессенджер)\n• Собственный адаптер\n• Изображения в списке\n• Обработка исключений</string>
+    <string name="data_source">Источник данных: JSONPlaceholder API</string>
+</resources>

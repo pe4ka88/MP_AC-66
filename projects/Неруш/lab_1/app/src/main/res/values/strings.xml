@@ -1,0 +1,37 @@
+<resources>
+    <string name="app_name">lab_1</string>
+    <string name="Title">lab_1</string>
+    <string name="confTitle">Game Settings</string>
+    <string name="ok_button">START GAME</string>
+    <string name="restart_button">Back to Settings</string>
+    <string name="str_width">Columns:</string>
+    <string name="str_height">Rows:</string>
+    <string name="str_mode">Game Mode:</string>
+    <string name="str_color">Color Theme:</string>
+    <string name="str_time">Time: %1$d s</string>
+    <string name="str_remaining">Sets left: %1$d</string>
+    <string name="str_best_time">Personal Best: %1$d s</string>
+    <string name="game_over">Level Complete!</string>
+    <string name="user_name_label">Your Name:</string>
+    <string name="high_scores_title">Top Records</string>
+    <string name="motivational_text">Keep it up!</string>
+
+    <string-array name="numbers">
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+    </string-array>
+
+    <string-array name="modes">
+        <item>Pairs (2)</item>
+        <item>Triplets (3)</item>
+    </string-array>
+
+    <string-array name="themes">
+        <item>Classic Blue</item>
+        <item>Nature Green</item>
+        <item>Sunset Orange</item>
+    </string-array>
+</resources>

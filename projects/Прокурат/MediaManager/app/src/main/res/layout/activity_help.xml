@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Прокурат АС-66"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:background="#E0E0E0"
+        android:padding="8dp"
+        android:layout_marginBottom="8dp" />
+
+    <Button
+        android:id="@+id/btnBack"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Назад"
+        android:layout_marginBottom="16dp" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Справка по приложению MediaManager"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:layout_marginBottom="16dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Сценарий использования:"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:layout_marginBottom="8dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="1. Для воспроизведения аудио: нажмите 'Выбрать аудиофайл', выберите MP3-файл из памяти эмулятора. Используйте кнопки Play/Pause/Stop для управления. Кнопки -10 и +10 позволяют перематывать трек на 10 секунд."
+                android:layout_marginBottom="12dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="2. Для воспроизведения видео: нажмите 'Выбрать видеофайл', выберите MP4-файл. Видео будет проигрываться с возможностью управления (Play/Pause/Stop/перемотка)."
+                android:layout_marginBottom="12dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="3. Для создания фото: нажмите 'Сделать фото', разрешите доступ к камере. После съёмки фото автоматически сохраняется и отображается. Фото сохраняется в память приложения."
+                android:layout_marginBottom="12dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="4. Для просмотра галереи: нажмите 'Галерея фото' - откроется список всех сохранённых фотографий. Нажмите на любое фото для просмотра."
+                android:layout_marginBottom="12dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="5. В просмотре фото доступны кнопки масштабирования: Увеличить, Уменьшить, Сброс."
+                android:layout_marginBottom="12dp" />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

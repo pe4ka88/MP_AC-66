@@ -1,0 +1,267 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#1a1a2e">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <!-- ===== ЗАГОЛОВОК ===== -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Лабораторная работа №6"
+            android:textColor="#e94560"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:paddingTop="16dp"
+            android:paddingBottom="4dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Работа с файловой системой. Разрешения."
+            android:textColor="#ffffff"
+            android:textSize="15sp"
+            android:gravity="center"
+            android:paddingBottom="8dp"/>
+
+        <!-- Авторство #1 — в заголовке -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Разработал: Лысюк Ростислав АС-66"
+            android:textColor="#a0c4ff"
+            android:textSize="14sp"
+            android:gravity="center"
+            android:paddingBottom="16dp"/>
+
+        <!-- ===== ПОСТАНОВКА ЗАДАЧИ ===== -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Задача: Создать приложение, обеспечивающее выбор файла во внешнем хранилище с возможностью дальнейшей его обработки в зависимости от расширения:\n• графический файл — отобразить через ImageView;\n• аудиофайл — воспроизвести через MediaPlayer;\n• видеофайл — воспроизвести через VideoView."
+            android:textColor="#cccccc"
+            android:textSize="13sp"
+            android:background="#16213e"
+            android:padding="14dp"
+            android:layout_marginBottom="8dp"/>
+
+        <!-- Авторство #2 -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Автор: Лысюк Ростислав | Группа: АС-66 | Лаб. №6"
+            android:textColor="#555577"
+            android:textSize="11sp"
+            android:gravity="center"
+            android:paddingBottom="16dp"/>
+
+        <!-- ===== КНОПКА ВЫБОРА ФАЙЛА ===== -->
+        <Button
+            android:id="@+id/btnSelectFile"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:text="Выбрать файл"
+            android:backgroundTint="#e94560"
+            android:textColor="#ffffff"
+            android:textSize="15sp"
+            android:layout_marginBottom="12dp"/>
+
+        <!-- ===== БЛОК ТЕСТО��ЫХ ФАЙЛОВ ===== -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Тестовые файлы (в res/raw/)"
+            android:textColor="#a0c4ff"
+            android:textSize="13sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="8dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Разработал: Лысюк Ростислав АС-66"
+            android:textColor="#555577"
+            android:textSize="11sp"
+            android:gravity="center"
+            android:layout_marginBottom="8dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="12dp">
+
+            <Button
+                android:id="@+id/btnTestImage"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="ИЗОБР."
+                android:backgroundTint="#4ecca3"
+                android:textColor="#000000"
+                android:layout_marginEnd="4dp"/>
+
+            <Button
+                android:id="@+id/btnTestAudio"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="АУДИО"
+                android:backgroundTint="#f7c59f"
+                android:textColor="#000000"
+                android:layout_marginStart="4dp"
+                android:layout_marginEnd="4dp"/>
+
+            <Button
+                android:id="@+id/btnTestVideo"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="ВИДЕО"
+                android:backgroundTint="#e94560"
+                android:textColor="#ffffff"
+                android:layout_marginStart="4dp"/>
+
+        </LinearLayout>
+
+        <!-- ===== ИНФОРМАЦИЯ О ФАЙЛЕ ===== -->
+        <TextView
+            android:id="@+id/tvFileName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Файл не выбран"
+            android:textColor="#aaaaaa"
+            android:textSize="13sp"
+            android:layout_marginBottom="4dp"/>
+
+        <TextView
+            android:id="@+id/tvStatus"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textColor="#4ecca3"
+            android:textSize="13sp"
+            android:textStyle="italic"
+            android:layout_marginBottom="12dp"/>
+
+        <!-- ===== IMAGEVIEW (скрыт по умолчанию) ===== -->
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:scaleType="fitCenter"
+            android:visibility="gone"
+            android:background="#16213e"
+            android:layout_marginBottom="12dp"
+            android:contentDescription="Разработал Лысюк Ростислав АС-66"/>
+
+        <!-- ===== VIDEOVIEW (скрыт по умолчанию) ===== -->
+        <VideoView
+            android:id="@+id/videoView"
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:visibility="gone"
+            android:layout_marginBottom="12dp"/>
+
+        <!-- ===== ПАНЕЛЬ АУДИО (скрыта по умолчанию) ===== -->
+        <LinearLayout
+            android:id="@+id/audioPanel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="#16213e"
+            android:padding="16dp"
+            android:visibility="gone"
+            android:layout_marginBottom="12dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Аудио воспроизводится через MediaPlayer"
+                android:textColor="#ffffff"
+                android:textSize="14sp"
+                android:gravity="center"
+                android:layout_marginBottom="4dp"/>
+
+            <!-- Авторство #3 — в панели аудио -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Лысюк Ростислав АС-66"
+                android:textColor="#a0c4ff"
+                android:textSize="12sp"
+                android:gravity="center"
+                android:layout_marginBottom="12dp"/>
+
+            <TextView
+                android:id="@+id/tvAudioFile"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:textColor="#a0c4ff"
+                android:textSize="12sp"
+                android:gravity="center"
+                android:layout_marginBottom="12dp"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center">
+
+                <Button
+                    android:id="@+id/btnPlay"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Играть"
+                    android:backgroundTint="#4ecca3"
+                    android:textColor="#000000"
+                    android:layout_marginEnd="4dp"/>
+
+                <Button
+                    android:id="@+id/btnPause"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Пауза"
+                    android:backgroundTint="#f7c59f"
+                    android:textColor="#000000"
+                    android:layout_marginStart="4dp"
+                    android:layout_marginEnd="4dp"/>
+
+                <Button
+                    android:id="@+id/btnStop"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Стоп"
+                    android:backgroundTint="#e94560"
+                    android:textColor="#ffffff"
+                    android:layout_marginStart="4dp"/>
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <!-- ===== ПОДВАЛ ===== -->
+        <!-- Авторство #4 — в подвале -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Разработал Лысюк Ростислав АС-66"
+            android:textColor="#555577"
+            android:textSize="11sp"
+            android:gravity="center"
+            android:paddingTop="24dp"
+            android:paddingBottom="16dp"/>
+
+    </LinearLayout>
+</ScrollView>

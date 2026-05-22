@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_deep">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="24dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="СПРАВКА И СЦЕНАРИЙ"
+                android:textColor="@color/accent_neon_pink"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                android:layout_gravity="center"
+                android:layout_marginBottom="24dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="1. Сценарий использования:\nПриложение 'Медиа Центр' предназначено для управления мультимедийным контентом. Пользователь может прослушивать аудио, смотреть видео и делать фотографии. Все действия автоматически сохраняются в базу данных.\n\n2. Аудио:\nИспользуйте кнопки 'Воспроизвести' и 'Пауза' для управления музыкой. SeekBar позволяет перематывать трек.\n\n3. Видео:\nВоспроизведение видео с возможностью перемотки. Поддерживается полноэкранный просмотр.\n\n4. Фото:\nМожно сделать снимок на камеру или выбрать изображение из галереи. Реализована функция масштабирования.\n\n5. История:\nРаздел 'История' отображает список всех просмотренных файлов с временной меткой."
+                android:textColor="@color/text_main"
+                android:textSize="16sp"
+                android:lineSpacingExtra="4dp"
+                android:layout_marginBottom="32dp"/>
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/button_back"
+                android:layout_width="150dp"
+                android:layout_height="40dp"
+                android:text="Понятно"
+                android:textColor="@color/white"
+                android:background="@drawable/button_background"
+                android:layout_gravity="center"/>
+        </LinearLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

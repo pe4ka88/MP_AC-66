@@ -1,0 +1,17 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.GeoEzepchukAC66" parent="Theme.Material3.DayNight.NoActionBar">
+        <!-- Customize your light theme here. -->
+        <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
+    </style>
+
+    <style name="Theme.GeoEzepchukAC66" parent="Theme.Material3.DayNight.NoActionBar">
+        <item name="android:statusBarColor">@android:color/transparent</item>
+        <item name="android:windowLightStatusBar">false</item>
+        <item name="colorPrimary">#D2E2B9</item>
+        <item name="colorOnPrimary">#FFFFFF</item>
+
+        <item name="colorSurface">#1E1E2E</item>
+        <item name="colorOnSurface">#FFFFFF</item>
+    </style>
+</resources>

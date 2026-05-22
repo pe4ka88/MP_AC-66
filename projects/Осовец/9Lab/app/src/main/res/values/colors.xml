@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="teal_primary">#FF009688</color>
+    <color name="teal_dark">#FF00796B</color>
+    <color name="row_even">#FFFFFFFF</color>
+    <color name="row_odd">#FFE0F2F1</color>
+</resources>

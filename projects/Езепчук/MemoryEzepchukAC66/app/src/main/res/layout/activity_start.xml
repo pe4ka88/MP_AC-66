@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!-- ФОН -->
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/back_start"
+        android:scaleType="centerCrop" />
+
+    <!-- КОНТЕНТ -->
+    <ScrollView
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+
+        <LinearLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:padding="24dp">
+            <!-- Кнопка информации о программе -->
+
+
+            <!-- Контейнер для полей с ограниченной шириной -->
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:gravity="center_horizontal"
+                android:layout_marginBottom="16dp">
+
+                <EditText
+                    android:id="@+id/nicknameInput"
+                    android:layout_width="300dp"
+                    android:layout_height="56dp"
+                    android:hint="Введите ник"
+                    android:textSize="18sp"
+                    android:background="@drawable/bg_input"
+                    android:textColor="#000000"
+                    android:textColorHint="#777777"
+                    android:maxLines="1"
+                    android:inputType="textPersonName"
+                    android:layout_marginBottom="16dp"/>
+
+                <Spinner
+                    android:id="@+id/gridSpinner"
+                    android:layout_width="300dp"
+                    android:layout_height="56dp"
+                    android:background="@drawable/bg_input"
+                    android:spinnerMode="dropdown"
+                    android:layout_marginBottom="16dp"/>
+
+                <Switch
+                    android:id="@+id/infiniteSwitch"
+                    android:layout_width="300dp"
+                    android:layout_height="wrap_content"
+                    android:minHeight="48dp"
+                    android:paddingStart="12dp"
+                    android:paddingEnd="12dp"
+                    android:text="Бесконечный режим"
+                    android:textSize="16sp"
+                    android:textColor="#FFFFFF"/>
+
+            </LinearLayout>
+
+            <!-- Кнопки -->
+            <Button
+                android:id="@+id/startGameButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Начать игру"
+                android:layout_marginBottom="12dp"/>
+
+            <Button
+                android:id="@+id/recordsButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Рекорды"/>
+
+            <TextView
+                android:id="@+id/textcoo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Сделано Езепчуком А.С. АС-66" />
+
+        </LinearLayout>
+    </ScrollView>
+
+    <ImageButton
+        android:id="@+id/infoButton"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_gravity="top|start"
+        android:layout_margin="16dp"
+        android:background="@android:color/transparent"
+        android:contentDescription="О программе"
+        android:padding="6dp"
+        android:scaleType="fitCenter"
+        android:src="@drawable/ic_info" />
+    <!-- Кнопка смены рубашки -->
+    <ImageButton
+        android:id="@+id/changeBackButton"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_gravity="top|end"
+        android:layout_margin="16dp"
+        android:background="@android:color/transparent"
+        android:padding="6dp"
+        android:src="@drawable/backcard"
+        android:scaleType="fitCenter"
+        android:adjustViewBounds="true"
+        android:contentDescription="Сменить рубашку карты"/>
+
+</FrameLayout>

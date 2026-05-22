@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:background="#121530">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <TextView
+            android:id="@+id/tvHeader"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Лабораторная работа №7"
+            android:textSize="28sp"
+            android:textStyle="bold"
+            android:textColor="#FF4F7B"
+            android:gravity="center"
+            android:layout_marginBottom="8dp" />
+
+        <TextView
+            android:id="@+id/tvTheme"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Приложение для воспроизведения аудио- и видеофайлов, создания и отображения фотоснимков"
+            android:textSize="17sp"
+            android:textColor="#FFFFFF"
+            android:gravity="center"
+            android:layout_marginBottom="10dp" />
+
+        <TextView
+            android:id="@+id/tvAuthorTop"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Разработал: Лысюк Ростислав АС-66"
+            android:textSize="18sp"
+            android:textColor="#DDE3FF"
+            android:gravity="center"
+            android:layout_marginBottom="10dp" />
+
+        <TextView
+            android:id="@+id/tvTask"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#1A2555"
+            android:padding="12dp"
+            android:text="Задача: создать приложение для воспроизведения собственных аудио- и видеофайлов, а также для создания и отображения фотоснимков.&#10;&#10;Автор: Цеван Константин&#10;Группа: АС-66&#10;Лабораторная работа №7"
+            android:textColor="#FFFFFF"
+            android:textSize="15sp"
+            android:layout_marginBottom="14dp" />
+
+        <Button
+            android:id="@+id/btnTakePhoto"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Сделать снимок"
+            android:textStyle="bold"
+            android:textAllCaps="false"
+            android:backgroundTint="#FF4F7B"
+            android:textColor="#FFFFFF"
+            android:layout_marginBottom="10dp" />
+
+        <TextView
+            android:id="@+id/tvAuthorMiddle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Разработал Лысюк Ростислав АС-66"
+            android:textColor="#8F98C8"
+            android:textSize="13sp"
+            android:gravity="center"
+            android:layout_marginBottom="10dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="10dp">
+
+            <Button
+                android:id="@+id/btnPlayAudio"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Аудио"
+                android:textStyle="bold"
+                android:textAllCaps="false"
+                android:backgroundTint="#59D6B3"
+                android:textColor="#000000"
+                android:layout_marginEnd="6dp" />
+
+            <Button
+                android:id="@+id/btnPauseAudio"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Пауза"
+                android:textStyle="bold"
+                android:textAllCaps="false"
+                android:backgroundTint="#F0C49B"
+                android:textColor="#000000"
+                android:layout_marginStart="3dp"
+                android:layout_marginEnd="3dp" />
+
+            <Button
+                android:id="@+id/btnStopAudio"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Стоп"
+                android:textStyle="bold"
+                android:textAllCaps="false"
+                android:backgroundTint="#FF4F7B"
+                android:textColor="#FFFFFF"
+                android:layout_marginStart="6dp" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btnShowVideo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Показать видео"
+            android:textStyle="bold"
+            android:textAllCaps="false"
+            android:backgroundTint="#5C8DFF"
+            android:textColor="#FFFFFF"
+            android:layout_marginBottom="12dp" />
+
+        <TextView
+            android:id="@+id/tvStatus"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Статус: приложение готово к работе"
+            android:textSize="16sp"
+            android:textColor="#6EF0C2"
+            android:layout_marginBottom="12dp" />
+
+        <ImageView
+            android:id="@+id/imageViewPhoto"
+            android:layout_width="match_parent"
+            android:layout_height="260dp"
+            android:scaleType="fitCenter"
+            android:adjustViewBounds="true"
+            android:background="#1A2555"
+            android:contentDescription="Фотоснимок"
+            android:layout_marginBottom="12dp" />
+
+        <FrameLayout
+            android:id="@+id/videoContainer"
+            android:layout_width="match_parent"
+            android:layout_height="240dp"
+            android:layout_marginBottom="12dp"
+            android:background="#000000">
+
+            <VideoView
+                android:id="@+id/videoView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+        </FrameLayout>
+
+        <TextView
+            android:id="@+id/tvAuthorBottom"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Разработал Цеван Константин | Группа АС-66 | Лаб. №7"
+            android:textColor="#8F98C8"
+            android:textSize="13sp"
+            android:gravity="center" />
+
+    </LinearLayout>
+</ScrollView>

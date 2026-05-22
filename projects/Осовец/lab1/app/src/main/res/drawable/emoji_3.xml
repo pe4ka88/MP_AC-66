@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Сердечные глаза -->
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="60dp"
+    android:height="60dp"
+    android:viewportWidth="60"
+    android:viewportHeight="60">
+    <!-- Лицо -->
+    <path
+        android:fillColor="#FFEB3B"
+        android:pathData="M30,56 C14,56 2,44 2,30 C2,16 14,4 30,4 C46,4 58,16 58,30 C58,44 46,56 30,56 Z"/>
+    <!-- Левый глаз-сердечко -->
+    <path
+        android:fillColor="#E91E63"
+        android:pathData="M20,26 C18,22 14,22 14,26 C14,30 20,34 20,34 C20,34 26,30 26,26 C26,22 22,22 20,26 Z"/>
+    <!-- Правый глаз-сердечко -->
+    <path
+        android:fillColor="#E91E63"
+        android:pathData="M40,26 C38,22 34,22 34,26 C34,30 40,34 40,34 C40,34 46,30 46,26 C46,22 42,22 40,26 Z"/>
+    <!-- Улыбка -->
+    <path
+        android:strokeColor="#000000"
+        android:strokeWidth="3"
+        android:pathData="M18,40 Q30,50 42,40"/>
+</vector>

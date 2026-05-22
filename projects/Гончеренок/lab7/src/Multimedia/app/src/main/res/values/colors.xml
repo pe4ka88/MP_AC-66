@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="brand_teal">#71E4DA</color>
+    <color name="brand_blue">#79A6FF</color>
+    <color name="surface_panel">#1F2A46</color>
+    <color name="surface_glass">#29FFFFFF</color>
+    <color name="text_on_dark">#F5F7FF</color>
+    <color name="text_secondary">#C4D3FF</color>
+</resources>

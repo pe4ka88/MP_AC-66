@@ -1,0 +1,44 @@
+<resources>
+    <string name="app_name">Taxi</string>
+    <string name="app_title">Taxi App</string>
+
+    <!-- MainActivity -->
+    <string name="hint_phone">Phone</string>
+    <string name="hint_first_name">First name</string>
+    <string name="hint_last_name">Last name</string>
+    <string name="btn_registration">Registration</string>
+    <string name="btn_login">Log in</string>
+
+    <!-- OrderActivity -->
+    <string name="order_title">Taxi Order</string>
+    <string name="user_name_format">Name: %1$s %2$s</string>
+    <string name="user_phone_format">Phone: %1$s</string>
+    <string name="route_label">Route:</string>
+    <string name="btn_set_path">Set path</string>
+    <string name="btn_call_taxi">Call Taxi</string>
+    <string name="taxi_called_message">Taxi has been successfully dispatched! 🚕</string>
+    <string name="route_info_format">From: %1$s, %2$s, %3$s\nTo: %4$s, %5$s, %6$s\n\nCall taxi now!</string>
+
+    <!-- RouteActivity -->
+    <string name="route_title">Set Route</string>
+    <string name="from_label">From:</string>
+    <string name="to_label">To:</string>
+    <string name="hint_city_from">City (from)</string>
+    <string name="hint_street_from">Street (from)</string>
+    <string name="hint_building_from">Building (from)</string>
+    <string name="hint_city_to">City (to)</string>
+    <string name="hint_street_to">Street (to)</string>
+    <string name="hint_building_to">Building (to)</string>
+    <string name="btn_ok">OK</string>
+    <string name="btn_ok_author">OK — нажимает Осовец</string>
+
+    <!-- Author info -->
+    <string name="author_developed_by">Разработал Осовец Арсений, гр. АС-66</string>
+    <string name="author_footer">© Осовец Арсений | АС-66 | ЛР №2</string>
+    <string name="author_screen_label">Экран разработал Осовец А., АС-66</string>
+    <string name="btn_task_info">Показать задание (Осовец)</string>
+    <string name="btn_info_short">ℹ Задание</string>
+    <string name="btn_clear_data">Очистить данные</string>
+    <string name="task_description_title">Лабораторная работа №2</string>
+    <string name="task_description">Лабораторная работа № 7. Разработка приложений с несколькими Activity. Передача данных между Activity.\n\nЗадание: Разработать приложение Taxi, состоящее из трех Activity. Первое — регистрация пользователя (телефон, имя, фамилия). Второе — заказ такси с отображением данных пользователя и маршрута. Третье — ввод параметров маршрута движения.\n\nРеализовано: явный и неявный вызов Activity, передача данных через Intent, startActivityForResult, SharedPreferences, логирование жизненного цикла.\n\nВыполнил: Осовец Арсений\nГруппа: АС-66</string>
+</resources>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="primary">#6200EE</color>
+    <color name="primaryVariant">#3700B3</color>
+    <color name="secondary">#03DAC6</color>
+
+    <!-- Unusual color scheme -->
+    <color name="background_deep">#121212</color>
+    <color name="accent_neon_pink">#FF00FF</color>
+    <color name="accent_neon_cyan">#00FFFF</color>
+    <color name="button_gradient_start">#8E24AA</color>
+    <color name="button_gradient_end">#1E88E5</color>
+    <color name="text_main">#E0E0E0</color>
+</resources>

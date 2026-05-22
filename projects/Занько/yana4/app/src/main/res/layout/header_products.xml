@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@color/green_soft"
+    android:padding="12dp">
+
+    <TextView
+        android:id="@+id/tvHeaderTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="LR4 • Лаб.№9 MiniShop"
+        android:textStyle="bold"
+        android:textSize="18sp"
+        android:textColor="@color/green_dark" />
+
+    <TextView
+        android:id="@+id/tvHeaderTask"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="6dp"
+        android:text="@string/task_text"
+        android:textColor="@color/green_dark" />
+
+    <TextView
+        android:id="@+id/tvHeaderAuthor"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="Разработал: Занько Я.С., группа АС-66"
+        android:textStyle="bold"
+        android:textColor="@color/green_dark" />
+
+    <TextView
+        android:id="@+id/tvHeaderAuth2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Кнопки/действия: «Нажимает Занько »"
+        android:textColor="@color/green_dark" />
+
+</LinearLayout>

@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!-- Фон -->
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/back_record"
+        android:scaleType="centerCrop" />
+
+    <!-- Контент -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="16dp"
+        android:gravity="top|center_horizontal">
+
+        <!-- Заголовок -->
+        <TextView
+            android:text="RECORDS"
+            style="@style/Text.Title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp" />
+
+        <TextView
+            android:id="@+id/textcoo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="Сделано Езепчуком А.С. АС-66" />
+
+        <!-- Список рекордов -->
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+
+            <TextView
+                android:id="@+id/recordsText"
+                style="@style/Text.Body"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="8dp"/>
+        </ScrollView>
+
+        <!-- Кнопка "Начать сначала" -->
+        <Button
+            android:id="@+id/restartGameButton"
+            style="@style/Button.Game"
+            android:text="Начать сначала"
+            android:layout_marginTop="12dp" />
+
+
+    </LinearLayout>
+</FrameLayout>

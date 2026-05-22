@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="RunConfigurationProducerService">
+    <option name="ignoredProducers">
+      <set>
+        <option value="com.intellij.execution.junit.AbstractAllInDirectoryConfigurationProducer" />
+        <option value="com.intellij.execution.junit.AllInPackageConfigurationProducer" />
+        <option value="com.intellij.execution.junit.PatternConfigurationProducer" />
+        <option value="com.intellij.execution.junit.TestInClassConfigurationProducer" />
+        <option value="com.intellij.execution.junit.UniqueIdConfigurationProducer" />
+        <option value="com.intellij.execution.junit.testDiscovery.JUnitTestDiscoveryConfigurationProducer" />
+        <option value="org.jetbrains.kotlin.idea.junit.KotlinJUnitRunConfigurationProducer" />
+        <option value="org.jetbrains.kotlin.idea.junit.KotlinPatternConfigurationProducer" />
+      </set>
+    </option>
+  </component>
+  <component name="ProjectRunConfigurationManager">
+    <configuration default="false" name="Android App" type="AndroidRunConfigurationType" factoryName="Android App" activateToolWindowBeforeRun="false">
+      <module name="app" />
+      <option name="DEPLOY" value="true" />
+      <option name="DEPLOY_APK_FROM_BUNDLE" value="false" />
+      <option name="ARTIFACT_NAME" value="" />
+      <option name="PM_INSTALL_OPTIONS" value="" />
+      <option name="DYNAMIC_FEATURES_DISABLED_LIST" value="" />
+      <option name="ACTIVITY_EXTRA_FLAGS" value="" />
+      <option name="MODE" value="default_activity" />
+      <option name="CLEAR_LOGCAT" value="false" />
+      <option name="SHOW_LOGCAT_AUTOMATICALLY" value="false" />
+      <option name="SKIP_NOOP_APK_INSTALLATIONS" value="true" />
+      <method v="2">
+        <option name="Android.Gradle.BeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+  </component>
+</project>

@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F5F6FA">
+
+    <!-- Header -->
+    <LinearLayout
+        android:id="@+id/headerLayout"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:padding="16dp"
+        android:background="#FFD54F"
+        android:elevation="4dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <!-- Текст -->
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/txtHeader"
+                android:text="Корзина"
+                android:textSize="22sp"
+                android:textStyle="bold"
+                android:textColor="#222"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:text="Проверьте выбранные товары"
+                android:textSize="13sp"
+                android:textColor="#444"
+                android:layout_marginTop="2dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+        </LinearLayout>
+
+        <!-- Кнопка аккаунта -->
+        <ImageButton
+            android:id="@+id/btnAccount"
+            android:layout_width="66dp"
+            android:layout_height="60dp"
+            android:background="@drawable/bg_circle_button"
+            android:contentDescription="Account"
+            android:padding="6dp"
+            android:scaleType="fitCenter"
+            android:src="@drawable/icon_profil"
+            />
+    </LinearLayout>
+
+    <!-- ListView -->
+    <ListView
+        android:id="@+id/listCart"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:padding="10dp"
+        android:clipToPadding="false"
+        android:divider="@android:color/transparent"
+        android:dividerHeight="8dp"/>
+
+    <!-- Кнопка заказа -->
+    <Button
+        android:id="@+id/btnOrder"
+        android:text="Оформить заказ"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:textColor="#FFFFFF"
+        android:backgroundTint="#4CAF50"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginBottom="6dp"/>
+
+    <!-- Копирайт -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="© Алексей Езепчук, 2026"
+        android:textAlignment="center"
+        android:textSize="12sp"
+        android:textColor="#777777"
+        android:layout_marginBottom="4dp"/>
+
+    <!-- Footer -->
+    <include
+        layout="@layout/footer"
+        android:id="@+id/footerLayout"/>
+
+</LinearLayout>

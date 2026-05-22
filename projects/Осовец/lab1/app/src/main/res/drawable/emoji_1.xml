@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Улыбка -->
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="60dp"
+    android:height="60dp"
+    android:viewportWidth="60"
+    android:viewportHeight="60">
+    <!-- Лицо -->
+    <path
+        android:fillColor="#FFEB3B"
+        android:pathData="M30,56 C14,56 2,44 2,30 C2,16 14,4 30,4 C46,4 58,16 58,30 C58,44 46,56 30,56 Z"/>
+    <!-- Глаза -->
+    <path
+        android:fillColor="#000000"
+        android:pathData="M20,26 A4,4 0 1,1 20,26.01"/>
+    <path
+        android:fillColor="#000000"
+        android:pathData="M40,26 A4,4 0 1,1 40,26.01"/>
+    <!-- Улыбка -->
+    <path
+        android:strokeColor="#000000"
+        android:strokeWidth="3"
+        android:pathData="M18,38 Q30,50 42,38"/>
+</vector>

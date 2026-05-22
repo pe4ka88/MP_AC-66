@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="20dp">
+
+    <!-- Инициалы -->
+    <TextView
+        android:id="@+id/initialsText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="В.Г."
+        android:textSize="16sp"
+        android:layout_gravity="end"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"/>
+
+    <!-- Заголовок -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ТЕХНИЧЕСКОЕ ЗАДАНИЕ"
+        style="@style/MainText"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp"/>
+
+    <!-- Текст задания -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:layout_marginBottom="20dp">
+
+        <TextView
+            android:id="@+id/taskText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Загрузка задания..."
+            style="@style/SecondaryText"
+            android:lineSpacingExtra="8dp"
+            android:padding="8dp"/>
+
+    </ScrollView>
+
+    <!-- Кнопка назад -->
+    <Button
+        android:id="@+id/backButton"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:text="НАЗАД"
+        android:textSize="18sp"
+        android:layout_marginBottom="40dp"/>
+
+    <!-- Разработчик внизу -->
+    <TextView
+        android:id="@+id/developerText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Разработчик: Головкина Виктория\nГруппа: АС-66\n2026 год"
+        style="@style/SmallText"
+        android:layout_gravity="center"/>
+
+</LinearLayout>

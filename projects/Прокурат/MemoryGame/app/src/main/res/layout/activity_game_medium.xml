@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="#ECF0F1">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/medium_level"
+        android:textSize="20sp"
+        android:textColor="#2C3E50"
+        android:layout_gravity="center"
+        android:layout_marginBottom="16dp"
+        android:textStyle="bold" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginBottom="16dp">
+
+        <TextView
+            android:id="@+id/pairsTextView"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/pairs_text"
+            android:textSize="16sp"
+            android:textColor="#27AE60"
+            android:gravity="center"
+            android:padding="12dp"
+            android:background="#FFFFFF"
+            android:layout_marginEnd="8dp"
+            android:elevation="2dp" />
+
+        <TextView
+            android:id="@+id/movesTextView"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/moves_text"
+            android:textSize="16sp"
+            android:textColor="#E67E22"
+            android:gravity="center"
+            android:padding="12dp"
+            android:background="#FFFFFF"
+            android:layout_marginStart="8dp"
+            android:elevation="2dp" />
+
+    </LinearLayout>
+
+    <GridLayout
+        android:id="@+id/gridLayout"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="#FFFFFF"
+        android:padding="8dp"
+        android:elevation="4dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="20dp">
+
+        <Button
+            android:id="@+id/restartButton"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/restart_button"
+            android:textSize="16sp"
+            android:backgroundTint="#3498DB"
+            android:textColor="#FFFFFF"
+            android:layout_marginEnd="8dp"
+            android:padding="12dp" />
+
+        <Button
+            android:id="@+id/backButton"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/back_to_menu"
+            android:textSize="16sp"
+            android:backgroundTint="#95A5A6"
+            android:textColor="#FFFFFF"
+            android:layout_marginStart="8dp"
+            android:padding="12dp" />
+
+    </LinearLayout>
+
+</LinearLayout>

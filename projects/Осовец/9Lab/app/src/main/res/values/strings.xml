@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">MiniShop</string>
+    <string name="header_title">My Goods List</string>
+    <string name="header_author">Разработал: Осовец Арсений</string>
+    <string name="btn_show_checked">SHOW CHECKED ITEMS</string>
+    <string name="btn_task_info">О задании (Осовец А.)</string>
+    <string name="author_label">Лаб. 9 | Осовец А.</string>
+    <string name="count_default">Count of goods = 0</string>
+    <string name="task_title">Постановка задачи</string>
+    <string name="task_body">Лабораторная работа №9\n\nСтудент: Осовец Арсений\n\nЗадание: Разработать Android-приложение MiniShop — двухэкранный список товаров.\n\nЭкран 1: ListView с 25 товарами, Header/Footer, чекбоксы (BaseAdapter + ViewHolder). Footer показывает счётчик выбранных товаров и кнопку перехода.\n\nЭкран 2: Корзина — список выбранных товаров, переданных через Intent (Serializable).\n\nАрхитектура: models/Good, interfaces/OnChangeListener, adapters/GoodsAdapter, adapters/CheckedGoodsAdapter, MainActivity, SecondActivity.</string>
+</resources>

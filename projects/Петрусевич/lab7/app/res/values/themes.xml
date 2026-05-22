@@ -1,0 +1,23 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.Lab_2" parent="Theme.MaterialComponents.DayNight.DarkActionBar">
+        <!-- Кнопки и основные элементы - фиолетовые -->
+        <item name="colorPrimary">@color/purple_primary</item>
+        <item name="colorPrimaryVariant">@color/purple_dark</item>
+        <item name="colorOnPrimary">@color/white</item>
+
+        <!-- Акценты (чекбоксы, поля ввода) - светлый фиолетовый -->
+        <item name="colorSecondary">@color/purple_accent</item>
+        <item name="colorSecondaryVariant">@color/purple_accent</item>
+        <item name="colorOnSecondary">@color/black</item>
+
+        <!-- Фон окон - нежно-розовый -->
+        <item name="android:windowBackground">@color/pink_background</item>
+
+        <!-- Цвет активных элементов управления -->
+        <item name="colorControlActivated">@color/purple_primary</item>
+        <item name="colorControlHighlight">@color/purple_accent</item>
+    </style>
+
+    <style name="Theme.Lab_2" parent="Base.Theme.Lab_2" />
+</resources>

@@ -1,0 +1,68 @@
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="108dp"
+    android:height="108dp"
+    android:viewportWidth="108"
+    android:viewportHeight="108">
+
+    <!-- Центральный круг-подложка -->
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M54,20 C72.8,20 88,35.2 88,54 C88,72.8 72.8,88 54,88 C35.2,88 20,72.8 20,54 C20,35.2 35.2,20 54,20Z" />
+
+    <!-- Мозг (символ памяти) -->
+    <path
+        android:fillColor="#1976D2"
+        android:pathData="M54,30 C46,30 39,34 36,40 C33,46 34,53 37,58 C39,61 42,63 45,64 L45,68 C45,69 46,70 47,70 L61,70 C62,70 63,69 63,68 L63,64 C66,63 69,61 71,58 C74,53 75,46 72,40 C69,34 62,30 54,30Z" />
+
+    <!-- Линия мозга центральная -->
+    <path
+        android:fillColor="#00000000"
+        android:pathData="M54,34 L54,66"
+        android:strokeWidth="1.5"
+        android:strokeColor="#BBDEFB" />
+
+    <!-- Извилины слева -->
+    <path
+        android:fillColor="#00000000"
+        android:pathData="M44,42 Q50,39 47,46 Q44,53 50,50"
+        android:strokeWidth="1.5"
+        android:strokeColor="#BBDEFB" />
+
+    <!-- Извилины справа -->
+    <path
+        android:fillColor="#00000000"
+        android:pathData="M64,42 Q58,39 61,46 Q64,53 58,50"
+        android:strokeWidth="1.5"
+        android:strokeColor="#BBDEFB" />
+
+    <!-- Надпись "ЛР1" внизу - белая плашка -->
+    <path
+        android:fillColor="#1976D2"
+        android:pathData="M34,73 L74,73 L74,83 L34,83 Z" />
+
+    <!-- Буква Л -->
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M39,75 L41,75 L41,79 L43,79 L43,81 L37,81 L37,79 L39,79 Z" />
+
+    <!-- Буква Р -->
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M45,75 L49,75 C50.5,75 51.5,76 51.5,77.5 C51.5,79 50.5,80 49,80 L47,80 L47,81 L45,81 Z M47,77 L47,78.5 L48.5,78.5 C49,78.5 49.5,78.2 49.5,77.75 C49.5,77.3 49,77 48.5,77 Z" />
+
+    <!-- Цифра 1 -->
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M55,75 L57,75 L57,79 L58.5,79 L58.5,81 L53.5,81 L53.5,79 L55,79 Z" />
+
+    <!-- Плашка "Осовец АС-66" -->
+    <path
+        android:fillColor="#0D47A1"
+        android:pathData="M30,84 L78,84 L78,91 L30,91 Z" />
+
+    <!-- Декоративные точки для текста "Осовец АС-66" -->
+    <path
+        android:fillColor="#90CAF9"
+        android:pathData="M33,86.5 C33,86 33.5,85.5 34,85.5 L74,85.5 C74.5,85.5 75,86 75,86.5 L75,89 C75,89.5 74.5,90 74,90 L34,90 C33.5,90 33,89.5 33,89 Z" />
+
+</vector>

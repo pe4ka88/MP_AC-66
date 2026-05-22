@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:paddingHorizontal="16dp"
+    android:paddingVertical="8dp">
+
+    <!-- Timeline (точка + линия) -->
+    <LinearLayout
+        android:layout_width="24dp"
+        android:layout_height="match_parent"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <!-- Иконка состояния -->
+        <ImageView
+            android:id="@+id/iconMoving"
+            android:layout_width="16dp"
+            android:layout_height="16dp"
+            android:src="@drawable/ic_moving"
+            android:visibility="gone" />
+
+        <ImageView
+            android:id="@+id/iconStay"
+            android:layout_width="16dp"
+            android:layout_height="16dp"
+            android:src="@drawable/ic_stay"
+            android:visibility="gone" />
+
+        <!-- Точка таймлайна -->
+        <View
+            android:id="@+id/timelineDot"
+            android:layout_width="12dp"
+            android:layout_height="12dp"
+            android:background="@drawable/timeline_dot" />
+
+        <!-- Линия -->
+        <View
+            android:layout_width="2dp"
+            android:layout_height="match_parent"
+            android:layout_marginTop="4dp"
+            android:background="#D0D0D0" />
+
+    </LinearLayout>
+
+    <!-- Карточка маршрута -->
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:layout_weight="1"
+        android:background="@drawable/route_card_bg"
+        android:elevation="2dp"
+        android:orientation="vertical"
+        android:padding="12dp">
+
+        <TextView
+            android:id="@+id/routePlace"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Home → University"
+            android:textColor="#222"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/routeTime"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:text="08:10 - 08:35"
+            android:textColor="#777"
+            android:textSize="13sp" />
+
+    </LinearLayout>
+
+</LinearLayout>

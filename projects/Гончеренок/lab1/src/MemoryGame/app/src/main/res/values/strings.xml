@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">MemoryGame</string>
+    <string name="title_activity_task">TaskActivity</string>
+</resources>

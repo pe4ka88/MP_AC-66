@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Ввод маршрута"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:layout_gravity="center_horizontal"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Савинец М. Д., гр. АС-66"
+            android:textSize="14sp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="16dp"/>
+
+        <!-- Кнопка для автоматического определения местоположения -->
+        <Button
+            android:id="@+id/btnDetectLocation"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text=" Определить мое местоположение"
+            android:backgroundTint="#4CAF50"
+            android:layout_marginBottom="8dp"/>
+
+        <!-- Раздел "Откуда ехать" -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=" ОТКУДА ЕХАТЬ:"
+            android:textStyle="bold"
+            android:textSize="14sp"
+            android:layout_marginTop="8dp"/>
+
+        <EditText
+            android:id="@+id/etFromStreet"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Улица (например, ул. Савинец)"
+            android:layout_marginTop="4dp"/>
+
+        <EditText
+            android:id="@+id/etFromHouse"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Дом"
+            android:layout_marginTop="4dp"/>
+
+        <EditText
+            android:id="@+id/etFromEntrance"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Подъезд (необязательно)"
+            android:layout_marginTop="4dp"/>
+
+        <!-- Раздел "Куда ехать" -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=" КУДА ЕХАТЬ:"
+            android:textStyle="bold"
+            android:textSize="14sp"
+            android:layout_marginTop="16dp"/>
+
+        <!-- Кнопка выбора на карте OSM -->
+        <Button
+            android:id="@+id/btnSelectOnMap"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="🗺 Выбрать на карте (OSM)"
+            android:backgroundTint="#2196F3"
+            android:layout_marginBottom="8dp"/>
+
+        <!-- Контейнер с картой (изначально скрыт) -->
+        <FrameLayout
+            android:id="@+id/mapContainer"
+            android:layout_width="match_parent"
+            android:layout_height="400dp"
+            android:visibility="gone"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp">
+
+            <org.osmdroid.views.MapView
+                android:id="@+id/map"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+            <!-- Кнопка подтверждения выбора -->
+            <Button
+                android:id="@+id/btnConfirmMapSelection"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=" Подтвердить выбор"
+                android:layout_gravity="bottom|center_horizontal"
+                android:layout_marginBottom="16dp"/>
+        </FrameLayout>
+
+        <EditText
+            android:id="@+id/etToStreet"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Улица"
+            android:layout_marginTop="4dp"/>
+
+        <EditText
+            android:id="@+id/etToHouse"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Дом"
+            android:layout_marginTop="4dp"/>
+
+        <EditText
+            android:id="@+id/etToEntrance"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Подъезд (необязательно)"
+            android:layout_marginTop="4dp"/>
+
+        <!-- Кнопка ОК -->
+        <Button
+            android:id="@+id/btnOk"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="ОК (Савинец)"
+            android:layout_marginTop="24dp"/>
+
+        <!-- Признак авторства -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Разработала: Савинец М. Д."
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="24dp"
+            android:textSize="12sp"/>
+
+    </LinearLayout>
+</ScrollView>

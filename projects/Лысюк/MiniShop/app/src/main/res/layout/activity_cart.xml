@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="12dp">
+
+    <TextView
+        android:id="@+id/tvCartTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Корзина товаров"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:paddingBottom="8dp" />
+
+    <TextView
+        android:id="@+id/tvCartAuthor1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Выполнил Лысюк Ростислав, АС-66"
+        android:textSize="16sp"
+        android:gravity="center"
+        android:paddingBottom="4dp" />
+
+    <TextView
+        android:id="@+id/tvCartAuthor2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Разработал Лысюк Ростислав"
+        android:textSize="16sp"
+        android:gravity="center"
+        android:paddingBottom="8dp" />
+
+    <TextView
+        android:id="@+id/tvCartInfo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="В корзине товаров: 0"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:paddingBottom="8dp" />
+
+    <ListView
+        android:id="@+id/listViewCart"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:dividerHeight="8dp" />
+
+    <Button
+        android:id="@+id/btnAuthorCart"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Нажимает Лысюк Ростислав, АС-66"
+        android:layout_marginTop="8dp" />
+
+</LinearLayout>

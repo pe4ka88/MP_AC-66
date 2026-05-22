@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">FileExplorer</string>
+    <string name="file_selected">Файл: %s</string>
+    <string name="file_type">Тип файла: %s</string>
+    <string name="file_not_selected">Файл не выбран</string>
+    <string name="permission_required">Требуются разрешения</string>
+    <string name="permission_message">Для работы приложения необходим доступ к медиафайлам. Пожалуйста, предоставьте разрешения в настройках.</string>
+    <string name="open_settings">Открыть настройки</string>
+    <string name="cancel">Отмена</string>
+</resources>

@@ -1,0 +1,40 @@
+<resources>
+    <string name="app_name">ЛР17 Осовец АС-66</string>
+    <string name="author_full_name">Осовец Арсений Олегович</string>
+    <string name="author_group">АС-66</string>
+    <string name="author_button">Нажимает Осовец</string>
+    <string name="author_signature">Разработал: Осовец, группа АС-66</string>
+
+    <string name="main_title">Медиа Лаборатория 17</string>
+    <string name="main_subtitle">Умный мультимедиа-центр: аудио, видео, фото и история</string>
+
+    <string name="go_audio">Аудио плеер</string>
+    <string name="go_video">Видео плеер</string>
+    <string name="go_camera">Камера и галерея</string>
+    <string name="go_history">История действий</string>
+    <string name="go_help">Справка и сценарий</string>
+
+    <string name="screen_audio_title">Аудио</string>
+    <string name="screen_video_title">Видео</string>
+    <string name="screen_camera_title">Камера и фото</string>
+    <string name="screen_history_title">История</string>
+    <string name="screen_help_title">Справка и постановка</string>
+
+    <string name="placeholder_media">Добавьте собственные мультимедиа-файлы для защиты лабораторной.</string>
+    <string name="placeholder_camera">Нажмите «Сделать фото», чтобы снять кадр и листать сохраненные снимки.</string>
+    <string name="placeholder_history">Здесь будет история действий из Room базы данных.</string>
+
+    <string name="action_back">Назад</string>
+    <string name="action_prev">Предыдущий</string>
+    <string name="action_next">Следующий</string>
+    <string name="action_zoom_in">Масштаб +</string>
+    <string name="action_zoom_out">Масштаб -</string>
+    <string name="action_refresh">Обновить</string>
+    <string name="action_scroll_top">Вверх</string>
+    <string name="action_scroll_bottom">Вниз</string>
+    <string name="action_target_next">Следующая точка</string>
+
+    <string name="task_full_text">Лабораторная работа 17 (Работа 7 из УМК). Приложение для воспроизведения аудио- и видео файлов, создания и отображения фотоснимков. Внимание: воспроизведение одинаковых аудио-, видео- файлов и изображений не допускается. Каждому студенту необходимо использовать собственные мультимедиа-файлы. Бонусы: собственные элементы управления во всех активностях, справка и сценарий, сохранение истории в базе данных. Все экраны приложения должны содержать не менее трех признаков авторства. Приложение должно содержать текст с полной формулировкой задачи, ФИО и группой исполнителя.</string>
+    <string name="task_owner">Выполнил: Осовец Арсений Олегович, группа АС-66</string>
+    <string name="defense_scenario">Сценарий защиты: 1) Главный экран и авторские метки. 2) Запуск аудио и видео с пользовательскими контролами. 3) Создание фото и просмотр снимков. 4) История действий в БД. 5) Справка с формулировкой задания, сценарием и данными исполнителя.</string>
+</resources>

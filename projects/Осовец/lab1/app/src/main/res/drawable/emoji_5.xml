@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Крутой (в очках) -->
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="60dp"
+    android:height="60dp"
+    android:viewportWidth="60"
+    android:viewportHeight="60">
+    <!-- Лицо -->
+    <path
+        android:fillColor="#FFEB3B"
+        android:pathData="M30,56 C14,56 2,44 2,30 C2,16 14,4 30,4 C46,4 58,16 58,30 C58,44 46,56 30,56 Z"/>
+    <!-- Очки -->
+    <path
+        android:fillColor="#212121"
+        android:pathData="M8,26 L26,26 L26,34 L8,34 Z"/>
+    <path
+        android:fillColor="#212121"
+        android:pathData="M34,26 L52,26 L52,34 L34,34 Z"/>
+    <path
+        android:fillColor="#212121"
+        android:pathData="M26,28 L34,28 L34,32 L26,32 Z"/>
+    <!-- Линзы -->
+    <path
+        android:fillColor="#37474F"
+        android:pathData="M10,27 L24,27 L24,33 L10,33 Z"/>
+    <path
+        android:fillColor="#37474F"
+        android:pathData="M36,27 L50,27 L50,33 L36,33 Z"/>
+    <!-- Блики на очках -->
+    <path
+        android:fillColor="#78909C"
+        android:pathData="M12,28 L16,28 L16,30 L12,30 Z"/>
+    <path
+        android:fillColor="#78909C"
+        android:pathData="M38,28 L42,28 L42,30 L38,30 Z"/>
+    <!-- Улыбка -->
+    <path
+        android:strokeColor="#000000"
+        android:strokeWidth="3"
+        android:pathData="M18,42 Q30,52 42,42"/>
+</vector>

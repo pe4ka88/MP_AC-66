@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">Memory</string>
+    <string name="Title">Игра  \"Память\" by Марина Д.</string>
+    <string name="confTitle">Определить игру, которую сделала Марина:</string>
+    <string name="ok_button">Начать</string>
+    <string name="restart_button">Играть заново</string>
+    <string name="str_width">Cтолбцы:</string>
+    <string name="str_height">Строки:</string>
+
+    <string-array name="numbers">
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+    </string-array>
+
+</resources>

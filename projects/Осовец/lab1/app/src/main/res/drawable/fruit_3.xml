@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Апельсин -->
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="60dp"
+    android:height="60dp"
+    android:viewportWidth="60"
+    android:viewportHeight="60">
+    <!-- Апельсин -->
+    <path
+        android:fillColor="#FF9800"
+        android:pathData="M30,54 C14,54 4,44 4,30 C4,16 14,6 30,6 C46,6 56,16 56,30 C56,44 46,54 30,54 Z"/>
+    <!-- Листик -->
+    <path
+        android:fillColor="#4CAF50"
+        android:pathData="M30,6 Q36,2 40,6 Q34,10 30,6 Z"/>
+    <!-- Текстура -->
+    <path
+        android:fillColor="#FFB74D"
+        android:pathData="M18,20 A3,3 0 1,1 18,20.01"/>
+    <path
+        android:fillColor="#FFB74D"
+        android:pathData="M42,24 A2,2 0 1,1 42,24.01"/>
+    <path
+        android:fillColor="#FFB74D"
+        android:pathData="M24,40 A2,2 0 1,1 24,40.01"/>
+    <path
+        android:fillColor="#FFB74D"
+        android:pathData="M38,42 A3,3 0 1,1 38,42.01"/>
+    <path
+        android:fillColor="#FFB74D"
+        android:pathData="M14,34 A2,2 0 1,1 14,34.01"/>
+    <!-- Блик -->
+    <path
+        android:fillColor="#FFCC80"
+        android:pathData="M20,18 A8,10 -30 1,1 20,18.01"/>
+</vector>

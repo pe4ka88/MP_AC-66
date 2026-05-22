@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Ангел -->
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="60dp"
+    android:height="60dp"
+    android:viewportWidth="60"
+    android:viewportHeight="60">
+    <!-- Нимб -->
+    <path
+        android:fillColor="#FFEB3B"
+        android:pathData="M30,10 A14,4 0 1,1 30,10.01"/>
+    <path
+        android:fillColor="#E3F2FD"
+        android:pathData="M30,10 A10,2 0 1,1 30,10.01"/>
+    <!-- Лицо -->
+    <path
+        android:fillColor="#FFEB3B"
+        android:pathData="M30,56 C14,56 2,44 2,32 C2,20 14,12 30,12 C46,12 58,20 58,32 C58,44 46,56 30,56 Z"/>
+    <!-- Глаза -->
+    <path
+        android:fillColor="#000000"
+        android:pathData="M20,30 A4,4 0 1,1 20,30.01"/>
+    <path
+        android:fillColor="#000000"
+        android:pathData="M40,30 A4,4 0 1,1 40,30.01"/>
+    <!-- Улыбка -->
+    <path
+        android:strokeColor="#000000"
+        android:strokeWidth="3"
+        android:pathData="M18,42 Q30,52 42,42"/>
+    <!-- Румянец -->
+    <path
+        android:fillColor="#FFCDD2"
+        android:pathData="M12,38 A4,3 0 1,1 12,38.01"/>
+    <path
+        android:fillColor="#FFCDD2"
+        android:pathData="M48,38 A4,3 0 1,1 48,38.01"/>
+</vector>

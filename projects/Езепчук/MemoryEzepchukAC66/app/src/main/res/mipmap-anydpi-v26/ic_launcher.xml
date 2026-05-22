@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<adaptive-icon xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- Фон можно оставить однотонным или тоже использовать изображение -->
+    <background android:drawable="@drawable/ic_launcher_background" />
+
+    <!-- Основной логотип PNG -->
+    <foreground android:drawable="@drawable/genshin_impact_logo" />
+
+    <!-- Чёрно-белая версия (можно оставить ту же) -->
+    <monochrome android:drawable="@drawable/genshin_impact_logo" />
+</adaptive-icon>

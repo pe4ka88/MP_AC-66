@@ -1,0 +1,10 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <style name="Theme.LR5" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <item name="colorPrimary">@color/primaryBlue</item>
+        <item name="colorPrimaryVariant">@color/primaryBlueDark</item>
+        <item name="colorSecondary">@color/accentBlue</item>
+        <item name="android:statusBarColor">@color/primaryBlueDark</item>
+        <item name="android:navigationBarColor">@color/backgroundBlue</item>
+        <item name="colorOnPrimary">@color/white</item>
+    </style>
+</resources>

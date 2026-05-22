@@ -1,0 +1,341 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <!-- ================= MENU ================= -->
+    <LinearLayout
+        android:id="@+id/layoutMenu"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="#F5F5F5">
+
+        <!-- Верхняя половина: картинка + подпись -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:gravity="center_horizontal"
+            android:paddingTop="120dp">
+
+            <ImageView
+                android:layout_width="300dp"
+                android:layout_height="300dp"
+                android:src="@drawable/logo"
+                android:scaleType="centerCrop"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Выполнил студент группы АС-66 Ануфриенко М.А."
+                android:textSize="11sp"
+                android:textColor="#AAAAAA"
+                android:layout_marginTop="16dp"/>
+
+        </LinearLayout>
+
+        <!-- Нижняя половина: кнопки -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:paddingBottom="48dp">
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnPlay"
+                android:layout_width="220dp"
+                android:layout_height="wrap_content"
+                android:text="Играть"
+                android:textColor="#1A1A1A"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                app:backgroundTint="#FFFFFF"
+                app:strokeColor="#1A1A1A"
+                app:strokeWidth="1.5dp"
+                android:layout_marginBottom="12dp"/>
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnSettings"
+                android:layout_width="220dp"
+                android:layout_height="wrap_content"
+                android:text="Настройки"
+                android:textColor="#1A1A1A"
+                android:textSize="16sp"
+                app:backgroundTint="#FFFFFF"
+                app:strokeColor="#1A1A1A"
+                app:strokeWidth="1.5dp"
+                android:layout_marginBottom="12dp"/>
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnRecords"
+                android:layout_width="220dp"
+                android:layout_height="wrap_content"
+                android:text="Рекорды"
+                android:textColor="#1A1A1A"
+                android:textSize="16sp"
+                app:backgroundTint="#FFFFFF"
+                app:strokeColor="#1A1A1A"
+                app:strokeWidth="1.5dp"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <!-- ================= GAME ================= -->
+    <LinearLayout
+        android:id="@+id/layoutGame"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="#F5F5F5"
+        android:visibility="gone">
+
+        <!-- Верхние 40%: пустое пространство + таймер с паузой внизу блока -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="4"
+            android:orientation="vertical"
+            android:gravity="bottom"
+            android:paddingHorizontal="16dp"
+            android:paddingBottom="8dp">
+
+            <!-- Строка: таймер + пауза фиксированной высоты -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="175dp"
+                android:orientation="horizontal">
+
+                <!-- Таймер -->
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:gravity="center"
+                    android:background="#FFFFFF"
+                    android:elevation="2dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="ВРЕМЯ"
+                        android:textSize="11sp"
+                        android:textColor="#AAAAAA"
+                        android:letterSpacing="0.15"/>
+
+                    <TextView
+                        android:id="@+id/tvTimer"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="52sp"
+                        android:textStyle="bold"
+                        android:textColor="#1A1A1A"/>
+
+                    <TextView
+                        android:id="@+id/tvBonus"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="18sp"
+                        android:textColor="#4CAF50"
+                        android:textStyle="bold"
+                        android:visibility="invisible"/>
+
+                </LinearLayout>
+
+                <!-- Кнопка паузы -->
+                <ImageButton
+                    android:id="@+id/btnPause"
+                    android:layout_width="56dp"
+                    android:layout_height="match_parent"
+                    android:src="@android:drawable/ic_media_pause"
+                    android:background="#FFFFFF"
+                    android:elevation="2dp"
+                    android:layout_marginStart="4dp"
+                    android:scaleType="center"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <!-- Сетка -->
+        <GridLayout
+            android:id="@+id/gameGrid"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="5"
+            android:useDefaultMargins="false"
+            android:gravity="center"
+            android:layout_marginTop="36dp"
+            android:paddingHorizontal="0dp"
+            android:paddingVertical="0dp"/>
+
+    </LinearLayout>
+
+    <!-- ================= SETTINGS ================= -->
+    <LinearLayout
+        android:id="@+id/layoutSettings"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="#F5F5F5"
+        android:clickable="true"
+        android:focusable="true"
+        android:visibility="gone">
+
+        <!-- Шапка -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Настройки"
+            android:textSize="28sp"
+            android:textStyle="bold"
+            android:textColor="#1A1A1A"
+            android:paddingTop="60dp"
+            android:paddingHorizontal="32dp"
+            android:paddingBottom="24dp"/>
+
+        <!-- Карточка с настройками -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:paddingHorizontal="24dp">
+
+            <!-- Блок переключателей -->
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardCornerRadius="16dp"
+                app:cardElevation="2dp"
+                app:cardBackgroundColor="#FFFFFF"
+                android:layout_marginBottom="16dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="8dp">
+
+                    <Switch
+                        android:id="@+id/switchHardMode"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:text="Сложный режим"
+                        android:textSize="15sp"
+                        android:textColor="#1A1A1A"
+                        android:paddingHorizontal="12dp"/>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="#EEEEEE"
+                        android:layout_marginHorizontal="12dp"/>
+
+                    <Switch
+                        android:id="@+id/switchEndless"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:text="Бесконечный режим"
+                        android:textSize="15sp"
+                        android:textColor="#1A1A1A"
+                        android:paddingHorizontal="12dp"/>
+
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <!-- Блок размера поля -->
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardCornerRadius="16dp"
+                app:cardElevation="2dp"
+                app:cardBackgroundColor="#FFFFFF">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="16dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Размер поля"
+                        android:textSize="13sp"
+                        android:textColor="#AAAAAA"
+                        android:layout_marginBottom="8dp"/>
+
+                    <RadioGroup
+                        android:id="@+id/radioGroupFieldSize"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <RadioButton
+                            android:id="@+id/radio4"
+                            android:layout_width="match_parent"
+                            android:layout_height="40dp"
+                            android:text="4 × 4"
+                            android:textSize="15sp"
+                            android:textColor="#1A1A1A"/>
+
+                        <RadioButton
+                            android:id="@+id/radio5"
+                            android:layout_width="match_parent"
+                            android:layout_height="40dp"
+                            android:text="5 × 5"
+                            android:textSize="15sp"
+                            android:textColor="#1A1A1A"/>
+
+                        <RadioButton
+                            android:id="@+id/radio6"
+                            android:layout_width="match_parent"
+                            android:layout_height="40dp"
+                            android:text="6 × 6"
+                            android:textSize="15sp"
+                            android:textColor="#1A1A1A"/>
+
+                        <RadioButton
+                            android:id="@+id/radioOrder"
+                            android:layout_width="match_parent"
+                            android:layout_height="40dp"
+                            android:text="По порядку"
+                            android:textSize="15sp"
+                            android:textColor="#1A1A1A"/>
+
+                    </RadioGroup>
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+        </LinearLayout>
+
+        <!-- Кнопка назад -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:paddingBottom="48dp"
+            android:paddingTop="24dp">
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnBackToMenu"
+                android:layout_width="220dp"
+                android:layout_height="wrap_content"
+                android:text="Назад"
+                android:textColor="#1A1A1A"
+                android:textSize="16sp"
+                app:backgroundTint="#FFFFFF"
+                app:strokeColor="#1A1A1A"
+                app:strokeWidth="1.5dp"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+</FrameLayout>

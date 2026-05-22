@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_deep">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:padding="24dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="КАМЕРА"
+            android:textColor="@color/accent_neon_pink"
+            android:textSize="28sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="24dp"/>
+
+        <ImageView
+            android:id="@+id/imageView_photo"
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:layout_marginBottom="24dp"
+            android:background="#1AFFFFFF"
+            android:scaleType="centerInside"
+            android:padding="4dp"
+            android:contentDescription="Фотография"/>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/button_capture_photo"
+            android:layout_width="240dp"
+            android:layout_height="50dp"
+            android:text="Сделать фото"
+            android:textColor="@color/white"
+            android:background="@drawable/button_background"
+            android:layout_marginBottom="12dp"/>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/button_choose_photo"
+            android:layout_width="240dp"
+            android:layout_height="50dp"
+            android:text="Выбрать из галереи"
+            android:textColor="@color/white"
+            android:background="@drawable/button_background"
+            android:layout_marginBottom="24dp"/>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/button_back_to_main"
+            android:layout_width="150dp"
+            android:layout_height="40dp"
+            android:text="Назад"
+            android:textColor="@color/white"
+            android:background="@drawable/button_background"
+            android:layout_marginBottom="24dp"
+            android:alpha="0.8"/>
+
+        <TextView
+            android:id="@+id/dev_info"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Разработала Петрусевич А. А. АС-66"
+            android:textColor="@color/accent_neon_cyan"
+            android:textAlignment="center"
+            android:textSize="14sp"
+            android:alpha="0.7" />
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
