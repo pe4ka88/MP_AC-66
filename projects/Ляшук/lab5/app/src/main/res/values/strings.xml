@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">lab5</string>
+    <string name="task_description">Лабораторная работа № 5. Фрагменты. ViewPager. Хранение информации в базе данных SQLite. \n\nЗадание: \n1. Разработать приложение MyNotes (ViewPager). \n2. Четыре фрагмента: Show, Add, Del, Update. \n3. PagerTabStrip с заголовками. \n4. FragmentShow: ListView + адаптер. \n5. FragmentAdd: добавление в БД. \n6. FragmentDel: удаление из БД. \n7. FragmentUpdate: обновление в БД. \n\nРазработал: Ляшук В.И., группа АС-66</string>
+    <string name="developer_name">Разработал: Ляшук В.И.</string>
+    <string name="group_name">Группа: АС-66</string>
+</resources>

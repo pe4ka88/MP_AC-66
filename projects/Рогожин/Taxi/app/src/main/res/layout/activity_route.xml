@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!-- Фоновая карта -->
+    <ImageView
+        android:id="@+id/bgMap"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/stylized_map"
+        android:scaleType="centerCrop"
+        android:contentDescription="Background map"
+        android:alpha="0.4"/>
+
+    <!-- Затемнение -->
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#80000000"/>
+
+    <!-- Основной контейнер -->
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="16dp">
+
+        <!-- ОСНОВНАЯ КАРТОЧКА -->
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            app:cardCornerRadius="36dp"
+            app:cardElevation="6dp"
+            app:cardBackgroundColor="?attr/colorSurfaceVariant">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="423dp"
+                android:orientation="vertical"
+                android:padding="20dp">
+
+                <!-- МИНИ ПРОФИЛЬ -->
+                <com.google.android.material.card.MaterialCardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:cardBackgroundColor="?attr/colorSurface"
+                    app:cardCornerRadius="28dp"
+                    app:cardElevation="2dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="115dp"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal"
+                        android:padding="14dp">
+
+                        <!-- АВАТАР (переход в профиль) -->
+                        <ImageButton
+                            android:id="@+id/btnProfile"
+                            android:layout_width="76dp"
+                            android:layout_height="78dp"
+                            android:background="?attr/selectableItemBackgroundBorderless"
+                            android:contentDescription="Профиль"
+                            android:scaleType="centerCrop"
+                            android:src="@drawable/ic_profile" />
+
+                        <!-- БЛОК ИМЯ + ТЕЛЕФОН -->
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="14dp"
+                            android:orientation="vertical">
+
+                            <!-- ИМЯ -->
+                            <TextView
+                                android:id="@+id/tvUser"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Иван Иванов"
+                                android:textColor="?attr/colorOnSurface"
+                                android:textSize="18sp"
+                                android:textStyle="bold" />
+
+                            <!-- ТЕЛЕФОН -->
+                            <TextView
+                                android:id="@+id/tvPhone"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="2dp"
+                                android:textColor="?attr/colorOnSurfaceVariant"
+                                android:textSize="14sp" />
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                </com.google.android.material.card.MaterialCardView>
+
+
+                <!-- БЛОК МАРШРУТА -->
+                <com.google.android.material.card.MaterialCardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    app:cardBackgroundColor="?attr/colorSurface"
+                    app:cardCornerRadius="28dp"
+                    app:cardElevation="2dp">
+
+                    <TextView
+                        android:id="@+id/tvRoute"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Откуда — Куда"
+                        android:textColor="?attr/colorOnSurface"
+                        android:textSize="16sp"
+                        android:padding="16dp"
+                        android:lineSpacingExtra="2dp"
+                        android:breakStrategy="balanced"
+                        android:maxLines="8"/>
+
+                </com.google.android.material.card.MaterialCardView>
+
+
+                <!-- КНОПКИ -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <!-- КНОПКА МАРШРУТА -->
+                    <com.google.android.material.card.MaterialCardView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="8dp"
+                        android:layout_weight="1"
+                        app:cardBackgroundColor="?attr/colorSurface"
+                        app:cardCornerRadius="24dp"
+                        app:cardElevation="2dp">
+
+                        <Button
+                            android:id="@+id/btnSetRoute"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:backgroundTint="?attr/colorPrimary"
+                            android:text="Маршрут"
+                            android:textColor="?attr/colorOnPrimary" />
+
+                    </com.google.android.material.card.MaterialCardView>
+
+
+                    <!-- КНОПКА ЗАКАЗА -->
+                    <com.google.android.material.card.MaterialCardView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="8dp"
+                        android:layout_weight="1"
+                        app:cardBackgroundColor="?attr/colorSurface"
+                        app:cardCornerRadius="24dp"
+                        app:cardElevation="2dp">
+
+                        <Button
+                            android:id="@+id/btnCallTaxi"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:backgroundTint="?attr/colorPrimary"
+                            android:text="Заказать"
+                            android:textColor="?attr/colorOnPrimary"
+                            android:textStyle="bold" />
+
+                    </com.google.android.material.card.MaterialCardView>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </com.google.android.material.card.MaterialCardView>
+        <!-- COPYRIGHT (внизу экрана) -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="© 2026 Рогожин А.С. АС-66"
+            android:textSize="12sp"
+            android:textColor="?attr/colorOutline"
+            android:gravity="center"
+            android:paddingTop="8dp"/>
+
+    </LinearLayout>
+
+</FrameLayout>

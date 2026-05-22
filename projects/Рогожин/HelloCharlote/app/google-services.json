@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "260132609009",
+    "project_id": "hellocharlotte-rogozhin-ac66",
+    "storage_bucket": "hellocharlotte-rogozhin-ac66.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:260132609009:android:eb492726132eceeafe0250",
+        "android_client_info": {
+          "package_name": "com.example.hellocharlote"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAw29ZemiJbnAzWReBP8N_n4dKb11azx9w"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

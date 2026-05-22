@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="12dp"
+    android:background="#F6F6F6">
+
+    <!-- Поиск + иконки -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical">
+
+        <!-- Поле поиска -->
+        <EditText
+            android:id="@+id/etFilter"
+            style="@style/SearchEditText"
+            android:layout_width="0dp"
+            android:layout_height="55dp"
+            android:layout_weight="1"
+            android:hint="Фильтр по названию"/>
+
+        <!-- Загрузить -->
+        <ImageButton
+            android:id="@+id/btnLoad"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_marginStart="6dp"
+            android:background="@drawable/icon_button_background"
+            android:src="@drawable/ic_download"
+            android:contentDescription="Load"/>
+
+        <ImageButton
+            android:id="@+id/btnSwitchView"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_marginStart="4dp"
+            android:background="@drawable/icon_button_background"
+            android:padding="10dp"
+            android:src="@drawable/ic_grid"
+            android:contentDescription="Switch view"/>
+
+    </LinearLayout>
+
+    <!-- Жанры -->
+    <HorizontalScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp">
+
+        <com.google.android.material.chip.ChipGroup
+            android:id="@+id/chipGroupGenres"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:chipSpacing="8dp"/>
+
+    </HorizontalScrollView>
+
+    <!-- Список -->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:layout_marginTop="8dp"/>
+
+    <!-- CSV кнопки -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="end"
+        android:orientation="horizontal"
+        android:layout_marginTop="8dp">
+
+        <!-- Сохранить CSV -->
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnSaveCsv"
+            style="@style/AppButton.Secondary"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:text=""
+            app:icon="@drawable/ic_save"
+            app:iconGravity="textStart"
+            app:iconPadding="0dp"/>
+
+        <!-- Поделиться CSV -->
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnShareCsv"
+            style="@style/AppButton.Secondary"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_marginStart="8dp"
+            android:text=""
+            app:icon="@drawable/ic_share"
+            app:iconGravity="textStart"
+            app:iconPadding="0dp"/>
+
+    </LinearLayout>
+
+    <!-- Копирайт -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="© Рогожин А.С. АС-66"
+        android:textAlignment="center"
+        android:textColor="#666666"
+        android:textSize="12sp"
+        android:paddingTop="8dp"/>
+
+</LinearLayout>

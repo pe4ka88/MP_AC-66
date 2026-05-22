@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="?attr/colorSurface">
+
+    <!-- Header -->
+    <LinearLayout
+        android:id="@+id/headerLayout"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:padding="16dp"
+        android:background="?attr/colorPrimary"
+        android:elevation="4dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <!-- Текстовый блок -->
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/txtHeader"
+                android:text="Список товаров"
+                android:textSize="22sp"
+                android:textStyle="bold"
+                android:textColor="?attr/colorOnPrimary"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:id="@+id/txtSubHeader"
+                android:text="Проверьте выбранные товары"
+                android:textSize="13sp"
+                android:textColor="?attr/colorOnPrimary"
+                android:layout_marginTop="2dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+        </LinearLayout>
+
+        <!-- Кнопка перехода к профилю -->
+        <ImageButton
+            android:id="@+id/btnAccount"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:background="@drawable/bg_circle_button"
+            android:contentDescription="Профиль"
+            android:padding="6dp"
+            android:scaleType="fitCenter"
+            android:src="@drawable/icon_profil"
+            android:tint="?attr/colorOnPrimary"/>
+    </LinearLayout>
+
+    <!-- ListView -->
+    <ListView
+        android:id="@+id/listView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:padding="10dp"
+        android:clipToPadding="false"
+        android:divider="@android:color/transparent"
+        android:dividerHeight="8dp"/>
+
+    <!-- Footer -->
+    <include
+        layout="@layout/footer"
+        android:id="@+id/footerLayout"/>
+
+    <!-- Копирайт -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="© Рогожин А.С. АС-66"
+        android:textAlignment="center"
+        android:textSize="12sp"
+        android:textColor="?attr/colorOnSurface"
+        android:layout_marginBottom="4dp"/>
+</LinearLayout>

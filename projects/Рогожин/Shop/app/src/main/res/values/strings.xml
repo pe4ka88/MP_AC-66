@@ -1,0 +1,36 @@
+<resources>
+    <!-- Название приложения -->
+    <string name="app_name">Shop</string>
+
+    <!-- Общие -->
+    <string name="back">Back</string>
+    <string name="login">Войти</string>
+    <string name="logout">Выйти</string>
+    <string name="save_address">Сохранить адрес</string>
+
+    <!-- Профиль -->
+    <string name="profile_header">Профиль пользователя</string>
+    <string name="hint_name">Имя</string>
+    <string name="hint_email">Email</string>
+    <string name="hint_password">Пароль</string>
+    <string name="hint_address">Адрес доставки</string>
+    <string name="balance">Баланс</string>
+
+    <!-- Корзина -->
+    <string name="cart_header">Корзина</string>
+    <string name="cart_subheader">Проверьте выбранные товары</string>
+    <string name="order_button">Оформить заказ</string>
+    <string name="in_cart">В корзине: %1$d</string>
+
+    <!-- История заказов -->
+    <string name="history_header">История заказов</string>
+
+    <!-- Магазин -->
+    <string name="store">Магазин</string>
+    <string name="account">Аккаунт</string>
+    <string name="history">История</string>
+
+    <!-- Продукты -->
+    <string name="product_list_header">Список товаров</string>
+    <string name="product_list_subheader">Проверьте выбранные товары</string>
+</resources>

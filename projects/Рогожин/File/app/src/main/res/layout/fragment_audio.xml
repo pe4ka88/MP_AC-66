@@ -1,0 +1,131 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#00000000">
+
+    <!-- Карточка -->
+    <LinearLayout
+        android:layout_width="340dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="@android:drawable/dialog_holo_light_frame"
+        android:elevation="10dp"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <!-- 🔥 Обложка -->
+        <ImageView
+            android:id="@+id/imageCover"
+            android:layout_width="224dp"
+            android:layout_height="160dp"
+            android:layout_gravity="center"
+            android:background="#EEE"
+            android:contentDescription="Album cover"
+            android:scaleType="centerCrop"
+            android:src="@drawable/ic_placeholder_cover" />
+
+        <!-- Основной горизонтальный блок -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <!-- Блок громкости -->
+            <LinearLayout
+                android:layout_width="40dp"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <FrameLayout
+                    android:layout_width="40dp"
+                    android:layout_height="140dp"
+                    android:clipChildren="false"
+                    android:clipToPadding="false">
+
+                    <SeekBar
+                        android:id="@+id/seekVolume"
+                        android:layout_width="134dp"
+                        android:layout_height="136dp"
+                        android:layout_gravity="center"
+                        android:max="100"
+                        android:progress="50"
+                        android:rotation="-90" />
+                </FrameLayout>
+
+                <ImageView
+                    android:layout_width="22dp"
+                    android:layout_height="22dp"
+                    android:layout_marginTop="6dp"
+                    android:src="@android:drawable/ic_lock_silent_mode_off"
+                    app:tint="#666" />
+            </LinearLayout>
+
+            <!-- Контент -->
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:paddingStart="12dp">
+
+                <!-- Waveform -->
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="70dp"
+                    android:background="#F5F7FA"
+                    android:padding="8dp">
+
+                    <com.example.file.ui.WaveformView
+                        android:id="@+id/waveformView"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent" />
+                </FrameLayout>
+
+                <!-- Прогресс -->
+                <SeekBar
+                    android:id="@+id/seekAudioProgress"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp" />
+
+                <!-- Кнопки -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="6dp"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <ImageButton
+                        android:id="@+id/btnAudioPlayPause"
+                        android:layout_width="44dp"
+                        android:layout_height="44dp"
+                        android:background="?android:attr/selectableItemBackgroundBorderless"
+                        android:src="@android:drawable/ic_media_play" />
+
+                    <ProgressBar
+                        android:id="@+id/progressBar"
+                        android:layout_width="24dp"
+                        android:layout_height="24dp"
+                        android:layout_marginStart="12dp"
+                        android:visibility="gone" />
+
+                    <Button
+                        android:id="@+id/btnTranscribe"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="12dp"
+                        android:text="Расшифровать" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</FrameLayout>

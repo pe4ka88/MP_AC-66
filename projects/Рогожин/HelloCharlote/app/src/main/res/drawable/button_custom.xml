@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- отключена -->
+    <item android:state_enabled="false">
+        <shape android:shape="rectangle">
+            <solid android:color="#444444"/>
+            <corners android:radius="12dp"/>
+            <stroke android:width="3dp" android:color="#888888"/>
+        </shape>
+    </item>
+
+    <!-- нажата -->
+    <item android:state_pressed="true">
+        <shape android:shape="rectangle">
+            <solid android:color="#222222"/>
+            <corners android:radius="12dp"/>
+            <stroke android:width="3dp" android:color="#FFFFFF"/>
+        </shape>
+    </item>
+
+    <!-- выбрана -->
+    <item android:state_selected="true">
+        <shape android:shape="rectangle">
+            <solid android:color="#111111"/>
+            <corners android:radius="12dp"/>
+            <stroke android:width="3dp" android:color="#FFFFFF"/>
+        </shape>
+    </item>
+
+    <!-- состояние по умолчанию -->
+    <item>
+        <shape android:shape="rectangle">
+            <solid android:color="#000000"/>
+            <corners android:radius="12dp"/>
+            <stroke android:width="3dp" android:color="#FFFFFF"/>
+        </shape>
+    </item>
+
+</selector>

@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!-- КАРТА -->
+    <com.yandex.mapkit.mapview.MapView
+        android:id="@+id/mapview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+
+    <!-- ВЕРХНЯЯ ПЛАВАЮЩАЯ ПАНЕЛЬ ПОИСКА -->
+    <com.google.android.material.card.MaterialCardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:layout_gravity="top"
+        app:cardCornerRadius="24dp"
+        app:cardElevation="6dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="10dp"
+            android:gravity="center_vertical">
+
+            <AutoCompleteTextView
+                android:id="@+id/etAddress"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:hint="Поиск адреса"
+                android:textSize="16sp"
+                android:background="@android:color/transparent"/>
+
+            <ImageButton
+                android:id="@+id/btnGps"
+                android:layout_width="44dp"
+                android:layout_height="44dp"
+                android:background="?attr/selectableItemBackgroundBorderless"
+                android:src="@drawable/ic_gps"/>
+        </LinearLayout>
+
+    </com.google.android.material.card.MaterialCardView>
+
+
+    <!-- КАРТОЧКА МАРШРУТА -->
+    <com.google.android.material.card.MaterialCardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="36dp"
+        android:layout_gravity="bottom"
+        app:cardCornerRadius="32dp"
+        app:cardElevation="10dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:padding="30dp">
+
+            <!-- ОТКУДА -->
+            <TextView
+                android:id="@+id/tvPickup"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="8dp"
+                android:text="Откуда"
+                android:textSize="16sp" />
+
+            <!-- КУДА -->
+            <TextView
+                android:id="@+id/tvDropoff"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="8dp"
+                android:text="Куда"
+                android:textSize="16sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="12dp"
+                android:gravity="center_vertical">
+
+                <!-- КНОПКА A -->
+                <Button
+                    android:id="@+id/btnPickup"
+                    android:layout_width="64dp"
+                    android:layout_height="44dp"
+                    android:text="A"
+                    android:textStyle="bold"
+                    android:textColor="#FFFFFF"
+                    android:backgroundTint="#FF4053"/>
+
+                <!-- КНОПКА B -->
+                <Button
+                    android:id="@+id/btnDropoff"
+                    android:layout_width="64dp"
+                    android:layout_height="44dp"
+                    android:text="B"
+                    android:textStyle="bold"
+                    android:textColor="#FFFFFF"
+                    android:layout_marginStart="8dp"
+                    android:backgroundTint="#FF4053"/>
+
+                <!-- КНОПКА ГОТОВО -->
+                <Button
+                    android:id="@+id/btnDone"
+                    android:layout_width="0dp"
+                    android:layout_height="48dp"
+                    android:layout_weight="1"
+                    android:text="Готово"
+                    android:textColor="#FFFFFF"
+                    android:layout_marginStart="12dp"
+                    android:backgroundTint="#FF4053"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </com.google.android.material.card.MaterialCardView>
+
+
+    <!-- COPYRIGHT -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="© 2026 Рогожин А.С. АС-66"
+        android:textSize="11sp"
+        android:textColor="#AAAAAA"
+        android:layout_gravity="bottom|center_horizontal"
+        android:layout_marginBottom="6dp"/>
+
+</FrameLayout>

@@ -1,0 +1,61 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <!-- Основная тема -->
+    <style name="Theme.Taxi" parent="Theme.Material3.DayNight.NoActionBar">
+
+        <!-- Основные цвета -->
+        <item name="colorPrimary">#FF4053</item>
+        <item name="colorSecondary">#FF4053</item>
+        <item name="colorSurface">@color/card_transparent</item>
+        <!-- Фон приложения -->
+        <item name="android:windowBackground">@color/bg_light</item>
+
+        <!-- Скругления -->
+        <item name="shapeAppearanceMediumComponent">@style/RoundedMedium</item>
+        <item name="shapeAppearanceLargeComponent">@style/RoundedLarge</item>
+
+        <!-- Стили элементов -->
+        <item name="materialButtonStyle">@style/SoftButton</item>
+        <item name="cardViewStyle">@style/SoftCard</item>
+
+    </style>
+
+
+    <!-- Большое мягкое скругление -->
+    <style name="RoundedLarge">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">32dp</item>
+    </style>
+
+    <style name="RoundedMedium">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">24dp</item>
+    </style>
+
+
+    <!-- Мягкая большая кнопка -->
+    <style name="SoftButton" parent="Widget.Material3.Button">
+
+        <item name="android:minHeight">64dp</item>
+        <item name="android:textSize">18sp</item>
+
+        <item name="cornerRadius">32dp</item>
+
+        <item name="backgroundTint">@color/accent_transparent</item>
+        <item name="android:textColor">@color/text_dark</item>
+
+        <item name="android:paddingStart">24dp</item>
+        <item name="android:paddingEnd">24dp</item>
+    </style>
+
+
+    <!-- Полупрозрачная карточка -->
+    <style name="SoftCard" parent="Widget.MaterialComponents.CardView">
+
+        <item name="cardCornerRadius">28dp</item>
+        <item name="cardElevation">4dp</item>
+        <item name="cardBackgroundColor">@color/card_transparent</item>
+
+    </style>
+
+</resources>

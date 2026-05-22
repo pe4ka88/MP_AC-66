@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="108dp"
+    android:height="108dp"
+    android:viewportWidth="108"
+    android:viewportHeight="108">
+    <!-- Map Marker Shape -->
+    <path
+        android:fillColor="#F44336"
+        android:pathData="M54,20c-13.3,0-24,10.7-24,24c0,18,24,44,24,44s24-26,24-44C78,30.7,67.3,20,54,20z M54,54c-5.5,0-10-4.5-10-10s4.5-10,10-10s10,4.5,10,10S59.5,54,54,54z" />
+
+    <!-- Lab Number Text "8" inside the marker -->
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M54,36.5c2.5,0,4.5,2,4.5,4.5s-2,4.5-4.5,4.5s-4.5-2-4.5-4.5S51.5,36.5,54,36.5z" />
+
+    <!-- Simplified text representation for "Lab 8" and "Ляшук" via shapes -->
+    <path
+        android:fillColor="#000000"
+        android:pathData="M20,95 L88,95 L88,105 L20,105 Z" /> <!-- Base for text area -->
+</vector>

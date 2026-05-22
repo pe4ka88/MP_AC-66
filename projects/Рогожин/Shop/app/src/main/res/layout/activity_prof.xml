@@ -1,0 +1,178 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="?attr/colorSurface">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="24dp">
+
+        <!-- Верхняя панель -->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp">
+
+            <ImageButton
+                android:id="@+id/btnBack"
+                android:layout_width="44dp"
+                android:layout_height="44dp"
+                android:layout_gravity="center"
+                android:background="@android:color/transparent"
+                android:src="@drawable/ic_arrow_back"
+                android:contentDescription="@string/back"
+                android:layout_alignParentStart="true"
+                android:layout_centerVertical="true"
+                android:scaleType="fitCenter"
+                android:adjustViewBounds="true"/>
+
+            <TextView
+                android:id="@+id/textHeader"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/profile_header"
+                android:textSize="22sp"
+                android:textStyle="bold"
+                android:textColor="?attr/colorOnSurface"
+                android:layout_centerInParent="true"/>
+        </RelativeLayout>
+
+        <!-- Иконка профиля -->
+        <ImageView
+            android:id="@+id/profileIcon"
+            android:layout_width="110dp"
+            android:layout_height="110dp"
+            android:layout_gravity="center"
+            android:src="@drawable/icon_profil"
+            android:background="@drawable/bg_circle_button"
+            android:padding="20dp"
+            android:layout_marginBottom="20dp"/>
+
+        <!-- Поля ввода -->
+        <EditText
+            android:id="@+id/editName"
+            android:hint="@string/hint_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_input"
+            android:padding="12dp"
+            android:textColor="?attr/colorOnSurface"
+            android:textColorHint="?attr/colorOnSurfaceVariant"/>
+
+        <EditText
+            android:id="@+id/editEmail"
+            android:hint="@string/hint_email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_input"
+            android:padding="12dp"
+            android:layout_marginTop="10dp"
+            android:textColor="?attr/colorOnSurface"
+            android:textColorHint="?attr/colorOnSurfaceVariant"/>
+
+        <EditText
+            android:id="@+id/editPassword"
+            android:hint="@string/hint_password"
+            android:inputType="textPassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_input"
+            android:padding="12dp"
+            android:layout_marginTop="10dp"
+            android:textColor="?attr/colorOnSurface"
+            android:textColorHint="?attr/colorOnSurfaceVariant"/>
+
+        <!-- Кнопки -->
+        <Button
+            android:id="@+id/btnLogin"
+            android:text="@string/login"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:backgroundTint="?attr/colorPrimary"
+            android:textColor="?attr/colorOnPrimary"/>
+
+        <!-- Блок профиля -->
+        <LinearLayout
+            android:id="@+id/profileLayout"
+            android:visibility="gone"
+            android:orientation="vertical"
+            android:layout_marginTop="24dp"
+            android:padding="16dp"
+            android:background="?attr/colorSurface"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/textProfileName"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:textColor="?attr/colorOnSurface"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:id="@+id/textProfileEmail"
+                android:textColor="?attr/colorOnSurfaceVariant"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/balance"
+                android:textStyle="bold"
+                android:layout_marginTop="16dp"/>
+
+            <TextView
+                android:id="@+id/textBalance"
+                android:textColor="?attr/colorPrimary"
+                android:textSize="20sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <EditText
+                android:id="@+id/editAddress"
+                android:hint="@string/hint_address"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_input"
+                android:padding="12dp"
+                android:layout_marginTop="12dp"
+                android:textColor="?attr/colorOnSurface"
+                android:textColorHint="?attr/colorOnSurfaceVariant"/>
+
+            <Button
+                android:id="@+id/btnSaveAddress"
+                android:text="@string/save_address"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:backgroundTint="?attr/colorPrimary"
+                android:textColor="?attr/colorOnPrimary"/>
+
+            <Button
+                android:id="@+id/btnLogout"
+                android:text="@string/logout"
+                android:layout_marginTop="16dp"
+                android:backgroundTint="?attr/colorError"
+                android:textColor="?attr/colorOnError"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+        </LinearLayout>
+
+        <!-- Копирайт -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="© Рогожин А.С. АС-66"
+            android:textAlignment="center"
+            android:textSize="12sp"
+            android:textColor="?attr/colorOnSurface"
+            android:layout_marginBottom="4dp"/>
+    </LinearLayout>
+
+</ScrollView>

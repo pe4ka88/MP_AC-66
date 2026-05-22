@@ -1,0 +1,36 @@
+<resources>
+    <string name="app_name">3lab</string>
+    <string name="load">Загрузить</string>
+    <string name="settings">Настройки</string>
+    <string name="list">Список</string>
+    <string name="toolbar_title">Список элементов</string>
+    <string name="custom_endpoint_hint">Пользовательский путь (например, /users)</string>
+    <string name="loading">Загрузка...</string>
+    <string name="no_data">Данные не получены</string>
+    <string name="loaded_items">Загружено %d элементов</string>
+    <string name="error_loading">Ошибка загрузки</string>
+    <string name="server_error">Ошибка сервера: %d</string>
+    <string name="network_error">Ошибка сети: %s</string>
+    <string name="category_label">Категория:</string>
+    <string name="id_label">ID:</string>
+    <string name="no_title">Без названия</string>
+    <string name="no_category">Неизвестная категория</string>
+    <string name="no_description">Описание отсутствует</string>
+    <string name="no_data_available">Нет данных</string>
+    <string name="server_configuration">Настройки сервера</string>
+    <string name="server_base_url">Базовый URL сервера</string>
+    <string name="select_endpoint">Выберите конечную точку</string>
+    <string name="save_settings">Сохранить настройки</string>
+    <string name="settings_saved">Настройки сохранены</string>
+    <string name="enter_server_url">Пожалуйста, введите URL сервера</string>
+    <string name="endpoint_posts">/posts (Посты)</string>
+    <string name="endpoint_products">/products (Товары)</string>
+    <string name="endpoint_todos">/todos (Задачи)</string>
+    <string name="endpoint_comments">/comments (Комментарии)</string>
+    <string name="no_title_short">Нет названия</string>
+    <string name="category_unknown">Категория: Неизвестно</string>
+    <string name="no_description_short">Описание отсутствует</string>
+    <string name="error">Ошибка</string>
+    <string name="success">Успех</string>
+    <string name="warning">Внимание</string>
+</resources>

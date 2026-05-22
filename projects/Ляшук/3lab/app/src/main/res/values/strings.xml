@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">3lab</string>
+    <string name="server_config">Настройка сервера</string>
+    <string name="base_url_hint">Базовый URL (например, https://jsonplaceholder.typicode.com/)</string>
+    <string name="endpoint_hint">Путь (например, photos или posts)</string>
+    <string name="limit_hint">Лимит строк</string>
+    <string name="btn_load">Загрузить данные</string>
+    <string name="post_id">ID поста: %1$d</string>
+    <string name="error_url">Некорректный URL</string>
+    <string name="error_no_data">Данные не найдены в ожидаемых полях</string>
+    <string name="detail_desc">Это детальное описание объекта с ID %1$d. Поскольку оригинальный API предоставляет ограниченный текст, мы расширили его для детального просмотра.</string>
+</resources>

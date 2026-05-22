@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <!-- Инициалы в правом верхнем углу -->
+    <TextView
+        android:id="@+id/initialsText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="К.Н."
+        android:textSize="16sp"
+        android:layout_gravity="end"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"/>
+
+    <!-- Панель информации -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="20dp">
+
+        <TextView
+            android:id="@+id/timerTextView"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Время: 00:00"
+            style="@style/SecondaryText"/>
+
+        <TextView
+            android:id="@+id/movesTextView"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Ходов: 0"
+            style="@style/SecondaryText"/>
+
+        <TextView
+            android:id="@+id/pairsLeftTextView"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Осталось: 0"
+            style="@style/SecondaryText"/>
+
+    </LinearLayout>
+
+    <!-- Игровое поле -->
+    <GridView
+        android:id="@+id/gridView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:gravity="center"/>
+
+    <!-- Кнопки управления -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp">
+
+        <Button
+            android:id="@+id/restartButton"
+            android:layout_width="0dp"
+            android:layout_height="56dp"
+            android:layout_weight="1"
+            android:text="НОВАЯ ИГРА"
+            android:textSize="18sp"
+            android:layout_marginEnd="8dp"/>
+
+        <Button
+            android:id="@+id/menuButton"
+            android:layout_width="0dp"
+            android:layout_height="56dp"
+            android:layout_weight="1"
+            android:text="В МЕНЮ"
+            android:textSize="18sp"
+            android:layout_marginStart="8dp"/>
+
+    </LinearLayout>
+
+    <!-- Разработчик внизу -->
+    <TextView
+        android:id="@+id/developerText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Разработчик: Куган Н. Л.\nГруппа: АС-66"
+        style="@style/SmallText"
+        android:layout_gravity="center"/>
+
+</LinearLayout>

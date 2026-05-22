@@ -1,0 +1,30 @@
+<resources>
+    <string name="app_name">lab7</string>
+    <string name="author_info">Разработал: Ляшук В.И., АС-66</string>
+    <string name="author_sign">Разработал: Ляшук В.И.</string>
+
+    <!-- Кнопки -->
+    <string name="btn_audio">Аудиоплеер</string>
+    <string name="btn_video">Видеоплеер</string>
+    <string name="btn_photo">Фотокамера</string>
+    <string name="btn_history">История</string>
+    <string name="btn_about">О приложении</string>
+    <string name="btn_back">Назад</string>
+    <string name="btn_play">Воспроизвести</string>
+    <string name="btn_pause">Пауза</string>
+    <string name="btn_stop">Стоп</string>
+    <string name="btn_take_photo">Сделать фото</string>
+    <string name="btn_get_location">Обновить координаты</string>
+    <string name="btn_zoom_in">+</string>
+    <string name="btn_zoom_out">-</string>
+
+    <!-- Тексты -->
+    <string name="title_audio">Проигрыватель аудио</string>
+    <string name="title_video">Проигрыватель видео</string>
+    <string name="title_photo">Работа с камерой</string>
+    <string name="title_history">История действий</string>
+    <string name="title_about">О программе</string>
+    <string name="task_description">Лабораторная работа 17. Приложение для воспроизведения мультимедиа: аудио, видео и работа с камерой. Реализована история действий в БД и определение местоположения.</string>
+    <string name="scenario_title">Сценарий работы:</string>
+    <string name="scenario_text">Сценарий: Пользователь запускает приложение, выбирает тип медиа. В аудио/видео доступны функции управления. В фото - создание снимка и масштабирование. Все действия логируются в базу данных SQLite.</string>
+</resources>

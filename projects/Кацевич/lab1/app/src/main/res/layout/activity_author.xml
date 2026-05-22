@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="20dp"
+    android:gravity="center">
+
+    <!-- Инициалы -->
+    <TextView
+        android:id="@+id/initialsText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="К.Н."
+        android:textSize="16sp"
+        android:layout_gravity="end"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"/>
+
+    <!-- Заголовок -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ОБ АВТОРЕ"
+        style="@style/MainText"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="40dp"/>
+
+    <!-- Информация об авторе -->
+    <TextView
+        android:id="@+id/authorInfo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="РАЗРАБОТЧИК ПРИЛОЖЕНИЯ\n\nФИО: Кацевич А. Ю.\nГруппа: АС-66\nКурс: 3\nСеместр: 5\nДисциплина: Мобильные приложения\nЛабораторная работа: №1\n\nПРИЛОЖЕНИЕ: Memory Game\nТип: Игра на память"
+        style="@style/SecondaryText"
+        android:gravity="center"
+        android:lineSpacingExtra="8dp"
+        android:layout_marginBottom="40dp"
+        android:padding="16dp"/>
+
+    <!-- Кнопка назад -->
+    <Button
+        android:id="@+id/backButton"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:text="НАЗАД"
+        android:textSize="18sp"
+        android:layout_marginBottom="40dp"/>
+
+    <!-- Разработчик внизу -->
+    <TextView
+        android:id="@+id/developerText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Разработчик приложения: Кацевич А. Ю."
+        style="@style/SmallText"/>
+
+</LinearLayout>

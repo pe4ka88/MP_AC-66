@@ -1,0 +1,23 @@
+[versions]
+# ИЗМЕНИТЬ ВЕРСИИ НА БОЛЕЕ СТАРЫЕ
+agp = "8.3.2"  # или "8.2.2" если не работает
+kotlin = "1.9.22"
+
+# Поменять версии библиотек на более старые
+compileSdk = "36"
+minSdk = "24"
+targetSdk = "36"
+
+[libraries]
+# ИЗМЕНИТЬ НА СТАРЫЕ ВЕРСИИ
+appcompat = { module = "androidx.appcompat:appcompat", version = "1.6.1" }  # вместо 1.12.0
+material = { module = "com.google.android.material:material", version = "1.11.0" }  # вместо 1.12.0
+activity = { module = "androidx.activity:activity", version = "1.8.0" }  # вместо 1.12.3
+constraintlayout = { module = "androidx.constraintlayout:constraintlayout", version = "2.1.4" }  # вместо 2.2.0
+
+junit = { module = "junit:junit", version = "4.13.2" }
+ext-junit = { module = "androidx.test.ext:junit", version = "1.1.5" }
+espresso-core = { module = "androidx.test.espresso:espresso-core", version = "3.5.1" }
+
+[plugins]
+android-application = { id = "com.android.application", version.ref = "agp" }

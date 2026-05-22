@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+
+
+    <color name="card_light">#EEEEEE</color>
+    <color name="card_dark">#1E1E1E</color>
+
+    <color name="panel_light">#CCFFFFFF</color>
+    <color name="panel_dark">#CC1E1E1E</color>
+
+    <color name="text_light">#000000</color>
+    <color name="accent_transparent">#AA4CAF50</color>
+    <color name="card_transparent">#88FFFFFF</color>
+
+    <color name="bg_light">#F2F4F8</color>
+    <color name="text_dark">#222222</color>
+    <color name="accent">#2F80ED</color>
+
+    <color name="accent_d">#FF5722</color>
+    <color name="accent_dark">#E64A19</color>
+    <color name="accent_variant">#FF7043</color>
+
+    <!-- Фоны -->
+    <color name="bg_dark">#121212</color>
+    <color name="surface_dark">#1E1E1E</color>
+    <color name="surface_variant_dark">#2C2C2C</color>
+
+    <!-- Текст -->
+    <color name="text_light_d">#FFFFFF</color>
+    <color name="text_light_variant">#DDDDDD</color>
+    <color name="text_on_primary">#FFFFFF</color>
+</resources>

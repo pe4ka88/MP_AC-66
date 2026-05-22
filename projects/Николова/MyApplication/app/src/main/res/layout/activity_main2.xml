@@ -1,0 +1,57 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <TextView
+        android:id="@+id/tvBestResult"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Рекорд: --" />
+
+    <TextView
+        android:id="@+id/tvSteps"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Шаги: 0"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <RadioGroup
+        android:id="@+id/rgMode"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <RadioButton android:id="@+id/rbPairs" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Пары" android:checked="true"/>
+        <RadioButton android:id="@+id/rbTriples" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Тройки"/>
+    </RadioGroup>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvBoard"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:layout_marginTop="16dp" />
+
+    <Button
+        android:id="@+id/btnRestart"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Перезапустить" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Размер поля:" />
+
+    <RadioGroup
+        android:id="@+id/rgSize"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <RadioButton android:id="@+id/rb4x4" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="4x4" android:checked="true"/>
+        <RadioButton android:id="@+id/rb6x6" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="6x6"/>
+        <RadioButton android:id="@+id/rb8x8" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="8x8"/>
+    </RadioGroup>
+</LinearLayout>

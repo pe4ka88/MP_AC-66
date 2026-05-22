@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/homeFragment">
+
+    <!-- Главный экран -->
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.example.file.ui.HomeFragment"
+        android:label="Home">
+
+        <!-- Навигация на ImageFragment -->
+        <action
+            android:id="@+id/action_home_to_imageFragment"
+            app:destination="@id/imageFragment" />
+
+        <!-- Навигация на VideoFragment -->
+        <action
+            android:id="@+id/action_home_to_videoFragment"
+            app:destination="@id/videoFragment" />
+
+        <!-- Навигация на AudioFragment -->
+        <action
+            android:id="@+id/action_home_to_audioFragment"
+            app:destination="@id/audioFragment" />
+    </fragment>
+
+    <!-- Фрагмент для изображений -->
+    <fragment
+        android:id="@+id/imageFragment"
+        android:name="com.example.file.ui.ImageFragment"
+        android:label="Image">
+        <argument
+            android:name="fileUri"
+            app:argType="string" />
+    </fragment>
+
+    <!-- Фрагмент для видео -->
+    <fragment
+        android:id="@+id/videoFragment"
+        android:name="com.example.file.ui.VideoFragment"
+        android:label="Video">
+        <argument
+            android:name="fileUri"
+            app:argType="string" />
+    </fragment>
+
+    <!-- Фрагмент для аудио -->
+    <fragment
+        android:id="@+id/audioFragment"
+        android:name="com.example.file.ui.AudioFragment"
+        android:label="Audio">
+        <argument
+            android:name="fileUri"
+            app:argType="string" />
+    </fragment>
+
+</navigation>

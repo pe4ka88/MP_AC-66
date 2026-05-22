@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="108dp"
+    android:height="108dp"
+    android:viewportWidth="108"
+    android:viewportHeight="108">
+    <!-- Taxi Sign -->
+    <path
+        android:fillColor="#000000"
+        android:pathData="M44,30h20v6h-20z" />
+    <path
+        android:fillColor="#000000"
+        android:pathData="M46,31h2v4h-2zM50,31h2v4h-2zM54,31h2v4h-2zM58,31h2v4h-2z" />
+
+    <!-- Car Body -->
+    <path
+        android:fillColor="#000000"
+        android:pathData="M25,55 L30,45 C32,40 35,38 40,38 L68,38 C73,38 76,40 78,45 L83,55 L85,55 C88,55 90,57 90,60 L90,75 C90,78 88,80 85,80 L23,80 C20,80 18,78 18,75 L18,60 C18,57 20,55 23,55 L25,55 Z" />
+
+    <!-- Windows -->
+    <path
+        android:fillColor="#FFD600"
+        android:pathData="M33,46 L40,41 L52,41 L52,53 L33,53 Z M56,41 L68,41 L75,46 L75,53 L56,53 Z" />
+
+    <!-- Wheels -->
+    <path
+        android:fillColor="#000000"
+        android:pathData="M30,75 A5,5 0 1 0 40,75 A5,5 0 1 0 30,75 Z M68,75 A5,5 0 1 0 78,75 A5,5 0 1 0 68,75 Z" />
+</vector>

@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">lab6</string>
+    <string name="author_full">Разработал: Ляшук В.И., группа АС-66</string>
+    <string name="lab_task_full">Лабораторная работа № 6. Работа с файловой системой. Разрешения. \nЗадание: Создать приложение, обеспечивающее выбор файла во внешнем хранилище с возможностью дальнейшей его обработки в зависимости от расширения: графический файл (ImageView), аудиофайл (MediaPlayer), видеофайл (VideoView).</string>
+    <string name="btn_pick_text">Выбрать файл</string>
+    <string name="btn_info_text">О программе</string>
+    <string name="play_audio">Play (Ляшук)</string>
+    <string name="stop_audio">Stop (Ляшук)</string>
+    <string name="image_desc">Выбранное изображение (Ляшук)</string>
+    <string name="audio_player_label">Аудиоплеер (Разработал Ляшук)</string>
+    <string name="footer_author">Приложение lab6 - Ляшук В.И. АС-66</string>
+</resources>

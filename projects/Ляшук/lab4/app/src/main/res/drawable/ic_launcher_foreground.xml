@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="108dp"
+    android:height="108dp"
+    android:viewportWidth="108"
+    android:viewportHeight="108">
+    <!-- Группа для уменьшения масштаба (0.6) и центрирования -->
+    <group
+        android:translateX="21.6"
+        android:translateY="21.6"
+        android:scaleX="0.6"
+        android:scaleY="0.6">
+        <!-- Современная минималистичная иконка сумки покупок -->
+        <path
+            android:fillColor="@color/icon_fg"
+            android:pathData="M34,36 L34,30 C34,18.95 42.95,10 54,10 C65.05,10 74,18.95 74,30 L74,36 L84,36 L84,88 C84,92.42 80.42,96 76,96 L32,96 C27.58,96 24,92.42 24,88 L24,36 L34,36 Z M40,36 L68,36 L68,30 C68,22.27 61.73,16 54,16 C46.27,16 40,22.27 40,30 L40,36 Z" />
+    </group>
+</vector>

@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="@color/gray_light">
+
+    <TextView
+        android:id="@+id/textViewUserInfo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp"
+        android:background="@color/primary_blue"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        android:layout_marginBottom="16dp"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:layout_marginBottom="16dp">
+
+        <TextView
+            android:id="@+id/textViewRoute"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="16dp"
+            android:background="@color/white"
+            android:text="@string/route_not_set"
+            android:textSize="14sp"
+            android:textColor="@color/gray_dark"/>
+    </ScrollView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/buttonSetPath"
+            android:layout_width="0dp"
+            android:layout_height="56dp"
+            android:layout_weight="1"
+            android:text="@string/set_path"
+            android:layout_marginEnd="8dp"
+            android:backgroundTint="@color/primary_blue"/>
+
+        <Button
+            android:id="@+id/buttonCallTaxi"
+            android:layout_width="0dp"
+            android:layout_height="56dp"
+            android:layout_weight="1"
+            android:text="@string/call_taxi"
+            android:layout_marginStart="8dp"
+            android:enabled="false"
+            android:backgroundTint="@color/secondary_green"/>
+
+    </LinearLayout>
+
+</LinearLayout>

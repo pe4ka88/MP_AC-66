@@ -1,0 +1,56 @@
+<resources>
+    <string name="app_name">JSON Viewer Куган</string>
+
+    <!-- Авторство -->
+    <string name="author_fio">Куган Н. Л.</string>
+    <string name="author_group">гр. АС-66</string>
+    <string name="author_full">Куган Н. Л., гр. АС-66</string>
+    <string name="author_signature">Разработала: Куган Н. Л.</string>
+    <string name="button_author">Нажимает Куган</string>
+
+    <!-- Заголовки -->
+    <string name="title_lab">Лабораторная работа: JSON Viewer</string>
+    <string name="title_list">Список постов</string>
+    <string name="title_detail">Детальная информация</string>
+    <string name="title_settings">Настройки</string>
+
+    <!-- Кнопки -->
+    <string name="btn_load_data">Загрузить данные</string>
+    <string name="btn_settings">Настройки</string>
+    <string name="btn_save">Сохранить</string>
+    <string name="btn_cancel">Отмена</string>
+    <string name="btn_back">Назад</string>
+    <string name="btn_refresh">Обновить</string>
+    <string name="btn_share">Поделиться</string>
+
+    <!-- Подписи полей -->
+    <string name="label_id">ID:</string>
+    <string name="label_user_id">User ID:</string>
+    <string name="label_title">Заголовок:</string>
+    <string name="label_body">Текст:</string>
+    <string name="label_preview">Превью:</string>
+    <string name="label_url">URL сервера:</string>
+    <string name="label_items_count">Количество элементов:</string>
+    <string name="label_images">Изображения:</string>
+
+    <!-- Сообщения -->
+    <string name="msg_empty">Нажмите "Загрузить данные" для начала</string>
+    <string name="msg_loading">Загрузка данных...</string>
+    <string name="msg_success">Данные успешно загружены</string>
+    <string name="msg_error">Ошибка загрузки</string>
+    <string name="msg_error_network">Ошибка сети. Проверьте подключение</string>
+    <string name="msg_error_parse">Ошибка обработки данных</string>
+    <string name="msg_settings_saved">Настройки сохранены</string>
+    <string name="msg_images_on">Изображения включены</string>
+    <string name="msg_images_off">Изображения выключены</string>
+    <string name="msg_taxi_sent">🚖 Такси успешно отправлено! Куган Н. Л.</string>
+
+    <!-- Погода -->
+    <string name="weather_brest">🌤 Погода в Бресте сейчас</string>
+    <string name="weather_loading">Загрузка...</string>
+    <string name="weather_error">Ошибка загрузки погоды</string>
+    <string name="weather_updated">Обновлено: %s</string>
+
+    <!-- URL по умолчанию -->
+    <string name="default_url">https://jsonplaceholder.typicode.com/posts</string>
+</resources>

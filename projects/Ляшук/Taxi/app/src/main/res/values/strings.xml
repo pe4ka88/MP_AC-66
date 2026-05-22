@@ -1,0 +1,30 @@
+<resources>
+    <string name="app_name">Taxi App</string>
+    <string name="phone_hint">Телефон</string>
+    <string name="first_name_hint">Имя</string>
+    <string name="last_name_hint">Фамилия</string>
+    <string name="registration_button">Регистрация</string>
+    <string name="login_button">Войти</string>
+    <string name="set_path_button">Задать маршрут</string>
+    <string name="call_taxi_button">Вызвать такси</string>
+    <string name="ok_button">ОК</string>
+    <string name="street_hint">Улица</string>
+    <string name="house_hint">Дом</string>
+    <string name="flat_hint">Квартира</string>
+    <string name="dest_street_hint">Куда (улица)</string>
+    <string name="dest_house_hint">Куда (дом)</string>
+    <string name="dest_flat_hint">Куда (квартира)</string>
+    <string name="taxi_success">Такси успешно отправлено!</string>
+    <string name="route_prefix">Маршрут: %1$s\nЖелаете вызвать такси?</string>
+    <string name="developer_name">Ляшук В.И.</string>
+    <string name="developer_group">Группа: АС-66</string>
+    <string name="copyright">© 2026 Ляшук В.И. Гр. АС-66</string>
+
+    <string name="profile_button">Профиль</string>
+    <string name="payment_method_label">Способ оплаты:</string>
+    <string name="payment_cash">Наличные</string>
+    <string name="payment_card">Карта</string>
+    <string name="history_button">История поездок</string>
+    <string name="history_title">История поездок</string>
+    <string name="no_history">История пуста</string>
+</resources>

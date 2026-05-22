@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="#F5F5F5">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="🎬 Видеоплеер (Кацевич А. Ю.)"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:padding="12dp"
+        android:background="#E0E0E0"
+        android:layout_marginBottom="16dp"/>
+
+    <!-- Информация о текущем файле -->
+    <TextView
+        android:id="@+id/tvVideoFileName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Файл не выбран"
+        android:textSize="14sp"
+        android:padding="12dp"
+        android:background="@android:drawable/editbox_background"
+        android:layout_marginBottom="16dp"/>
+
+    <!-- Кнопка выбора видеофайла -->
+    <Button
+        android:id="@+id/btnChooseVideo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="📂 Выбрать видеофайл"
+        android:backgroundTint="#9C27B0"
+        android:layout_marginBottom="16dp"/>
+
+    <!-- VideoView -->
+    <FrameLayout
+        android:id="@+id/videoContainer"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="#000000">
+
+        <VideoView
+            android:id="@+id/videoView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+    </FrameLayout>
+
+    <!-- Кастомные элементы управления -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="12dp"
+        android:background="#FFFFFF">
+
+        <!-- Прогресс -->
+        <SeekBar
+            android:id="@+id/videoSeekBar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical">
+
+            <TextView
+                android:id="@+id/tvVideoCurrentTime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="00:00"/>
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"/>
+
+            <TextView
+                android:id="@+id/tvVideoTotalTime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="00:00"/>
+        </LinearLayout>
+
+        <!-- Кнопки управления -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_marginTop="8dp">
+
+            <ImageButton
+                android:id="@+id/btnVideoRewind"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:src="@android:drawable/ic_media_previous"
+                android:background="?selectableItemBackgroundBorderless"/>
+
+            <ImageButton
+                android:id="@+id/btnVideoPlayPause"
+                android:layout_width="64dp"
+                android:layout_height="64dp"
+                android:src="@android:drawable/ic_media_play"
+                android:background="?selectableItemBackgroundBorderless"/>
+
+            <ImageButton
+                android:id="@+id/btnVideoForward"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:src="@android:drawable/ic_media_next"
+                android:background="?selectableItemBackgroundBorderless"/>
+
+            <ImageButton
+                android:id="@+id/btnVideoFullscreen"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:src="@android:drawable/ic_menu_view"
+                android:background="?selectableItemBackgroundBorderless"/>
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

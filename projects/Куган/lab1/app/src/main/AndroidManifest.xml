@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <!-- Разрешение на интернет для API -->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="Memory Game ЛР1"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.MemoryGameJava">
+
+        <!-- Главное меню -->
+        <activity
+            android:name=".MainMenuActivity"
+            android:exported="true"
+            android:label="Главное меню">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <!-- Выбор размера поля -->
+        <activity
+            android:name=".ChooseSizeActivity"
+            android:label="Выбор размера поля"
+            android:parentActivityName=".MainMenuActivity"
+            android:exported="false">
+        </activity>
+
+        <!-- Игровое поле -->
+        <activity
+            android:name=".GameActivity"
+            android:label="Игра Memory"
+            android:parentActivityName=".ChooseSizeActivity"
+            android:exported="false">
+        </activity>
+
+        <!-- Настройки -->
+        <activity
+            android:name=".SettingsActivity"
+            android:label="Настройки игры"
+            android:parentActivityName=".MainMenuActivity"
+            android:exported="false">
+        </activity>
+
+        <!-- Информация об авторе -->
+        <activity
+            android:name=".AuthorActivity"
+            android:label="Об авторе"
+            android:parentActivityName=".MainMenuActivity"
+            android:exported="false">
+        </activity>
+
+        <!-- Формулировка задачи -->
+        <activity
+            android:name=".TaskActivity"
+            android:label="Задание ЛР1"
+            android:parentActivityName=".MainMenuActivity"
+            android:exported="false">
+        </activity>
+
+        <!-- Правила куки (API) -->
+        <activity
+            android:name=".CookiePolicyActivity"
+            android:label="Правила использования куки"
+            android:parentActivityName=".MainMenuActivity"
+            android:exported="false">
+        </activity>
+
+        <!-- Таблица рекордов -->
+        <activity
+            android:name=".RecordsActivity"
+            android:label="Рекорды"
+            android:parentActivityName=".MainMenuActivity"
+            android:exported="false">
+        </activity>
+
+    </application>
+
+</manifest>

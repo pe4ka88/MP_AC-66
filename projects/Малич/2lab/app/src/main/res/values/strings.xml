@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Существующие строки -->
+    <string name="app_name">2lab</string>
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+    <string name="lorem_ipsum">Lorem ipsum dolor sit amet...</string>
+
+    <!-- Строки приложения -->
+    <string name="registration">Регистрация</string>
+    <string name="phone">Телефон</string>
+    <string name="first_name">Имя</string>
+    <string name="last_name">Фамилия</string>
+    <string name="register_button">Зарегистрироваться (Невар В.А.)</string>
+
+    <string name="call_taxi">Вызвать такси (Невар В.А.)</string>
+    <string name="set_path">Задать маршрут (Невар В.А.)</string>
+    <string name="route_not_set">Маршрут не задан (Невар В.А.)</string>
+    <string name="taxi_called">Такси успешно вызвано! Ожидайте.</string>
+
+    <string name="route_params">Параметры маршрута</string>
+    <string name="from_where">Откуда</string>
+    <string name="to_where">Куда</string>
+    <string name="date">Дата</string>
+    <string name="time">Время</string>
+    <string name="passengers">Количество пассажиров (Невар В.А.)</string>
+    <string name="comment">Комментарий</string>
+    <string name="ok">OK</string>
+    <string name="cancel">Отмена</string>
+
+    <string name="as_soon_as_possible">Как можно быстрее</string>
+    <string name="specific_time">На определенное время</string>
+    <string name="select_date">Выбрать дату</string>
+    <string name="select_time">Выбрать время</string>
+
+    <string name="enter_from">Введите точку отправления</string>
+    <string name="enter_to">Введите точку назначения</string>
+    <string name="error_date_past">Дата не может быть раньше сегодняшней</string>
+
+    <string name="select_on_map">Выбрать на карте (Невар В.А.)</string>
+    <string name="confirm_address">Подтвердить адрес (Невар В.А.)</string>
+    <string name="from_point">Точка отправления</string>
+    <string name="to_point">Точка назначения</string>
+    <string name="error_select_location">Выберите место на карте</string>
+    <string name="error_location_permission">Нет разрешения на определение местоположения</string>
+</resources>

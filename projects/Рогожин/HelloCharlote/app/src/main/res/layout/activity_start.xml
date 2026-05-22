@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000000">
+
+    <ImageView
+        android:id="@+id/characterImage"
+        android:layout_width="match_parent"
+        android:layout_height="402dp"
+        android:layout_above="@id/dialogBox"
+        android:layout_marginBottom="-2dp"
+        android:adjustViewBounds="true"
+        android:contentDescription="Character portrait"
+        android:scaleType="fitEnd"
+        android:src="@drawable/q84_1" />
+
+    <LinearLayout
+        android:id="@+id/dialogBox"
+        android:layout_width="match_parent"
+        android:layout_height="240dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="91dp"
+        android:background="@drawable/dialog_background"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <!-- Текст диалога -->
+        <TextView
+            android:id="@+id/dialogText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/hello_charlotte"
+            android:gravity="center"
+            android:text="..."
+            android:textColor="#FFFFFF"
+            android:textSize="18sp" />
+
+        <!-- Поле ввода имени -->
+        <EditText
+            android:id="@+id/nicknameInput"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/hello_charlotte"
+            android:gravity="center"
+            android:hint="Введите имя"
+            android:textColor="#FFFFFF"
+            android:textColorHint="#AAAAAA"
+            android:visibility="gone" />
+
+        <LinearLayout
+            android:id="@+id/gridButtons"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:visibility="gone"
+            android:layout_marginTop="16dp">
+
+            <!-- Левая колонка -->
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <Button
+                    android:id="@+id/btnA"
+                    style="@style/TextButtonStyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="A 2x2"
+                    android:layout_marginBottom="8dp"/>
+
+                <Button
+                    android:id="@+id/btnC"
+                    style="@style/TextButtonStyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="C 5x5"/>
+            </LinearLayout>
+
+            <!-- Правая колонка -->
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <Button
+                    android:id="@+id/btnB"
+                    style="@style/TextButtonStyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="B 3x3"
+                    android:layout_marginBottom="8dp"/>
+
+                <Button
+                    android:id="@+id/btnD"
+                    style="@style/TextButtonStyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="D 6x6"/>
+            </LinearLayout>
+        </LinearLayout>
+
+        <!-- Бесконечный режим -->
+        <Switch
+            android:id="@+id/infiniteSwitch"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/hello_charlotte"
+            android:text="Бесконечный режим"
+            android:textColor="#FFFFFF"
+            android:visibility="gone"
+            android:thumb="@drawable/custom_checkbox"
+            android:track="@android:color/transparent"/>
+
+    </LinearLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:gravity="center"
+        android:padding="8dp"
+        android:text="© 2026 Рогожин А.С. АС-66"
+        android:textColor="#FFFFFF"
+        android:textSize="12sp" />
+</RelativeLayout>

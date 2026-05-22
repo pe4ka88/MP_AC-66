@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="#F5F5F5">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="🎵 Аудиоплеер (Куган Н. Л.)"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:padding="12dp"
+        android:background="#E0E0E0"
+        android:layout_marginBottom="16dp"/>
+
+    <!-- Информация о текущем файле -->
+    <TextView
+        android:id="@+id/tvAudioFileName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Файл не выбран"
+        android:textSize="14sp"
+        android:padding="12dp"
+        android:background="@android:drawable/editbox_background"
+        android:layout_marginBottom="16dp"/>
+
+    <!-- Кнопка выбора аудиофайла -->
+    <Button
+        android:id="@+id/btnChooseAudio"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="📂 Выбрать аудиофайл"
+        android:backgroundTint="#9C27B0"
+        android:layout_marginBottom="24dp"/>
+
+    <!-- Прогресс бар -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginBottom="8dp">
+
+        <TextView
+            android:id="@+id/tvCurrentTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="00:00"
+            android:textSize="12sp"/>
+
+        <SeekBar
+            android:id="@+id/seekBar"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"/>
+
+        <TextView
+            android:id="@+id/tvTotalTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="00:00"
+            android:textSize="12sp"/>
+    </LinearLayout>
+
+    <!-- Собственные элементы управления (бонус) -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center">
+
+        <ImageButton
+            android:id="@+id/btnRewind"
+            android:layout_width="64dp"
+            android:layout_height="64dp"
+            android:src="@android:drawable/ic_media_previous"
+            android:background="?selectableItemBackgroundBorderless"
+            android:layout_marginEnd="16dp"/>
+
+        <ImageButton
+            android:id="@+id/btnPlayPause"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:src="@android:drawable/ic_media_play"
+            android:background="?selectableItemBackgroundBorderless"/>
+
+        <ImageButton
+            android:id="@+id/btnForward"
+            android:layout_width="64dp"
+            android:layout_height="64dp"
+            android:src="@android:drawable/ic_media_next"
+            android:background="?selectableItemBackgroundBorderless"
+            android:layout_marginStart="16dp"/>
+    </LinearLayout>
+
+    <!-- Кнопки управления громкостью (бонус) -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_marginTop="24dp">
+
+        <ImageButton
+            android:id="@+id/btnVolumeDown"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:src="@android:drawable/ic_media_ff"
+            android:rotation="270"
+            android:background="?selectableItemBackgroundBorderless"/>
+
+        <SeekBar
+            android:id="@+id/volumeSeekBar"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            android:max="100"
+            android:progress="50"/>
+
+        <ImageButton
+            android:id="@+id/btnVolumeUp"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:src="@android:drawable/ic_media_ff"
+            android:rotation="90"
+            android:background="?selectableItemBackgroundBorderless"/>
+    </LinearLayout>
+
+</LinearLayout>

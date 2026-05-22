@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/developer_name"
+        android:textStyle="italic" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/group_name"
+        android:paddingBottom="16dp" />
+
+    <EditText
+        android:id="@+id/editTextUpdateId"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter note ID to update"
+        android:inputType="number"
+        android:autofillHints="none" />
+
+    <EditText
+        android:id="@+id/editTextUpdateDescription"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter new description"
+        android:inputType="text"
+        android:autofillHints="none" />
+
+    <Button
+        android:id="@+id/btnUpdate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Update" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:paddingTop="16dp"
+        android:text="Лабораторная работа №5 - Обновление"
+        android:textSize="12sp" />
+</LinearLayout>

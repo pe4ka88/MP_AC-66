@@ -1,0 +1,51 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <!-- Тёмная тема приложения -->
+    <style name="Theme.Note.Dark" parent="Theme.Material3.DayNight.NoActionBar">
+
+        <!-- Основные цвета -->
+        <item name="colorPrimary">#1976D2</item>
+        <item name="colorOnPrimary">#FFFFFF</item>
+
+        <item name="colorSecondary">#03DAC6</item>
+        <item name="colorOnSecondary">#000000</item>
+
+        <!-- Поверхности -->
+        <item name="colorSurface">#1E1E1E</item>        <!-- тёмные карточки -->
+        <item name="colorOnSurface">#FFFFFF</item>      <!-- текст на карточках -->
+        <item name="colorOnSurfaceVariant">#B0B0B0</item> <!-- второстепенный текст -->
+
+        <!-- Фон приложения -->
+        <item name="android:colorBackground">?attr/colorSurface</item>
+
+        <!-- Toolbar -->
+        <item name="toolbarStyle">@style/AppToolbarStyle.Dark</item>
+
+        <!-- TextInputLayout и EditText -->
+        <item name="textInputStyle">@style/Widget.Material3.TextInputLayout.FilledBox</item>
+        <item name="editTextStyle">@style/Widget.Material3.TextInputEditText.FilledBox</item>
+
+        <!-- Кнопки -->
+        <item name="materialButtonStyle">@style/Widget.Material3.Button</item>
+
+        <!-- Карточки -->
+        <item name="materialCardViewStyle">@style/AppCardStyle.Dark</item>
+
+    </style>
+
+    <!-- Карточки -->
+    <style name="AppCardStyle.Dark" parent="Widget.Material3.CardView.Elevated">
+        <item name="cardCornerRadius">16dp</item>
+        <item name="cardElevation">4dp</item>
+        <item name="cardBackgroundColor">?attr/colorSurface</item>
+        <item name="rippleColor">?attr/colorPrimary</item>
+    </style>
+
+    <!-- Toolbar -->
+    <style name="AppToolbarStyle.Dark" parent="Widget.Material3.Toolbar">
+        <item name="backgroundTint">?attr/colorSurface</item>
+        <item name="titleTextColor">?attr/colorOnSurface</item>
+        <item name="elevation">4dp</item>
+    </style>
+
+</resources>

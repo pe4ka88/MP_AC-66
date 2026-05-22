@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gray_light">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/route_params"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            android:textColor="@color/primary_blue"
+            android:layout_marginBottom="24dp"
+            android:layout_gravity="center_horizontal"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/from_where"
+            android:textStyle="bold"
+            android:layout_marginBottom="8dp"/>
+
+        <EditText
+            android:id="@+id/editTextFrom"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:hint="@string/from_where"
+            android:padding="16dp"
+            android:background="@android:drawable/editbox_background"
+            android:layout_marginBottom="8dp"/>
+
+        <Button
+            android:id="@+id/buttonSelectFromMap"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:text="@string/select_on_map"
+            android:layout_marginBottom="16dp"
+            android:backgroundTint="@color/primary_blue"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/to_where"
+            android:textStyle="bold"
+            android:layout_marginBottom="8dp"/>
+
+        <EditText
+            android:id="@+id/editTextTo"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:hint="@string/to_where"
+            android:padding="16dp"
+            android:background="@android:drawable/editbox_background"
+            android:layout_marginBottom="8dp"/>
+
+        <Button
+            android:id="@+id/buttonSelectToMap"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:text="@string/select_on_map"
+            android:layout_marginBottom="16dp"
+            android:backgroundTint="@color/secondary_green"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/date"
+            android:textStyle="bold"
+            android:layout_marginBottom="8dp"/>
+
+        <Button
+            android:id="@+id/buttonSelectDate"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:text="@string/select_date"
+            android:layout_marginBottom="16dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/time"
+            android:textStyle="bold"
+            android:layout_marginBottom="8dp"/>
+
+        <RadioGroup
+            android:id="@+id/radioGroupTimeType"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp">
+
+            <RadioButton
+                android:id="@+id/radioAsap"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/as_soon_as_possible"
+                android:checked="true"/>
+
+            <RadioButton
+                android:id="@+id/radioSpecificTime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/specific_time"/>
+        </RadioGroup>
+
+        <Button
+            android:id="@+id/buttonSelectTime"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:text="@string/select_time"
+            android:enabled="false"
+            android:layout_marginBottom="16dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/passengers"
+            android:textStyle="bold"
+            android:layout_marginBottom="8dp"/>
+
+        <NumberPicker
+            android:id="@+id/numberPickerPassengers"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/comment"
+            android:textStyle="bold"
+            android:layout_marginBottom="8dp"/>
+
+        <EditText
+            android:id="@+id/editTextComment"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/comment"
+            android:inputType="textMultiLine"
+            android:lines="3"
+            android:gravity="top"
+            android:padding="16dp"
+            android:background="@android:drawable/editbox_background"
+            android:layout_marginBottom="24dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="16dp">
+
+            <Button
+                android:id="@+id/buttonOk"
+                android:layout_width="0dp"
+                android:layout_height="56dp"
+                android:layout_weight="1"
+                android:text="@string/ok"
+                android:layout_marginEnd="8dp"
+                android:backgroundTint="@color/primary_blue"/>
+
+            <Button
+                android:id="@+id/buttonCancel"
+                android:layout_width="0dp"
+                android:layout_height="56dp"
+                android:layout_weight="1"
+                android:text="@string/cancel"
+                android:layout_marginStart="8dp"
+                android:backgroundTint="@color/gray_medium"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</ScrollView>
