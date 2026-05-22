@@ -1,0 +1,38 @@
+<resources>
+    <string name="app_name">GeoPulse Lab</string>
+    <string name="app_title">GeoPulse</string>
+    <string name="app_subtitle">Лабораторная: Сенсоры и геолокация</string>
+    <string name="author_label">Пекун М. С</string>
+
+    <string name="weather_city">Погода: Брест</string>
+    <string name="weather_loading">Обновляем данные...</string>
+    <string name="weather_temp_placeholder">--°C</string>
+
+    <string name="btn_start_tracking">Старт трекинга</string>
+    <string name="btn_stop_tracking">Стоп</string>
+    <string name="btn_generate_test">Тестовые точки</string>
+
+    <string name="tab_map">Маршрут</string>
+    <string name="tab_stats">Аналитика</string>
+
+    <string name="points_count">Собрано точек: 0</string>
+    <string name="map_hint">Выберите период, чтобы отобразить посещенные места и маршрут.</string>
+
+    <string name="stats_title">Аналитика посещений</string>
+    <string name="stats_summary_title">Сводка</string>
+    <string name="stats_activity_title">Активность по дням</string>
+    <string name="stats_recent_title">Последние 10 фиксаций</string>
+
+    <string name="total_points">Всего точек: --</string>
+    <string name="week_points">За неделю: --</string>
+    <string name="month_points">За месяц: --</string>
+    <string name="first_point">Первая точка: --</string>
+
+    <string name="period_day">День</string>
+    <string name="period_week">Неделя</string>
+    <string name="period_month">Месяц</string>
+    <string name="period_all">Все</string>
+
+    <string name="location_coordinates">55.1234, 27.1234</string>
+    <string name="location_datetime">01.03.2024 15:30</string>
+</resources>

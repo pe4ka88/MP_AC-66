@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.SecondLab7Taxi">
+        
+        <!-- SplashActivity - экран загрузки (главный экран запуска) -->
+        <activity
+            android:name=".SplashActivity"
+            android:exported="true"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        
+        <!-- RegistrationActivity - экран регистрации -->
+        <activity
+            android:name=".RegistrationActivity"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+
+        <!-- MainTaxiActivity - главное меню такси -->
+        <activity
+            android:name=".MainTaxiActivity"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:parentActivityName=".RegistrationActivity" />
+
+        <!-- RouteActivity - выбор маршрута (неявный Intent) -->
+        <activity
+            android:name=".RouteActivity"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:parentActivityName=".MainTaxiActivity">
+            <intent-filter>
+                <action android:name="com.example.secondlab7taxi.ACTION_SET_ROUTE" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <!-- AboutActivity - экран "О приложении" -->
+        <activity
+            android:name=".AboutActivity"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:parentActivityName=".RegistrationActivity" />
+
+        <!-- MainActivity - оставляем для совместимости -->
+        <activity
+            android:name=".MainActivity"
+            android:exported="false" />
+    </application>
+
+</manifest>

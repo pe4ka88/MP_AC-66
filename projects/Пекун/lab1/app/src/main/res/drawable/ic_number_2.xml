@@ -1,0 +1,17 @@
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="56dp"
+    android:height="56dp"
+    android:viewportWidth="56"
+    android:viewportHeight="56">
+    
+    <!-- Круглый фон -->
+    <path
+        android:pathData="M28,28m-24,0a24,24 0,1 1,48 0a24,24 0,1 1,-48 0"
+        android:fillColor="@color/primary_light"/>
+    
+    <!-- Цифра "2" -->
+    <path
+        android:pathData="M20,36 L36,36 L36,32 L24,32 L24,28 L32,20 Q34,18 34,16 L34,14 Q34,12 32,12 L24,12 Q22,12 22,14 L22,16 L26,16 L26,14 L30,14 L30,16 Q30,18 28,20 L20,28 L20,36 Z"
+        android:fillColor="@color/primary"
+        android:strokeWidth="0"/>
+</vector>

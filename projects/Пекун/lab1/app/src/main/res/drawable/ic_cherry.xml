@@ -1,0 +1,41 @@
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="64dp"
+    android:height="64dp"
+    android:viewportWidth="24"
+    android:viewportHeight="24">
+    
+    <!-- Веточка -->
+    <path
+        android:fillColor="#8B4513"
+        android:pathData="M12,3 Q10,5 8,7 M12,3 Q14,5 16,7"/>
+    <path
+        android:strokeColor="#8B4513"
+        android:strokeWidth="0.8"
+        android:strokeLineCap="round"
+        android:pathData="M12,3 Q10,5 8,7 M12,3 Q14,5 16,7"/>
+    
+    <!-- Листик -->
+    <path
+        android:fillColor="#4CAF50"
+        android:pathData="M11,2 Q13,2 14,4 Q13,3 11,3 Z"/>
+    
+    <!-- Левая вишенка -->
+    <path
+        android:fillColor="#E53935"
+        android:pathData="M8,8 C5.8,8 4,9.8 4,12 C4,14.2 5.8,16 8,16 C10.2,16 12,14.2 12,12 C12,9.8 10.2,8 8,8 Z"/>
+    
+    <!-- Блик на левой вишенке -->
+    <path
+        android:fillColor="#FF6B6B"
+        android:pathData="M7,10 C6.5,10 6,10.2 6,10.5 C6,10.8 6.5,11 7,11 C7.5,11 8,10.8 8,10.5 C8,10.2 7.5,10 7,10 Z"/>
+    
+    <!-- Правая вишенка -->
+    <path
+        android:fillColor="#C62828"
+        android:pathData="M16,8 C13.8,8 12,9.8 12,12 C12,14.2 13.8,16 16,16 C18.2,16 20,14.2 20,12 C20,9.8 18.2,8 16,8 Z"/>
+    
+    <!-- Блик на правой вишенке -->
+    <path
+        android:fillColor="#EF5350"
+        android:pathData="M15,10 C14.5,10 14,10.2 14,10.5 C14,10.8 14.5,11 15,11 C15.5,11 16,10.8 16,10.5 C16,10.2 15.5,10 15,10 Z"/>
+</vector>

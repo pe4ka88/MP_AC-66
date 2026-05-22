@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">MiniShop</string>
+    <string name="header_title">My Goods List</string>
+    <string name="footer_count">Count of goods = %1$d</string>
+    <string name="show_checked_button">SHOW CHECKED ITEMS</string>
+    <string name="cart_title">Ваша корзина (%1$d товар(ов))</string>
+    <string name="cart_empty">Корзина пуста</string>
+</resources>

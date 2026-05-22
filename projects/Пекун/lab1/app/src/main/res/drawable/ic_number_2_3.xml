@@ -1,0 +1,28 @@
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="56dp"
+    android:height="56dp"
+    android:viewportWidth="56"
+    android:viewportHeight="56">
+    
+    <!-- Круглый фон -->
+    <path
+        android:pathData="M28,28m-24,0a24,24 0,1 1,48 0a24,24 0,1 1,-48 0"
+        android:fillColor="@color/primary_light"/>
+    
+    <!-- Цифра "2" слева -->
+    <path
+        android:pathData="M12,36 L22,36 L22,34 L14,34 L14,32 L20,26 Q21,25 21,24 L21,23 Q21,22 20,22 L14,22 Q13,22 13,23 L13,24 L15,24 L15,23 L19,23 L19,24 Q19,25 18,26 L12,32 L12,36 Z"
+        android:fillColor="@color/primary"
+        android:strokeWidth="0"/>
+    
+    <!-- Разделитель "/" -->
+    <path
+        android:pathData="M26,36 L28,36 L30,20 L28,20 L26,36 Z"
+        android:fillColor="@color/primary"/>
+    
+    <!-- Цифра "3" справа -->
+    <path
+        android:pathData="M34,22 L42,22 Q43,22 43,23 L43,25 Q43,26 42,26 L42,26 Q43,26 43,27 L43,33 Q43,34 42,34 L34,34 L34,32 L41,32 L41,27 L37,27 L37,25 L41,25 L41,24 L34,24 L34,22 Z"
+        android:fillColor="@color/primary"
+        android:strokeWidth="0"/>
+</vector>

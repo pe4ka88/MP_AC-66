@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 
+    Макет главного экрана приложения такси (MainTaxiActivity)
+    
+    Содержит:
+    - Информацию о пользователе (имя и телефон)
+    - Выбранный маршрут поездки
+    - Кнопки для выбора маршрута и вызова такси
+    
+    Автор: Пекун Марк Сергеевич
+    Группа: АС-66
+    Лабораторная работа №7
+-->
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:background="#F5F5F5">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="24dp">
+
+        <!-- Информация об авторе в шапке экрана -->
+        <TextView
+            android:id="@+id/tvAuthorHeader"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Автор приложения: Пекун Марк Сергеевич (АС-66)"
+            android:textSize="12sp"
+            android:textColor="#616161"
+            android:textStyle="italic"
+            android:layout_marginTop="8dp"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+        <!-- Заголовок экрана с иконкой такси -->
+        <TextView
+            android:id="@+id/tvHeader"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="🚖 Главное меню"
+            android:textSize="28sp"
+            android:textStyle="bold"
+            android:textColor="#FF6B00"
+            android:layout_marginTop="16dp"
+            app:layout_constraintTop_toBottomOf="@id/tvAuthorHeader"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+        <!-- Карточка с информацией о пользователе -->
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/cardUser"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            app:cardCornerRadius="16dp"
+            app:cardElevation="4dp"
+            app:cardBackgroundColor="#FFFFFF"
+            app:layout_constraintTop_toBottomOf="@id/tvHeader">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="20dp">
+
+                <!-- Заголовок секции пользователя -->
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="👤 Информация о пользователе"
+                    android:textSize="14sp"
+                    android:textColor="#757575"
+                    android:textStyle="bold" />
+
+                <!-- Разделитель -->
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginBottom="12dp"
+                    android:background="#E0E0E0" />
+
+                <!-- Имя и фамилия пользователя (загружается из Intent) -->
+                <TextView
+                    android:id="@+id/tvUserName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Имя Фамилия"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    android:textColor="#212121" />
+
+                <!-- Номер телефона пользователя (загружается из Intent) -->
+                <TextView
+                    android:id="@+id/tvUserPhone"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    android:text="Телефон: +7 (999) 123-45-67"
+                    android:textSize="16sp"
+                    android:textColor="#616161" />
+
+            </LinearLayout>
+        </com.google.android.material.card.MaterialCardView>
+
+        <!-- Карточка с информацией о маршруте -->
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/cardRoute"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            app:cardCornerRadius="16dp"
+            app:cardElevation="4dp"
+            app:cardBackgroundColor="#FFF8E1"
+            app:layout_constraintTop_toBottomOf="@id/cardUser">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="20dp">
+
+                <!-- Заголовок секции маршрута -->
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="🗺️ Выбранный маршрут"
+                    android:textSize="14sp"
+                    android:textColor="#F57C00"
+                    android:textStyle="bold" />
+
+                <!-- Разделитель -->
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginBottom="12dp"
+                    android:background="#FFE082" />
+
+                <!-- Детали маршрута (обновляется после возврата из RouteActivity) -->
+                <TextView
+                    android:id="@+id/tvRoute"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Маршрут не выбран.\nНажмите 'Выбрать маршрут' для начала."
+                    android:textSize="14sp"
+                    android:textColor="#616161"
+                    android:lineSpacingExtra="4dp" />
+
+            </LinearLayout>
+        </com.google.android.material.card.MaterialCardView>
+
+        <!-- Кнопка "Выбрать маршрут" - открывает RouteActivity -->
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnSetPath"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginTop="24dp"
+            android:text="📍 Выбрать маршрут"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:cornerRadius="12dp"
+            app:icon="@android:drawable/ic_dialog_map"
+            app:iconGravity="textStart"
+            app:backgroundTint="#FF9800"
+            app:layout_constraintTop_toBottomOf="@id/cardRoute" />
+
+        <!-- Кнопка "Вызвать такси" - активна только после выбора маршрута -->
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnCallTaxi"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginTop="12dp"
+            android:text="🚕 Вызвать такси"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:enabled="false"
+            app:cornerRadius="12dp"
+            app:icon="@android:drawable/ic_menu_call"
+            app:iconGravity="textStart"
+            app:backgroundTint="#4CAF50"
+            app:layout_constraintTop_toBottomOf="@id/btnSetPath" />
+
+        <!-- Подсказка для пользователя -->
+        <TextView
+            android:id="@+id/tvHint"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="💡 Сначала выберите маршрут, затем вызовите такси"
+            android:textSize="12sp"
+            android:textColor="#9E9E9E"
+            android:layout_marginTop="16dp"
+            android:gravity="center"
+            app:layout_constraintTop_toBottomOf="@id/btnCallTaxi"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

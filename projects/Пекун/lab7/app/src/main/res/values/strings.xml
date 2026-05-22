@@ -1,0 +1,32 @@
+<resources>
+    <string name="app_name">Media Studio 17</string>
+    <string name="play">Play</string>
+    <string name="pause">Pause</string>
+    <string name="audio_loaded">Аудио файл загружен</string>
+    <string name="audio_open_error">Не удалось открыть аудио файл</string>
+    <string name="pick_audio_first">Сначала выберите аудиофайл</string>
+    <string name="video_loaded">Видео файл загружен</string>
+    <string name="pick_video_first">Сначала выберите видеофайл</string>
+    <string name="speed_not_supported">Скорость не поддерживается на этом устройстве</string>
+    <string name="fullscreen">Полноэкранный режим</string>
+    <string name="exit_fullscreen">Выйти из полноэкранного режима</string>
+    <string name="current_quality">Текущее качество: %1$s</string>
+    <string name="quality_emulation">Имитация качества: %1$s</string>
+    <string name="camera_permission_required">Нужно разрешение на камеру</string>
+    <string name="camera_open_error">Не удалось открыть камеру</string>
+    <string name="photo_saved">Фото сохранено и отображено</string>
+    <string name="photo_not_captured">Фото не сделано</string>
+
+    <string-array name="speed_options">
+        <item>0.5x</item>
+        <item>1x</item>
+        <item>1.5x</item>
+        <item>2x</item>
+    </string-array>
+
+    <string-array name="video_quality_options">
+        <item>480p</item>
+        <item>720p</item>
+        <item>1080p</item>
+    </string-array>
+</resources>

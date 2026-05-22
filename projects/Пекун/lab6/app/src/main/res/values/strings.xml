@@ -1,0 +1,47 @@
+<resources>
+    <string name="app_name">Медиа Просмотрщик ЛР14</string>
+
+    <string name="splash_title">Медиа Просмотрщик ЛР14</string>
+    <string name="splash_subtitle">Лабораторная работа №14: Файловая система и разрешения</string>
+    <string name="splash_author_1">Разработал: Пекун Марк</string>
+    <string name="splash_author_2">Автор проекта: Пекун Марк, группа ИУ7-00</string>
+    <string name="splash_author_3">Подпись автора: Пекун Марк</string>
+
+    <string name="main_title">Обработка медиафайлов</string>
+    <string name="main_subtitle">Выберите изображение, аудио или видео из внешнего хранилища</string>
+    <string name="choose_file">Выбрать файл</string>
+    <string name="import_test_media">Загрузить набор медиа</string>
+    <string name="about_task">О задании</string>
+    <string name="main_author_1">Разработал Пекун Марк</string>
+    <string name="main_author_2">Кнопку нажал Пекун</string>
+    <string name="main_author_3">Подпись внизу: Пекун Марк</string>
+
+    <string name="viewer_title_default">Универсальный просмотрщик</string>
+    <string name="viewer_mode_image">Режим изображения</string>
+    <string name="viewer_mode_audio">Режим аудио</string>
+    <string name="viewer_mode_video">Режим видео</string>
+    <string name="viewer_video_fullscreen">Открыть видео во весь экран</string>
+    <string name="viewer_file_info">Определенный тип: %1$s</string>
+    <string name="play_audio">Воспроизвести</string>
+    <string name="pause_audio">Пауза</string>
+    <string name="viewer_author_1">Просмотрщик сделал Пекун Марк</string>
+    <string name="viewer_author_2">Обработка медиа: Пекун Марк</string>
+    <string name="viewer_author_3">Подпись лабораторной: Пекун Марк</string>
+
+    <string name="about_title">О лабораторной работе</string>
+    <string name="about_description">ТЕМА 4. ФАЙЛОВАЯ СИСТЕМА ОС ANDROID\n\nЛабораторная работа №14. Работа с файловой системой. Разрешения.\nИсточник текста работы:\nhttps://cchgeu.ru/upload/iblock/bbb/gybsukwp8a96mlmex3q865xflvd02gei/Uchebn_posobie-Razrabotka-mobilnykh-prilozheniy-na-yazyke-JAVA-s-ispolzovaniem-ANDROID-STUDIO.pdf.pdf\nНужный, А.М. Разработка мобильных приложений на языке Java с использованием Android Studio: учебное пособие, С. 75-88.\n\nЗадание:\nСоздать приложение, обеспечивающее выбор файла во внешнем хранилище с возможностью дальнейшей его обработки в зависимости от расширения:\n- графический файл отображается с использованием ImageView;\n- аудиофайл воспроизводится с использованием MediaPlayer;\n- видеофайл воспроизводится с использованием VideoView.\n\nВыполнено в приложении:\n1) Выбор файла через SAF (ACTION_OPEN_DOCUMENT);\n2) Определение типа через ContentResolver.getType();\n3) Автоматический переход в режим просмотра/воспроизведения;\n4) Кнопка «Загрузить набор медиа» сохраняет тестовые файлы в папку приложения files/test_media;\n5) Для видео доступен полноэкранный режим;\n6) Обработка ошибок: файл не выбран или формат не поддерживается.</string>
+    <string name="about_author_name">ФИО: Пекун Марк</string>
+    <string name="about_author_group">Группа: ИУ7-00</string>
+    <string name="about_author_signature">Подпись разработчика: Пекун Марк</string>
+
+    <string name="error_no_file">Файл не выбран</string>
+    <string name="unsupported_file_title">Неподдерживаемый файл</string>
+    <string name="unsupported_file_message">Этот формат не поддерживается</string>
+    <string name="error_open_media">Не удалось открыть выбранный медиафайл</string>
+    <string name="import_empty_selection">Файлы для загрузки не выбраны</string>
+    <string name="import_result_ok">Загружено файлов: %1$d. Папка: %2$s</string>
+    <string name="import_result_partial">Скопировано %1$d из %2$d файлов</string>
+    <string name="import_result_failed">Не удалось сохранить выбранные файлы</string>
+    <string name="video_fullscreen_title">Полноэкранное видео</string>
+    <string name="close_video">Закрыть</string>
+</resources>

@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingStart="16dp"
+    android:paddingEnd="16dp"
+    android:paddingTop="5dp"
+    android:paddingBottom="5dp">
+
+    <LinearLayout
+        android:id="@+id/cardRoot"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:background="@drawable/bg_white_card"
+        android:paddingStart="12dp"
+        android:paddingEnd="14dp"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:elevation="2dp">
+
+        <!-- Product Image -->
+        <FrameLayout
+            android:layout_width="62dp"
+            android:layout_height="62dp"
+            android:background="@drawable/bg_image_placeholder"
+            android:layout_marginEnd="12dp">
+
+            <ImageView
+                android:id="@+id/ivProductImage"
+                android:layout_width="54dp"
+                android:layout_height="54dp"
+                android:layout_gravity="center"
+                android:scaleType="centerInside"
+                android:padding="4dp"
+                android:contentDescription="Фото товара"/>
+
+            <!-- ID badge поверх фото -->
+            <TextView
+                android:id="@+id/tvProductId"
+                android:layout_width="22dp"
+                android:layout_height="22dp"
+                android:layout_gravity="bottom|end"
+                android:gravity="center"
+                android:textSize="9sp"
+                android:textStyle="bold"
+                android:textColor="#FFFFFF"
+                android:background="@drawable/bg_id_badge"/>
+
+        </FrameLayout>
+
+        <!-- Name + Category + Price -->
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tvProductName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                android:textColor="@color/text_primary"
+                android:fontFamily="sans-serif-medium"
+                android:maxLines="2"
+                android:ellipsize="end"
+                android:lineSpacingMultiplier="1.2"/>
+
+            <TextView
+                android:id="@+id/tvProductCategory"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="11sp"
+                android:textColor="@color/text_muted"
+                android:layout_marginTop="2dp"
+                android:maxLines="1"
+                android:ellipsize="end"/>
+
+            <TextView
+                android:id="@+id/tvProductPrice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                android:textColor="@color/emerald"
+                android:fontFamily="sans-serif-medium"
+                android:layout_marginTop="4dp"/>
+
+        </LinearLayout>
+
+        <!-- Custom CheckBox -->
+        <CheckBox
+            android:id="@+id/cbProductSelect"
+            android:layout_width="28dp"
+            android:layout_height="28dp"
+            android:layout_marginStart="8dp"
+            android:button="@null"
+            android:background="@drawable/selector_checkbox"
+            android:clickable="false"
+            android:focusable="false"/>
+
+    </LinearLayout>
+
+</FrameLayout>

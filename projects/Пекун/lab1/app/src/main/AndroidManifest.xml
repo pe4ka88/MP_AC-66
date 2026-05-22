@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 
+    AndroidManifest.xml - манифест приложения
+    Описывает все Activity приложения, разрешения, настройки и точку входа
+-->
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Lab1MemoryGame"
+        tools:targetApi="31">
+        
+        <!-- SplashActivity - экран загрузки, точка входа в приложение -->
+        <activity
+            android:name=".SplashActivity"
+            android:exported="true"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.Lab1MemoryGame.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        
+        <!-- MenuActivity - главное меню приложения -->
+        <activity
+            android:name=".MenuActivity"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.Lab1MemoryGame.NoActionBar"/>
+        
+        <!-- SettingsActivity - экран выбора настроек игры -->
+        <activity
+            android:name=".SettingsActivity"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:label="@string/settings_title"
+            android:parentActivityName=".MenuActivity"/>
+        
+        <!-- MainActivity - основной игровой экран -->
+        <activity
+            android:name=".MainActivity"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.Lab1MemoryGame.NoActionBar"/>
+        
+        <!-- StatisticsActivity - экран статистики игр -->
+        <activity
+            android:name=".StatisticsActivity"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:label="@string/stats_title"
+            android:parentActivityName=".MenuActivity"/>
+        
+        <!-- AboutActivity - экран информации об авторе -->
+        <activity
+            android:name=".AboutActivity"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:label="@string/about_title"
+            android:parentActivityName=".MenuActivity"/>
+            
+    </application>
+
+</manifest>

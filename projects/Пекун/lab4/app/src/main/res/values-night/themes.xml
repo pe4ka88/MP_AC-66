@@ -1,0 +1,13 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.ThirdLab9" parent="Theme.Material3.DayNight.NoActionBar">
+        <!-- Customize your dark theme here. -->
+        <item name="colorPrimary">@color/emerald</item>
+        <item name="colorPrimaryDark">@color/emerald_dark</item>
+        <item name="colorAccent">@color/emerald_light</item>
+        <item name="android:windowBackground">@color/bg_screen_dark</item>
+        <item name="android:statusBarColor">@color/bg_screen_dark</item>
+        <item name="android:navigationBarColor">@color/bg_footer_dark</item>
+        <item name="android:windowLightStatusBar" tools:targetApi="23">false</item>
+    </style>
+</resources>

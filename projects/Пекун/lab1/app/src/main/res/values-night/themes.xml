@@ -1,0 +1,18 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- ✅ ФИКС: Используем светлую тему вместо тёмной для единообразия -->
+    <style name="Base.Theme.Lab1MemoryGame" parent="Theme.Material3.Light">
+        <item name="colorPrimary">@color/primary</item>
+        <item name="colorPrimaryDark">@color/primary_dark</item>
+        <item name="colorAccent">@color/accent</item>
+        <item name="colorSecondary">@color/secondary</item>
+        <item name="colorOnPrimary">@color/white</item>
+        <item name="android:statusBarColor">@color/primary_dark</item>
+        <item name="android:windowBackground">@color/background</item>
+        <item name="android:textColorPrimary">@color/text_primary</item>
+        <item name="android:textColorSecondary">@color/text_secondary</item>
+        
+        <!-- ✅ Светлые диалоги -->
+        <item name="alertDialogTheme">@style/Theme.Lab1MemoryGame.Dialog</item>
+        <item name="materialAlertDialogTheme">@style/Theme.Lab1MemoryGame.Dialog</item>
+    </style>
+</resources>

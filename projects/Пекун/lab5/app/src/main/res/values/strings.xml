@@ -1,0 +1,32 @@
+<resources>
+    <string name="app_name">MyNotes</string>
+    <string name="app_title">MyNotes</string>
+    <string name="app_subtitle">ViewPager • SQLite • ListView</string>
+    <string name="splash_title">MyNotes</string>
+    <string name="splash_subtitle">Лабораторная работа №10</string>
+    <string name="hint_description">Введите текст заметки</string>
+    <string name="hint_id">Введите id заметки</string>
+    <string name="hint_new_description">Введите новый текст</string>
+    <string name="button_add">Add</string>
+    <string name="button_del">Del</string>
+    <string name="button_update">Update</string>
+    <string name="label_note_id">ID:</string>
+    <string name="label_note_description">Description:</string>
+    <string name="author_hint_name">Пекун Марк Сергеевич</string>
+    <string name="author_hint_group">АС-66</string>
+    <string name="author_hint_compact">ЛР10 выполнена: Пекун М. С. • АС-66</string>
+    <string name="coauthor_mark">co-created by Pekun Mark • AS-66</string>
+    <string name="button_task_info">Полная формулировка задания</string>
+    <string name="task_info_title">Лабораторная работа №10</string>
+    <string name="task_info_author">Выполнил: Пекун Марк Сергеевич, группа АС-66</string>
+    <string name="task_info_full">Тема: Фрагменты. ViewPager. Хранение информации в базе данных SQLite.&#10;&#10;Практическое задание:&#10;1. Разработать приложение MyNotes, представляющее собой ViewPager.&#10;2. Поместить четыре фрагмента: FragmentShow, FragmentAdd, FragmentDel, FragmentUpdate.&#10;3. Добавить верхние вкладки: Show, Add, Del, Update.&#10;4. Во FragmentShow реализовать ListView с собственным адаптером.&#10;5. В каждом пункте списка отобразить номер заметки и описание.&#10;6. Хранение и предоставление данных адаптеру реализовать через SQLite.&#10;7. Во FragmentAdd добавить заметку через EditText и кнопку Add.&#10;8. Во FragmentDel удалить заметку по id через кнопку Del.&#10;9. Во FragmentUpdate обновить заметку по id и новому описанию через кнопку Update.&#10;10. База данных, содержащая менее 20 записей, считается отсутствующей.&#10;&#10;Данные автора: Пекун Марк Сергеевич, АС-66.</string>
+    <string name="msg_empty_description">Введите описание заметки</string>
+    <string name="msg_add_failed">Не удалось добавить запись</string>
+    <string name="msg_added">Заметка добавлена</string>
+    <string name="msg_empty_id">Введите id</string>
+    <string name="msg_invalid_id">Некорректный id</string>
+    <string name="msg_deleted">Заметка удалена</string>
+    <string name="msg_not_found">Запись с таким id не найдена</string>
+    <string name="msg_fill_all_fields">Заполните все поля</string>
+    <string name="msg_updated">Заметка обновлена</string>
+</resources>

@@ -1,0 +1,32 @@
+[
+  {
+    "id": 1,
+    "name": "Иван Иванов",
+    "email": "ivan.ivanov@example.com",
+    "phone": "+7 (999) 123-45-67",
+    "website": "www.ivanov-dev.com",
+    "company": "Tech Solutions Ltd",
+    "address": "Москва, ул. Ленина, д. 10",
+    "avatar": "https://i.pravatar.cc/150?img=1"
+  },
+  {
+    "id": 2,
+    "name": "Мария Петрова",
+    "email": "maria.petrova@example.com",
+    "phone": "+7 (999) 234-56-78",
+    "website": "www.petrova-design.com",
+    "company": "Creative Agency",
+    "address": "Санкт-Петербург, Невский пр., д. 25",
+    "avatar": "https://i.pravatar.cc/150?img=5"
+  },
+  {
+    "id": 3,
+    "name": "Алексей Смирнов",
+    "email": "alexey.smirnov@example.com",
+    "phone": "+7 (999) 345-67-89",
+    "website": "www.smirnov-tech.com",
+    "company": "Digital Innovations",
+    "address": "Новосибирск, ул. Красный пр., д. 50",
+    "avatar": "https://i.pravatar.cc/150?img=8"
+  }
+]

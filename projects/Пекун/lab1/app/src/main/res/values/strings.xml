@@ -1,0 +1,108 @@
+<resources>
+    <string name="app_name">Память — ЛР1</string>
+    
+    <!-- Author info -->
+    <string name="author_full_name">Пекун Марк Сергеевич</string>
+    <string name="author_short">Пекун М.С.</string>
+    <string name="author_group">АС-66</string>
+    <string name="lab_number">Лабораторная работа №1</string>
+    <string name="lab_title">Игра «Память»</string>
+    <string name="developed_by">Разработал: Пекун Марк Сергеевич, АС-66</string>
+    
+    <!-- Splash Screen -->
+    <string name="splash_title">Игра «Память»</string>
+    <string name="splash_subtitle">Лабораторная работа №1</string>
+    <string name="splash_author">Выполнил: Пекун Марк Сергеевич, АС-66</string>
+    
+    <!-- Main Menu -->
+    <string name="menu_start_game">▶ Начать игру</string>
+    <string name="menu_settings">⚙ Настройки</string>
+    <string name="menu_statistics">📊 Статистика</string>
+    <string name="menu_about">ℹ️ О приложении</string>
+    
+    <!-- Game Settings -->
+    <string name="settings_title">Настройки игры</string>
+    <string name="settings_grid_size">Размер поля</string>
+    <string name="settings_grid_size_desc">Выберите размер игрового поля</string>
+    <string name="settings_match_mode">Режим совпадений</string>
+    <string name="settings_match_mode_desc">Выберите правила игры</string>
+    
+    <string name="grid_4x4">4×4</string>
+    <string name="grid_4x4_desc">8 пар · Легкий</string>
+    <string name="grid_4x5">4×5</string>
+    <string name="grid_4x5_desc">10 пар · Средний</string>
+    <string name="grid_6x6">6×6</string>
+    <string name="grid_6x6_desc">18 пар · Сложный</string>
+    
+    <string name="mode_pairs">Пары</string>
+    <string name="mode_pairs_desc">Открывайте 2 карточки</string>
+    <string name="mode_triples">Тройки</string>
+    <string name="mode_triples_desc">Открывайте 3 карточки</string>
+    <string name="mode_hybrid">Гибридный</string>
+    <string name="mode_hybrid_desc">Пары и тройки</string>
+    
+    <string name="btn_start">▶ Начать игру</string>
+    <string name="btn_back">Назад</string>
+    
+    <!-- Game Screen -->
+    <string name="game_title">Игра "Память"</string>
+    <string name="pairs_left">Осталось: %d</string>
+    <string name="time_elapsed">Время: %s</string>
+    <string name="moves_count">Ходов: %d</string>
+    <string name="current_mode_indicator">Открой %d карточки</string>
+    <string name="restart_game">Перезапустить</string>
+    <string name="restart_game_icon">🔄</string>
+    <string name="pause_game">⏸ Пауза</string>
+    <string name="resume_game">▶ Продолжить</string>
+    <string name="exit_game">Меню</string>
+    <string name="exit_game_icon">🏠</string>
+    
+    <!-- Statistics -->
+    <string name="stats_title">Статистика</string>
+    <string name="stats_total_games">Всего игр:</string>
+    <string name="stats_best_time">Лучшее время:</string>
+    <string name="stats_last_time">Последнее время:</string>
+    <string name="stats_mode_pairs">Режим «Пары»:</string>
+    <string name="stats_mode_triples">Режим «Тройки»:</string>
+    <string name="stats_mode_hybrid">Гибридный режим:</string>
+    <string name="stats_no_data">Нет данных</string>
+    <string name="stats_games_count">%d игр(ы)</string>
+    <string name="btn_reset_stats">Сбросить статистику</string>
+    <string name="stats_reset_confirm">Вы уверены, что хотите сбросить всю статистику?</string>
+    
+    <!-- About -->
+    <string name="about_title">О приложении</string>
+    <string name="about_developer">Разработчик</string>
+    <string name="about_name_value">Пекун Марк Сергеевич</string>
+    <string name="about_group_value">Группа АС-66</string>
+    <string name="about_project">О проекте</string>
+    <string name="about_lab_value">ТЕМА 1. ДИЗАЙН И СОБЫТИЯ МОБИЛЬНЫХ ПРИЛОЖЕНИЙ\n\nЛабораторная работа №1. Игра «Память» на Android</string>
+    <string name="about_description">Необходимо реализовать интерфейс приложения для последовательного открытия пар карточек для запоминания.\n\nПриложение в минимальном представлении должно:\n\n• отображать игровое поле минимального размера 4х4\n\n• в каждый момент времени на экране отображается не более одной картинки. При открытии каждой следующей картинки происходит парное удаление с игрового поля только в случае совпадения текущей и предыдущей картинки\n\n• предоставлять возможность перезапустить игру</string>
+    <string name="about_features_title">Реализованные бонусы:</string>
+    <string name="about_features">✅ Возможность настраивать установки игрового поля (переменный размер игрового поля: 4×4, 4×5, 6×6)\n\n✅ Возможность присутствия на игровом поле не только ПАР, но и ТРОЕК картинок (режимы: пары, тройки, гибридный)\n\n✅ Запись информации (рекорды, время игры, статистика по режимам)\n\n✅ Собственное оформление игры (отображение информации для пользователя: время, число оставшихся пар-троек, счетчик ходов, Material Design 3, плавные анимации)</string>
+    
+    <!-- Dialogs -->
+    <string name="congratulations">🎉 Поздравляем!</string>
+    <string name="victory_title">Победа!</string>
+    <string name="victory_message" formatted="false">Отличная работа!\n\nВремя: %1$s\nХодов: %2$d\nРежим: %3$s\nРазмер: %4$dx%5$d\n\nАвтор: Пекун М.С., АС-66</string>
+    <string name="btn_main_menu">🏠 В главное меню</string>
+    <string name="btn_play_again">🔄 Сыграть ещё раз</string>
+    <string name="new_record">🏆 Новый рекорд!</string>
+    <string name="ok">ОК</string>
+    <string name="cancel">Отмена</string>
+    <string name="yes">Да</string>
+    <string name="no">Нет</string>
+    
+    <!-- Pause Dialog -->
+    <string name="pause_title">Игра на паузе</string>
+    <string name="pause_message">Время остановлено</string>
+    
+    <!-- Exit Confirmation -->
+    <string name="exit_confirm_title">Выход из игры</string>
+    <string name="exit_confirm_message">Прогресс текущей игры будет потерян. Продолжить?</string>
+    
+    <!-- Mode names for display -->
+    <string name="mode_name_pairs">Пары</string>
+    <string name="mode_name_triples">Тройки</string>
+    <string name="mode_name_hybrid">Гибридный</string>
+</resources>

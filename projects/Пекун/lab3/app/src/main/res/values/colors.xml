@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Т-Банк стиль - жёлто-чёрная палитра -->
+    
+    <!-- Светлая тема -->
+    <color name="md_theme_light_primary">#FFDD2D</color> <!-- Фирменный жёлтый Т-Банка -->
+    <color name="md_theme_light_onPrimary">#000000</color> <!-- Чёрный текст на жёлтом -->
+    <color name="md_theme_light_primaryContainer">#FFF9C4</color> <!-- Светло-жёлтый контейнер -->
+    <color name="md_theme_light_onPrimaryContainer">#1A1A1A</color>
+    
+    <color name="md_theme_light_secondary">#333333</color> <!-- Тёмно-серый -->
+    <color name="md_theme_light_onSecondary">#FFFFFF</color>
+    <color name="md_theme_light_secondaryContainer">#E0E0E0</color>
+    <color name="md_theme_light_onSecondaryContainer">#1A1A1A</color>
+    
+    <color name="md_theme_light_error">#FF3B30</color> <!-- Яркий красный для ошибок -->
+    <color name="md_theme_light_onError">#FFFFFF</color>
+    
+    <color name="md_theme_light_background">#F5F5F5</color> <!-- Светло-серый фон -->
+    <color name="md_theme_light_onBackground">#1A1A1A</color>
+    <color name="md_theme_light_surface">#FFFFFF</color>
+    <color name="md_theme_light_onSurface">#1A1A1A</color>
+    <color name="md_theme_light_surfaceVariant">#F9F9F9</color>
+    <color name="md_theme_light_onSurfaceVariant">#666666</color>
+    
+    <!-- Тёмная тема (в стиле Т-Банка) -->
+    <color name="md_theme_dark_primary">#FFDD2D</color> <!-- Тот же жёлтый -->
+    <color name="md_theme_dark_onPrimary">#000000</color>
+    <color name="md_theme_dark_primaryContainer">#B39A00</color>
+    <color name="md_theme_dark_onPrimaryContainer">#FFDD2D</color>
+    
+    <color name="md_theme_dark_secondary">#FFDD2D</color>
+    <color name="md_theme_dark_onSecondary">#000000</color>
+    <color name="md_theme_dark_secondaryContainer">#2A2A2A</color>
+    <color name="md_theme_dark_onSecondaryContainer">#FFDD2D</color>
+    
+    <color name="md_theme_dark_error">#FF453A</color>
+    <color name="md_theme_dark_onError">#FFFFFF</color>
+    
+    <color name="md_theme_dark_background">#000000</color> <!-- Чистый чёрный -->
+    <color name="md_theme_dark_onBackground">#FFFFFF</color>
+    <color name="md_theme_dark_surface">#1A1A1A</color> <!-- Тёмно-серый для карточек -->
+    <color name="md_theme_dark_onSurface">#FFFFFF</color>
+    <color name="md_theme_dark_surfaceVariant">#2A2A2A</color>
+    <color name="md_theme_dark_onSurfaceVariant">#CCCCCC</color>
+    
+    <!-- Дополнительные цвета Т-Банка -->
+    <color name="tbank_yellow">#FFDD2D</color>
+    <color name="tbank_black">#000000</color>
+    <color name="tbank_dark_gray">#1A1A1A</color>
+    <color name="tbank_gray">#666666</color>
+    <color name="tbank_light_gray">#F5F5F5</color>
+    
+    <!-- Акцентные цвета -->
+    <color name="black">#000000</color>
+    <color name="white">#FFFFFF</color>
+    <color name="accent_yellow">#FFDD2D</color>
+    <color name="accent_red">#FF3B30</color>
+    <color name="accent_green">#34C759</color>
+    
+    <!-- Цвета для Chip (новые) -->
+    <color name="chip_selected">#FFDD2D</color>
+    <color name="chip_unselected">#E0E0E0</color>
+</resources>

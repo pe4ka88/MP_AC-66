@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 
+    Макет экрана загрузки (Splash Screen)
+    
+    Отображается при первом запуске приложения.
+    Содержит:
+    - Анимированную иконку такси (движение, подпрыгивание, покачивание)
+    - Название приложения
+    - Индикатор загрузки
+    - Информацию об авторе
+    
+    После 3 секунд автоматически переходит на экран регистрации.
+    
+    Автор: Пекун Марк Сергеевич
+    Группа: АС-66
+    Лабораторная работа №7
+-->
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white">
+
+    <!-- Фоновый цвет (тёплый оранжевый оттенок) -->
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#FFF3E0" />
+
+    <!-- Главная иконка такси с анимацией -->
+    <!-- Анимируется в коде: движение слева-направо, подпрыгивание, покачивание -->
+    <TextView
+        android:id="@+id/tvTaxiIcon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="🚖"
+        android:textSize="120sp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintVertical_bias="0.35" />
+
+    <!-- Название приложения -->
+    <TextView
+        android:id="@+id/tvAppName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Пекун Такси"
+        android:textSize="36sp"
+        android:textStyle="bold"
+        android:textColor="#FF6B00"
+        android:layout_marginTop="24dp"
+        app:layout_constraintTop_toBottomOf="@id/tvTaxiIcon"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <!-- Подзаголовок приложения -->
+    <TextView
+        android:id="@+id/tvSubtitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Ваше надёжное такси"
+        android:textSize="16sp"
+        android:textColor="#757575"
+        android:layout_marginTop="8dp"
+        app:layout_constraintTop_toBottomOf="@id/tvAppName"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <!-- Круговой индикатор загрузки -->
+    <ProgressBar
+        android:id="@+id/progressBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:indeterminateTint="#FF6B00"
+        android:layout_marginTop="48dp"
+        app:layout_constraintTop_toBottomOf="@id/tvSubtitle"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <!-- Текст "Загрузка..." -->
+    <TextView
+        android:id="@+id/tvLoading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Загрузка..."
+        android:textSize="14sp"
+        android:textColor="#9E9E9E"
+        android:layout_marginTop="16dp"
+        app:layout_constraintTop_toBottomOf="@id/progressBar"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <!-- Информация об авторе (внизу экрана) -->
+    <TextView
+        android:id="@+id/tvAuthor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Разработал: Пекун Марк Сергеевич\nГруппа: АС-66"
+        android:textSize="12sp"
+        android:textColor="#BDBDBD"
+        android:gravity="center"
+        android:layout_marginBottom="24dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

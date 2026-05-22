@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Primary Emerald -->
+    <color name="emerald">#1F8A70</color>
+    <color name="emerald_dark">#1A7560</color>
+    <color name="emerald_light">#25A882</color>
+    <color name="emerald_subtle">#F0FAF6</color>
+
+    <!-- Backgrounds Light -->
+    <color name="bg_screen">#F7F9FB</color>
+    <color name="bg_card">#FFFFFF</color>
+    <color name="bg_footer">#FFFFFF</color>
+
+    <!-- Backgrounds Dark -->
+    <color name="bg_screen_dark">#0D1717</color>
+    <color name="bg_card_dark">#1E2A2A</color>
+    <color name="bg_footer_dark">#121C1C</color>
+
+    <!-- Text Light -->
+    <color name="text_primary">#1A1A2E</color>
+    <color name="text_secondary">#6B7280</color>
+    <color name="text_muted">#9CA3AF</color>
+    <color name="text_price">#1F8A70</color>
+    <color name="text_white">#FFFFFF</color>
+
+    <!-- Text Dark -->
+    <color name="text_primary_dark">#E8F5F0</color>
+    <color name="text_secondary_dark">#8FA89F</color>
+    <color name="text_muted_dark">#5A7870</color>
+
+    <!-- Divider -->
+    <color name="divider">#F0F0F0</color>
+    <color name="divider_dark">#1E2A2A</color>
+
+    <!-- Accent -->
+    <color name="accent_glow">#401F8A70</color>
+    <color name="shadow">#18000000</color>
+</resources>

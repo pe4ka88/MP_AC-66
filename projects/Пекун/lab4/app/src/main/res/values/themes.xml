@@ -1,0 +1,21 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.ThirdLab9" parent="Theme.Material3.DayNight.NoActionBar">
+        <!-- Customize your light theme here. -->
+        <item name="colorPrimary">@color/emerald</item>
+        <item name="colorPrimaryDark">@color/emerald_dark</item>
+        <item name="colorAccent">@color/emerald</item>
+        <item name="android:windowBackground">@color/bg_screen</item>
+        <item name="android:statusBarColor">@color/emerald_dark</item>
+        <item name="android:navigationBarColor">@color/bg_footer</item>
+        <item name="android:windowLightStatusBar" tools:targetApi="23">false</item>
+    </style>
+
+    <style name="Theme.ThirdLab9" parent="Base.Theme.ThirdLab9" />
+
+    <!-- Slide-in transition for SecondActivity -->
+    <style name="Theme.ThirdLab9.Cart" parent="Base.Theme.ThirdLab9">
+        <item name="android:windowEnterAnimation">@anim/slide_in_right</item>
+        <item name="android:windowExitAnimation">@anim/slide_out_left</item>
+    </style>
+</resources>

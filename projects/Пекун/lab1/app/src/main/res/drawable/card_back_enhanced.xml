@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- Основной фон с градиентом -->
+    <item>
+        <shape android:shape="rectangle">
+            <gradient
+                android:angle="135"
+                android:startColor="@color/card_back_gradient_start"
+                android:endColor="@color/card_back_gradient_end"
+                android:type="linear"/>
+            <corners android:radius="20dp"/>
+        </shape>
+    </item>
+    
+    <!-- Паттерн (опционально) -->
+    <item
+        android:top="8dp"
+        android:bottom="8dp"
+        android:left="8dp"
+        android:right="8dp">
+        <shape android:shape="oval">
+            <solid android:color="#20FFFFFF"/>
+        </shape>
+    </item>
+</layer-list>
