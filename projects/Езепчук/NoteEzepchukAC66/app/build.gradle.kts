@@ -20,7 +20,7 @@ android {
 
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
 
-        buildConfigField("String", "HF_TOKEN", "\"YOUR_TOKEN_HERE\"")
+        buildConfigField("String", "HF_TOKEN", "\"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\"")
     }
 
     buildTypes {
